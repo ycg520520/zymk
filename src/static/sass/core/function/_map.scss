@@ -1,0 +1,56 @@
+/**
+ * 获取颜色map方法
+ * @parm $k 颜色的key值
+ */
+@function colors($k){
+  @if not map-has-key($color, $k){
+      @warn "属性 `#{$k}` 在 `$color` 没找到。";
+  }  
+  @return map-get($color, $k);
+}
+
+/**
+ * 获取字体map方法
+ * @parm $k 字体的key值
+ */
+@function fonts($k){
+  @if not map-has-key($font, $k){
+      @warn "属性 `#{$k}` 在 `$fonts` 没找到。";
+  }
+  @return map-get($font, $k);
+}
+
+/**
+ * 获取层级map方法
+ * @parm $k 颜色的key值
+ */
+@function zIndex($k){
+  @if not map-has-key($zIndex, $k){
+      @warn "属性 `#{$k}` 在 `$zIndex` 没找到。";
+  }
+  @return map-get($zIndex, $k);
+}
+
+/**
+ * 获取圆角map方法
+ * @parm $k 圆角的key值
+ */
+@function radius($k){
+  @if not map-has-key($radius, $k){
+      @warn "属性 `#{$k}` 在 `$radius` 没找到。";
+  }
+  @return map-get($radius, $k);
+}
+
+
+//定义获取map值的方法
+@function getmap($key,$map:''){
+  @if $map != '' {
+    @if not map-has-key($map, $key){
+        @warn "属性 `#{$key}` 在 `$map` 没找到。";
+    }
+    @return map-get($map, $key);
+  }@else{
+    @return $key;
+  }    
+}

@@ -1,0 +1,6 @@
+// Opacity
+// lte8使用filter兼容
+@mixin opacity($opacity:50) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}

@@ -1,0 +1,269 @@
+@charset "UTF-8";
+//comments评论
+.comments {
+
+	&-hd {
+		line-height: 32px;
+		.title {
+			height: 32px;
+			font-size: fonts(size) * 1.4;
+			font-weight: normal;
+		}
+		.sort{
+			font-size: fonts(size) * 1.2;
+			@include float(right);
+			a{
+				color: colors(dark);
+				&.active{
+					color: colors(auxiliary);
+				}
+			}
+		}
+	}
+
+	//评论内容
+	&-bd {
+		border-top: 1px solid colors(gray);
+		//margin-top:-1px;
+		//padding:19px;
+	}
+
+	@at-root{
+		// 评论列表样式
+		&-list {
+			& &{
+				position: relative;
+				z-index: 1;
+				margin-left: -35px;
+				margin-top: 10px;
+			}		
+			.item{
+				padding:8px 8px 0 64px;
+				border-bottom: 1px solid colors(gray);
+				font-size: fonts(size) * 1.4;
+				line-height: 1.8;
+				position: relative;
+				background-color: colors(white);
+				
+				&:before{
+					position: absolute;
+					left: 28px;
+					top: 72px;
+					bottom: 0;
+					content:'';
+					width:0;
+					border-left: 1px solid colors(gray);
+				}
+				.item{
+					padding-left: 64px;
+					border-bottom:0;
+					@include nth-child(odd){
+						background-color: colors(light);
+					};
+					&:hover{
+						margin-left: -1px;
+						border-left:3px solid colors(primary);
+						padding-left: 62px;
+						background-color:colors(light);
+						.figure{
+							&:before{
+								content:none;
+							}
+						}
+						.opt{
+							a{display: inline;}
+						}
+					}
+					.figure{
+						position: relative;
+						&:before{
+							position: absolute;
+							left:-67px;
+							top:22px;
+							content:'';
+							width: 5px;
+							height: 5px;
+							border-radius:50%;
+							background-color: colors(gray);
+						}
+						.thumbnail {
+							float:left;
+							width: 46px;
+							margin-left: -56px;
+						}
+					}
+					.figcaption{
+						padding-top: 3px;
+					}
+					.opt{
+						padding-top: 3px;
+						a{display: none;}
+					}
+					&:before{
+						content:none;
+					}
+				}
+				.figure{
+					@include float;
+					.thumbnail {
+						float:left;
+						width: 54px;
+						margin-left: -64px;
+						border:1px solid colors(gray);
+						border-radius:50%;
+						overflow: hidden;
+						transition:.3s ease-in-out;
+						img{
+							width:100%;
+							height: 100%;
+						}
+						&:hover {						
+							transform:rotate(180deg);
+							opacity:.75;
+						}
+					}
+				}
+				.figcaption{
+					padding-top: 7px;
+					.name{
+						height: 20px;
+						line-height: 20px;
+						font-size: fonts(size) * 1.4;
+						font-weight: normal;
+						color: colors(dark);
+						overflow: hidden;
+						a {
+							color: colors(primary);
+						}
+					}
+					.aid{
+						font-size: fonts(size) * 1.2;
+						color: colors(gray);
+					}
+					.time{
+
+					}
+					.address{
+
+					}
+				}
+				.opt{
+					padding-top: 7px;
+					font-size: fonts(size) * 1.2;
+					@include float(right);
+					text-align: right;
+					[class*="ift-"]{
+						margin-right: 2px;
+						font-size: fonts(size) * 1.2;
+					}
+					a{
+						margin-left: 8px;
+						color: colors(dark);
+					}
+					.re-floor{font-style: normal;margin-left: 8px;}
+				}
+				&-hd {
+					@extend %clearfix;
+				}
+				&-bd{
+					padding-bottom: 8px;
+				}
+			}
+		}
+
+		// 评论提交表单
+		&-form {
+			margin: 0 auto;
+			font-size: fonts(size) * 1.2;
+			&>.hd {
+				margin-bottom: 5px;
+				line-height: 20px;
+				.fr {
+					color: colors(gray);
+				}
+				.like,
+				.dislike {
+					display: inline-block;
+					height: 20px;
+					padding: 0 5px;
+					margin-right: 5px;
+					color: colors(white);
+					font-size: fonts(size) * 1.2;
+					vertical-align: bottom;
+					background-color: colors(dark);
+					border-radius: 3px;
+					cursor: pointer;
+				}
+			}
+			&>.bd {
+				.main{
+					position: relative;
+					margin-left: 66px;
+					padding-left:4px;
+					border: 1px solid colors(gray);
+					margin-bottom: 16px;
+				}
+				.figure {
+					@include float;
+					width: 48px;
+					height: 48px;
+					padding: 8px;
+					margin:-1px 0 0 -70px;
+					border: 1px solid colors(gray);
+					border-right:0;
+					background-color:colors(light);
+					cursor: pointer;
+				}
+				.textarea {
+					vertical-align: top;
+					margin: 0;
+					border: 0;
+					padding: 4px 0;
+					width: 100%;
+					height: 56px;
+					outline: none;
+					resize: vertical;
+					color: colors(dark);
+					background: none;
+					overflow: auto;
+					&:focus {
+						box-shadow:none;
+					}
+				}
+				.byte {
+					position: absolute;
+					right: 12px;
+					bottom: 0;
+					text-align: right;
+					color: colors(dark);
+					background-color: colors(white);
+				}
+				.face {
+					position: absolute;
+					bottom: -25px;
+					left: -1px;
+					width: 60px;
+					height: 24px;
+					border: 1px solid colors(gray);
+					border-top: 0;
+					line-height: 24px;
+					text-align: center;
+					color: colors(dark);
+					background-color: colors(white);
+					border-radius:0 0 radius(S) radius(S);
+					cursor: pointer;
+					.ift-face{
+						vertical-align:0;
+						font-size: fonts(size) * 1.4;
+						margin-right: 4px;
+					}
+					&:hover {
+						color: colors(primary)
+					}
+				}
+
+			}
+		}
+
+	}
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+//页面提示站位样式
+%tips{
+	padding:9px;
+	border:1px solid lighten(colors(orange), 35%);
+	font-size:fonts(size) * 1.4;
+	font-family: fonts(family);
+	line-height: 1.5;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	border-radius:radius(S);
+	// color:colors(orange);
+	background-color:lighten(colors(orange), 49%);
+	overflow: hidden;
+	strong{
+		color:colors(red);
+		font-weight: bold;
+	}	
+	.tips-title{
+		font-size: fonts(size) * 1.6;
+	}
+}

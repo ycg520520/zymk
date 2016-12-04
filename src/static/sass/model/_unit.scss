@@ -1,0 +1,16 @@
+@charset "UTF-8";
+//评星模块
+.score-star{
+	position:relative;
+	width: 120px;
+	height: 24px;
+	background: url(/static/images/skin.png) no-repeat -245px -48px;
+	cursor: pointer;
+	.star-hover{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		background: url(/static/images/skin.png) no-repeat -245px -24px;
+	}
+}

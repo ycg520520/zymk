@@ -1,0 +1,93 @@
+@charset "UTF-8";
+//图片精灵配置
+$icon: sprite-map("sprite/*.png");
+$sprite-sprite-base-class:'.i'; //配置精灵的基础类注意：必须在导入精灵图之前做配置
+$sprite-sprite-dimensions:true; //自动设置sprite精灵尺寸
+$sprite-clean-up:true; //自动清除过期的精灵图片
+$default-sprite-separator:'-'; //默认sprite链接字符设置
+$disable-magic-sprite-selectors:false; //是否通过伪类选择器自动生成精灵
+// $sprite-layout:"smart"; //设置精灵图片拼合方式 smart:最紧密 vertical:纵向排列 horizontal:横向排列 diagonal:对角线排列
+@import "sprite/*.png";
+// @include all-sprite-sprites; //自动生成所有图片精灵
+
+$splitSprite: sprite-map-name($icon) + '.png'; //拼合后的图片名称
+$spritePre: 50;
+//icon图标
+.i{
+	display:inline-block;
+	overflow: hidden;
+}
+
+.close{@include mysprite(close,false);}
+.close-gray16{@include mysprite(close_gray16,false);}
+
+.search{@include mysprite(search);}
+.user{@include mysprite(user);}
+.cart{@include mysprite(cart);}
+.cart_red{@include mysprite(cart_red);}
+.sound{@include mysprite(sound,false);}
+.category{@include mysprite(category);}
+
+//箭头相关
+.arrow-prev{@include mysprite(arrow_prev,false);
+	@include max-screen(960px){
+		@include resize-sprite(arrow_prev,false);
+	}
+}
+.arrow-next{@include mysprite(arrow_next,false);
+	@include max-screen(960px){
+		@include resize-sprite(arrow_next,false);
+	}
+}
+.arrow2-down{@include mysprite(arrow2_down,false);}
+.arrow2-up{@include mysprite(arrow2_up,false);}
+.arrow2-next{@include mysprite(arrow2_next,false);}
+.arrow3-prev{@include mysprite(arrow3_prev,false);}
+.arrow3-next{@include mysprite(arrow3_next,false);}
+.arrow4-next{
+	@include mysprite(arrow4_next,false);
+}
+.del-red{
+	@include mysprite(del_red,false);
+}
+.ico-sift-search{
+	@include mysprite(search2,false);
+}
+.ok-white{
+	@include mysprite(ok_white,false);
+	background-color: colors(dark);
+}
+
+.i-select{@include mysprite(select);}
+.inquiry{@include mysprite(inquiry,false);}
+
+.minus-black{@include mysprite(minus_black,false);}
+.add-black{@include mysprite(add_black,false);}
+.add-red{@include mysprite(add_red,false);}
+
+.ok{@include mysprite(ok);}
+.write{@include mysprite(write,false);}
+.sina{@include mysprite(sina);}
+.qq{@include mysprite(qq);}
+
+.down-gray{
+	@include mysprite(down_gray);
+}
+.down-white{
+	@include mysprite(down_white);
+}
+.big-pic{
+	@include mysprite(big_pic_gray);
+}
+.small-pic{
+	@include mysprite(small_pic_gray);
+}
+
+//用户图标
+.user-white{
+	@include mysprite(user_white,false);
+}
+.ico-lock{
+	@include mysprite(lock,false);
+}
+

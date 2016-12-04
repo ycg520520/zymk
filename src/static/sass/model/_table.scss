@@ -1,0 +1,97 @@
+@charset "UTF-8";
+//表格
+.table{
+	width: 100%;
+	border-spacing:0;
+	border-collapse: collapse;
+	border:1px solid lighten(colors(gray),10%);
+	vertical-align: top;
+	font-size:fonts(size) * 1.4;
+	line-height: 1.5;
+	//解决table自动撑宽度的问题注意：如果第一行存在合并单元格时需小心，这是设置宽度将无效，需用colgroup+col来设置宽度
+	table-layout: fixed;
+	word-wrap: break-word;
+	th,td{
+		border:1px solid lighten(colors(gray),10%);
+		border-width:1px 1px 0 0;
+		padding: 8px;
+		&:last-child{
+			border-right:0;
+		}
+	}
+	th{
+		font-weight:normal;
+	}
+	thead{
+		background: colors(light);
+		// background-image:linear-gradient(top, colors(white) colors(light));
+		th,td{
+			// font-weight: bold;
+		}
+		tr{
+			&:first-child{
+				th,td{
+					border-top:0;
+				}
+			}
+		}
+	}
+	.bg-red{ background-color: lighten(colors(red),45%);}
+	.bg-orange{background-color: lighten(colors(orange),45%);}
+	.bg-yellow{background-color: lighten(colors(yellow),30%);}
+	.bg-blue{background-color: lighten(colors(blue),55%);}
+	.bg-purple{background-color: lighten(colors(purple),55%);}
+	.bg-green{background-color: lighten(colors(green),58%);}
+	.bg-gray{background-color: colors(light);}
+	.bg-white{background-color: colors(white);}
+
+	@at-root{
+		&+&{
+			margin-top: -1px;
+		}
+
+		&-col3{
+			width: 10%;
+		}
+		&-col4{
+			width: 15%;
+		}
+	}
+
+}
+.table-hover{
+	tbody{
+		tr:hover{
+			background-color: lighten(colors(light),2%);
+		}
+	}	
+}
+//表格水平线方向有线
+.table-hline{
+	border-width:1px 0 0 0;
+	td,th{
+		border-width:0 0 1px 0;
+	}
+}
+
+//无线表格
+.table-noborder{
+	border:0;
+	td,th{
+		border-width:0;
+	}
+}
+
+// 交替变色
+.table-alternate{
+	tbody{
+		tr{
+			&.even,&:nth-child(2n){
+				background-color: colors(light);
+			}
+			&.odd,&:nth-child(2n-1){
+				background-color: colors(white);
+			}
+		}
+	}
+}

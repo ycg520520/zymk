@@ -1,0 +1,23 @@
+@charset "UTF-8";
+//栅格栏配置
+$is_percentage: true;
+$is_boxsizing: true;
+$grid_precentage_width: 88%;
+$container:".row"; //包裹类
+$gridname:".col"; //设置栅格栏类名
+$grid_width: 960px;
+$max_width: 1190px;
+$def_gutter: 0px; //槽间距
+$columns: 24;
+@include auto_grids; //自动创建栅格类
+
+// 对盒子模型对齐方式
+.align-left{
+  margin: 0 auto 0 0;
+}
+.align-center{
+  margin: 0 auto;
+}
+.align-right{
+  margin: 0 0 0 auto;
+}

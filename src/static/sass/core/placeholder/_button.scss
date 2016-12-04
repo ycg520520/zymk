@@ -1,0 +1,32 @@
+@charset "UTF-8";
+//按钮基础类
+%button{
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-family: fonts(family);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: 0;
+  border:0;
+  color:colors(white);
+  border-radius: 3px;
+  *overflow:visible; //解决ie67双倍padding
+  transition:.3s ease-in;
+  &:hover,&:focus {
+    color:colors(white);
+    text-decoration: none;
+    opacity:.9;
+  }
+
+  &:active,&.active {
+    box-shadow:inset 0 5px 5px rgba(0,0,0,.05);
+  }
+
+  &.disabled,&[disabled],fieldset[disabled] &{
+    cursor: not-allowed;
+    pointer-events:none; // Future-proof disabling of clicks
+    opacity:.65;
+    box-shadow:none;
+  }
+}

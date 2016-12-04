@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+//////////////////////栅格默认配置 START////////////////////
+//是否开启百分比
+$is_percentage:false !default;
+
+//是否开启boxsizing
+$is_boxsizing: false !default;
+
+//开启百分比默认栅格总百分比
+$grid_precentage_width: 100% !default;
+
+//默认单元栅格宽度
+$grid_width: 960px !default;
+
+//默认最大宽度
+$max_width: 1190px !default;
+
+//默认槽宽
+$def_gutter: 10px !default;
+
+//默认栅格数
+$columns: 24 !default;
+
+//默认分割符号
+$separator: "-" !default;
+
+//默认包裹名
+$container:'.warp' !default;
+
+//默认栅格栏名
+$gridname:'.grid' !default;
+
+//////////////////////栅格默认配置 END////////////////////
+
+//栅格容器
+@mixin grid_container{
+  @if $is_percentage{
+    min-width: $grid_width;
+    max-width: $max_width;
+    width: $grid_precentage_width;
+    //解决ie6不支持min-width
+    _width:expression(this.width<#{$grid_width} ? #{$grid_width}: this.width<#{$grid_precentage_width}?this.width:#{$grid_precentage_width});
+  }@else{    
+    width: $grid_width;
+  }
+  @extend %clearfix;
+  margin:0 auto;
+}
+
+// 获得栅格宽度fn: get_width
+// param: $n 栅格数
+// param: $cols 默认列数
+// param: $def-gutter 槽宽
+@function get_width($n, $cols: $columns, $gutter: $def_gutter){
+  @if $is_percentage{
+    @if is_boxsizing{
+      @return percentage($n / $cols);
+    }@else{
+      @return percentage($n / $cols - $gutter / $grid_width);
+    } 
+  }@else{
+    @if is_boxsizing{
+      @return $grid_width / $cols * $n;
+    }@else{
+      @return $grid_width / $cols * $n - $gutter;
+    }  
+  }
+}
+
+// 获得栅格偏移量fn: get_offset
+// param: $n 栅格数
+// param: $cols 默认列数
+// param: $def-gutter 槽宽
+@function get_offset($n, $cols: $columns, $gutter:$def_gutter){
+  @if $is_percentage{
+    @if is_boxsizing{
+      @return percentage($n / $cols);
+    }@else{
+      @return percentage($n / $cols - $gutter / $grid_width);
+    }    
+  }@else{    
+    @return $grid_width / $cols * $n;
+  }
+}
+
+@function enumerate($gridname, $start, $cols, $separator){
+  $str:'';
+  @for $n from $start through $cols{
+    @if $n == $cols{
+      $str: #{$str}#{$gridname}#{$separator}#{$n}
+    }@else{
+      $str: #{$str}#{$gridname}#{$separator}#{$n}#{','}
+    }
+  }
+  @return $str;
+}
+
+
+// 栅格工具基础
+// param: $def_gutter 槽宽
+@mixin grid_unit_base($gutter: $def_gutter){
+  float:left;
+  @if $is_boxsizing {
+    box-sizing:border-box;
+  }
+
+  @if $is_percentage{
+    $percentage_gutter: percentage($gutter / $grid_width / 2);
+    @if $gutter != 0 {
+      padding:{
+        left: $percentage_gutter;
+        right: $percentage_gutter;
+      }
+    }
+  }@else{
+    $half_gutter: $gutter / 2;
+    @if $gutter != 0 {
+      padding:{
+        left: $half_gutter;
+        right:$half_gutter;
+      }
+    }
+  }
+  
+}
+
+// 栅格栏
+// param: $n 栅格数
+// param: $cols 默认列数
+// param: $gutter 槽宽
+@mixin grid($n, $cols: $columns, $gutter: $def_gutter){
+  @if $n == $cols{
+    #{$gridname}#{$separator}#{$n}{
+      margin:0 auto;
+      width:get_width($n, $cols, $gutter);
+    }
+  }@else{
+    @include grid_unit_base($gutter);
+    width:get_width($n, $cols, $gutter);
+  }
+}
+
+
+// 栅格栏自动生成
+// param: $n 栅格数
+// param: $cols 默认列数
+// param: $gutter 槽宽
+@mixin auto_grids($cols: $columns, $gutter: $def-gutter){
+
+  //包裹样式
+  #{$container}{
+    @include grid_container;
+  }
+
+  // #{enumerate($gridname, 1, $cols-1, $separator)}{ //$cols - 1排除最后一个
+  #{enumerate($gridname, 1, $cols, $separator)}{ // 最大栅格同样应该保留
+    @include grid_unit_base($gutter);
+  }
+
+  @for $n from 1 through $cols{
+    @if $n == $cols{
+      #{$gridname}#{$separator}#{$n}{
+        margin:0 auto;
+        width:get_width($n, $cols, $gutter);
+      }
+    }@else{
+      #{$gridname}#{$separator}#{$n}{
+        width:get_width($n, $cols, $gutter);
+      }
+      #{$gridname}#{$separator}offset#{$separator}#{$n}{
+        margin-left:get_offset($n, $cols, $gutter);
+      }
+    }
+
+  }
+}

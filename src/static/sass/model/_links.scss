@@ -1,0 +1,33 @@
+@charset "UTF-8";
+//友情链接
+.link-box{
+  margin-top: 40px;
+  background-color: colors(light);
+}
+.partner{
+  // @extend %clearfix;
+  &>.item{
+    float: left;
+    width: 12.4%;
+    height: 64px;
+    margin-right: 2.2%;
+    @include last-child{
+      margin-right: 0;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.link{
+  margin-bottom: 24px;
+  &>.item{
+    float: left;
+    margin-right: 16px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+

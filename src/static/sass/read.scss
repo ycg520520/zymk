@@ -1,0 +1,105 @@
+@import 'config';
+@import "fonts/fonts"; // 站点相关字体样式
+@import "model/reset"; // 重设默认样式
+@import "model/grid"; // 栅格栏样式
+$headerHeight: 56px;
+body{
+  padding-top:$headerHeight;
+}
+#header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: $headerHeight;
+  line-height: $headerHeight;
+  background-color: rgba(colors(auxiliary),.95);
+  .crumbs{
+    float: left;
+    font-size: fonts(size) * 1.2;
+    color: colors(white);
+    font-family: fonts(cn);
+    a{
+      margin: 0 4px;
+      color: colors(white);
+      font-family: fonts(family);
+      @include first-child{
+        margin-left: 0;
+      }
+    }
+  }
+  .title{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: $headerHeight;
+    margin:0 -25%;
+    text-align: center;
+    color: colors(white);
+    font-size: fonts(size) *  2.4;
+    @include ellipsis;
+  }
+  .pages{
+    float: right;
+    font-size: fonts(size) *  1.4;
+    color: colors(white);
+    font-style: italic;
+    strong{
+      color: colors(primary);
+      font-size: fonts(size) * 3.2;
+    }
+  }
+}
+
+#content{
+  text-align: center;
+  .imgbox{
+    img{
+      width: 720px;
+    }
+  }
+}
+
+#tools{
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  width: 40px;
+  height: 400px;
+  margin-top: -200px;
+  &:before{
+    content:'';
+    display:block;
+    width:1px;
+    height:380px;
+    position: absolute;
+    left: 19px;
+    top: 10px;
+    z-index: -1;
+    background-color:colors(gray);
+  }
+  .item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: colors(white);
+    box-shadow: 0 0 8px rgba(colors(black), .2);
+    margin-bottom: 10px;
+    .hd{
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      .text{
+        display:block;
+        height: 40px;
+        width: 40px;
+      }
+    }
+    .bd{
+      display: none;
+    }
+  }
+}
+
+

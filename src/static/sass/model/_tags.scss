@@ -1,0 +1,20 @@
+@charset "UTF-8";
+//tags
+.tags{
+	@extend %clearfix;
+	&>.item{
+		@include float;
+		margin: 0 4px 8px 0;
+		font-size: fonts(size) * 1.4;
+		a{
+			display: block;
+			padding: 0 4px;
+			background-color: lighten(colors(blue),40%);
+			line-height: 1.5;
+			border-radius: 3px;
+			&:hover{
+				color: colors(auxiliary);
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+/* TEAM */
+    Founder & Developer: Rao yaoming
+    Contact: ceo [at] maigouwang.com
+    Weibo: @maigouwang
+    website: http://www.maigouwang.com
+    From: Chengdu, SiChuan, China
+
+/* THANKS */
+    humans.txt Founder: Abel Cabans
+    Site: http://www.humanstxt.org
+
+/* SITE */
+    Last update: 2013/01/23
+    Language: Chinese
+    Doctype: HTML5
+    Standards: HTML5, CSS3
+    Components: webpack, JQuery, layer
+    Core: asp, js, sqlSever
+    Deployment: windows, iis, nodejs, Git
+    Software: maigouwang
+    IDE: IntelliJ IDEA

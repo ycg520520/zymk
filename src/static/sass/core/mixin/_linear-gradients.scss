@@ -1,0 +1,10 @@
+//自定义线性渐变
+@mixin linear-gradient($angle, $details...){
+  //ie6789
+  filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='transparent', endColorStr='#F3F3F7', gradientType='0');
+  //ie10以上
+  background-image:linear-gradient($angle, $details);
+  //ie6
+  // _background-color:colors(black);
+  // _filter:alpha(opacity=50);
+}

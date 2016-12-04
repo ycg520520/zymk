@@ -1,0 +1,9 @@
+/**
+ * 解决IE9以下不支持rgba，下面是rgba的替代
+ * @param $color
+ * @param $opacity
+ */
+@mixin rgba($color,$opacity){
+  background-color: rgba($color,$opacity);
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cc000000, endcolorstr=#cc000000);
+}

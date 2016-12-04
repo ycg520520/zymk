@@ -1,0 +1,84 @@
+@charset "UTF-8";
+//验证样式
+.Validform_checktip{	
+	display:inline-block;
+	// visibility: hidden;
+	height:16px;
+	margin-left: 5px;
+	padding-left:18px;
+	line-height:16px;
+	overflow:hidden;
+	color:colors(darker);
+	font-family: fonts(cn);
+	font-size:fonts(size) * 1.2;
+	white-space:nowrap;
+	vertical-align: middle;
+	background:url("valid/valid.png") no-repeat left -48px;
+}
+.Validform_right{
+	visibility:visible;
+	color:green;
+	background-position: 0 -32px;
+}
+.Validform_wrong{
+	visibility:visible;
+	color:red;	
+	background-position: 0 0;
+}
+.Validform_loading{
+	visibility:visible;
+	background-image:url("valid/loading.gif");
+}
+.Validform_error{
+	visibility:visible;
+	border-color:lighten(colors(red),35%)!important;
+}
+#Validform_msg{
+	display:none;
+	position:absolute;
+	top:0;
+	right:50px;
+	z-index:99999;
+	width:280px;
+	color:colors(darker);
+	box-shadow:2px 2px 3px colors(dark);
+	background:colors(white);
+	.iframe{
+		position:absolute;
+		left:0;
+		top:-1px;
+		z-index:-1;
+	}
+	.Validform_title{
+		position:relative;
+		height:25px;
+		line-height:25px;
+		text-align:left;
+		font-weight:bold;
+		padding:0 8px;
+		color:colors(white);
+		background-color:colors(darker);
+		background-image:linear-gradient(top,colors(dark) darken(colors(dark),5%));
+	}
+	a{
+		&.Validform_close{
+			&:link,&:visited{
+				position:absolute;
+				right:8px;
+				top:0px;
+				color:colors(white);
+				line-height:22px;
+				text-decoration:none;
+			}
+			&:hover{
+				color:colors(gray);
+			}
+		}
+	}
+	.Validform_info{
+		padding:8px;
+		border:1px solid colors(dark);
+		border-top:none;
+		text-align:left;
+	}
+}

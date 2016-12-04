@@ -1,0 +1,26 @@
+@charset "UTF-8";
+//面包屑
+.crumb{
+	height: 48px;
+	line-height: 48px;
+	font-size: fonts(size) * 1.4;
+	color:colors(gray);
+	font-family: fonts(cn);
+	&.border-bottom{
+		border-bottom: 1px solid colors(gray);
+	}
+	em,strong,span,a{
+		font-family: fonts(family);
+		font-weight: normal;
+	}
+	em,span{
+		color: colors(dark);
+		font-style: normal;
+	}
+	strong{
+		color: colors(blue);
+	}
+	a{
+		text-decoration: none;
+	}
+}

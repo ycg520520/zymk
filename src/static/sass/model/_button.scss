@@ -1,0 +1,109 @@
+@charset "UTF-8";
+//按钮基础类
+.btn{
+  @include buttonSize(0 10px, fonts(size) * 1.4, 24px, 0);
+  @extend %button;
+}
+.btn-primary{
+  background-color: colors(primary);
+  // background-image:linear-gradient(top,lighten(colors(primary),3%) colors(primary));
+  &:hover,&:focus{
+    // background-image:linear-gradient(top,colors(primary) lighten(colors(primary),3%));
+  }
+}
+
+.btn-auxiliary{
+  background-color: colors(auxiliary);
+  // background-image:linear-gradient(top,lighten(colors(auxiliary),3%) colors(auxiliary));
+  &:hover,&:focus{
+    // background-image:linear-gradient(top,colors(auxiliary) lighten(colors(auxiliary),3%));
+  }
+}
+
+.btn-default{
+  color:colors(dark);
+  border:1px solid colors(gray);
+  // background-color: lighten(colors(gray),5%);
+  // background-image:linear-gradient(top,lighten(colors(gray),18%) lighten(colors(gray),12%));
+  text-shadow:1px 1px 0 0 rgba(colors(white), .5);
+  &:hover,&:focus{
+    color:colors(dark);
+    // background-image:linear-gradient(top,lighten(colors(gray),3%) lighten(colors(gray),13%));
+  }
+}
+
+.btn-gray{
+  color:colors(dark);
+  background-color: lighten(colors(gray),5%);
+  // background-image:linear-gradient(top,lighten(colors(gray),18%) lighten(colors(gray),12%));
+  text-shadow:1px 1px 0 0 rgba(colors(white), .5);
+  &:hover,&:focus{
+    color:colors(dark);
+    // background-image:linear-gradient(top,lighten(colors(gray),3%) lighten(colors(gray),13%));
+  }
+}
+.btn-danger,.btn-red{
+  background-color: colors(red);
+  // background-image:linear-gradient(top,lighten(colors(red),3%) colors(red));
+  &:hover,&:focus{
+    // background-image:linear-gradient(top,colors(red) lighten(colors(red),3%));
+  }
+}
+.btn-warning,.btn-orange{  
+  background-color: colors(orange);
+  // background-image:linear-gradient(top,lighten(colors(orange),3%) colors(orange));
+  &:hover,&:focus{
+    // background-image:linear-gradient(top,colors(orange) lighten(colors(orange),3%));
+  }
+}
+.btn-success,.btn-green{
+  background-color: colors(green);
+  // background-image:linear-gradient(top,lighten(colors(green),3%) colors(green));
+  &:hover,&:focus{
+    // background-image:linear-gradient(top,colors(green) lighten(colors(green),3%));
+  }
+}
+.btn-blue{
+  background-color: colors(blue);
+  // background-image:linear-gradient(top,lighten(colors(blue),3%) colors(blue));
+  &:hover,&:focus{
+    // background-image:linear-gradient(top,colors(blue) lighten(colors(blue),3%));
+  }
+}
+
+.btn-link{
+  color:colors(darker);
+  background-color: transparent;
+  // background-image:linear-gradient(top,lighten(colors(white),3%) colors(white));
+  &:hover,&:focus{
+    color:colors(darker);
+    // background-image:linear-gradient(top,colors(white) lighten(colors(white),3%));
+  }
+}
+
+/* XS最小号XS
+  SM小号S
+  MD中号M 默认为中号
+  LG大号L
+  XL更大一号XL */
+.btn-xs{
+  @extend %button;
+  @include buttonSize(0 4px, fonts(size) * 1.2, 16px, 0);
+}
+.btn-sm{
+  @extend %button;
+  @include buttonSize(0 8px, fonts(size) * 1.2, 24px, 0);
+}
+.btn-lg{
+  @extend %button;
+  @include buttonSize(0 16px, fonts(size) * 1.4, 32px, 0);
+}
+.btn-xl{
+  @extend %button;
+  @include buttonSize(0 24px, fonts(size) * 1.8, 40px, 0);
+}
+.btn-block{
+  padding: 0;
+  border: 0;
+  width: 100%;
+}

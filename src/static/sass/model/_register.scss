@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.login{
+	background: no-repeat center top;
+	height: 480px;
+	min-width: 960px;
+	.row{
+		position: relative;
+	}
+}
+.login+#footer{
+	margin-top: 0;
+}
+//用户注册表单
+.login-box{
+	position: absolute;
+	right: 0;
+	top: 40px;
+	width: 320px;
+	// background-color: rgba(colors(white), .95);
+	background-color:colors(white);
+	&>.hd,.hd{
+		height: 32px;
+		padding:20px 20px 0;
+		.title{
+			font-size: 18px;
+
+		}
+	}
+	.tips{
+		border:1px solid lighten(colors(red),30%);
+		background-color:lighten(colors(orange),45%);
+		display:block;
+		margin-bottom: 8px;
+		padding:4px;
+		.Validform_checktip{margin-left: 0;}
+	}
+	&>.bd,.bd{
+		padding:10px 20px;
+		font-size: fonts(size) * 1.2;
+		border-radius:0 0 radius(S) radius(S);
+		.btn-xl{
+		  @extend %button;
+		  padding: 0 20px;
+		  height: 48px;
+		  line-height: 46px;
+		  font-size: fonts(size) * 2;
+		}
+		.btn-percent{
+		  box-sizing:border-box;
+		  width: 100%;
+		}
+		.btn-primary{
+		  color:colors(white);
+		  border-color:darken(colors(primary),3%);
+		  background-color: colors(primary);
+		  text-shadow:1px 1px 0 rgba(colors(black),.2);
+		  // background-image:linear-gradient(top,lighten(colors(primary),3%) colors(primary));
+		  &:hover,&:focus{
+		    color:colors(white);
+		    // background-image:linear-gradient(top,colors(primary) lighten(colors(primary),3%));
+		  }
+		}
+
+	}
+	
+	.ft{
+		padding:10px 20px;
+		border-top:1px solid lighten(colors(gray),5%);
+		background-color: lighten(colors(gray),10%);
+		font-size: fonts(size) * 1.2;
+		line-height:20px;
+		img{
+			margin-right:2px;
+			vertical-align: middle;
+		}
+	}
+}
+.login-propaganda{
+	position: absolute;
+	top: 120px;
+	left: 45%;
+	color: colors(white);
+	.title{
+		font-size: 48px;
+		margin-bottom: 16px;
+		strong{
+			font-weight: bold;
+			color: colors(yellow);
+		}
+	}
+	.content{
+		font-size: fonts(size) * 1.8;
+		line-height: 1.5;
+		strong{
+			font-weight: bold;
+		}
+	}
+	@include max-screen(1440px) {
+		left: 50%;
+	}
+	@include max-screen(1366px) {
+		left: 41%;
+	}
+	@include max-screen(1024px) {
+		left: 40%;
+		.title{
+			font-size: 40px;
+		}
+	}
+	
+	
+}

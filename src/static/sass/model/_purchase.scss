@@ -1,0 +1,327 @@
+@charset "UTF-8";
+%purchase-table{
+	.table{
+		font-size: fonts(size) * 1.4;
+		line-height: 1.5;
+		th,td{
+			border-left-width:0;
+			text-align: left;
+		}
+		thead{
+			th{
+				height: 36px;
+				font-weight: 500;
+				background: none;
+				padding:0 16px;
+			}
+		}
+		tbody{
+			td,th{
+				padding:5px 16px;
+			}
+		}
+	}
+}
+
+.bg-gray{
+	background-color: colors(light);
+}
+//采购详情展示
+.purchase-detail{
+	padding:19px;
+	border:1px solid colors(gray);
+	font-family: fonts(family);
+	background-color: colors(white);
+	.purchase-hd{
+		height: 30px;
+		line-height: 30px;
+		padding-bottom: 16px;
+		h1{
+			border-left: 5px solid colors(blue);
+			padding-left: 5px;
+			line-height: 30px;
+			font-size: fonts(size) * 2.4;
+		}
+	}
+
+	.purchase-bd{
+	}
+
+	.purchase-quota{
+		font-size: fonts(size) * 1.3;
+		margin-bottom: 16px;
+		@extend %clearfix;
+		.dates{
+			line-height: 25px;
+			margin-bottom: 5px;
+		}
+	}
+
+	.quota-info{
+		@include float(right);
+		.action{
+			position:relative;
+			width: 320px;
+			height: 64px;
+			margin: 0 -26px 5px 0;
+			padding:0 25px 0 (image-width("purchase/arrow.png") + 20px);
+			color:colors(white);
+			background: colors(blue) url("purchase/arrow.png") no-repeat;
+			&:after{
+				display: block;
+				position: absolute;
+				right: 0;
+				bottom: -6px;
+				@include arrow(darken(colors(blue),10%) transparent transparent darken(colors(blue),10%), 3px,solid);
+			}
+			.btn-quoted{
+				margin: 14px 20px 0 0;
+				padding: 0 16px;
+				border-color: darken(colors(blue),10%);
+				line-height: 36px;
+				font-size: fonts(size) * 1.6;
+				color:colors(blue);
+				background-color: lighten(colors(blue),55%);
+			}
+		}
+		.get-quoted{
+			padding-left: image-width("purchase/arrow.png");
+		}
+	}
+	
+	.purchase-m-hd{
+		font-size: fonts(size) * 1.8;
+		border-left: 5px solid colors(blue);
+		padding-left: 5px;
+		margin: 32px 0 16px 0;
+	}
+
+	@extend %purchase-table;
+
+	.attachments{
+		width: 240px;
+		@include float(right);
+		margin: 0 -10px -5px 0;
+		overflow-y: hidden;
+		li{
+			position: relative;
+			float:left;
+			display: table;
+			height: 72px;
+			width: 72px;
+			margin:0 6px 5px 0;
+			border: 1px solid colors(light);
+			text-align: center;
+			img{
+				max-width: 100%;
+				max-height: 100%;
+			}
+			a{
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.need-list{
+		position:relative;
+		line-height: 1.5;
+		dt,dd{
+			height: 20px;
+			margin-bottom: 5px;
+		}
+		dt{
+			position:absolute;
+			width: 70px;
+			text-align: right;
+			color:colors(dark);
+		}
+		dd{
+			padding-left: 75px;
+		}
+
+	}
+}
+
+.purchase-aside{
+	font-family: fonts(family);
+	font-size: fonts(size) * 1.3;
+	border:1px solid colors(gray);
+	background-color: colors(white);
+	.purchase-logo{
+		position: relative;
+		height: 64px;
+		border-bottom:1px dotted colors(gray);
+		img{
+			width: auto;
+			height:60px;
+			margin: 2px;
+		}
+	}
+	.mingqi-icon{
+		width: 48px;
+		height: 64px;
+		vertical-align: top;
+		position: absolute;
+		top: -2px;
+		right:0;
+		img{
+			width: auto;
+			max-width: 48px;
+			height: auto;
+			max-height: 64px;
+		}
+	}
+	.purchase-cell{
+		margin:10px;
+		padding-bottom: 10px;
+		border-bottom:1px solid colors(gray);
+		&:last-child{
+			border-bottom:none;
+		}
+		h2{
+			height: 20px;
+			line-height: 20px;
+			font-weight: 400;
+			font-size: fonts(size) * 1.5;
+			@include ellipsis;
+			margin-bottom: 5px;
+		}
+		.level{
+			margin-bottom: 5px;
+		}
+		li{
+			color:darken(colors(dark),10%);
+			line-height: 20px;
+			@include ellipsis;
+		}
+		.contact{
+			position:relative;
+			.lock{
+				position:absolute;
+				top: 0;
+				right: 0;
+				width: 120px;
+				border:1px dotted colors(gray);
+				padding: 9px 0;
+				text-align: center;
+			}
+		}
+		.more-offer{
+			width: 100%;
+			padding:0;
+			margin: 16px 0;
+			line-height: 36px;
+		}
+		.other-buyerdata{
+			overflow-y: hidden;
+			li{
+				border-top:1px dotted colors(gray);
+				padding:5px 0;
+				margin-top: -1px;
+			}
+			dt,dd{
+				@include ellipsis;
+			}
+			em{
+				font-weight: bold;
+				padding-right: 2px;
+			}
+			a{
+				dt{
+					color: colors(blue);
+				}
+				dd{
+					color:colors(dark);
+				}
+				&:hover{
+					dt{
+						color: colors(orange);
+					}
+				}
+			}
+		}
+	}
+}
+
+//报价
+.quotation,.related{
+	font-family: fonts(family);
+	&-hd{
+		padding: 32px 0 8px 0;
+		h2{
+			font-size: fonts(size) * 1.6;
+		}
+	}
+	&-bd{
+		background-color: colors(white);
+	}
+}
+.quotation{
+	@extend %purchase-table;
+	.page-small{
+		margin: 8px 0;
+		text-align: right;
+	}
+	
+}
+.related{
+	&-bd{
+		border: 1px solid colors(gray);
+	}
+	&-list{
+		font-size: fonts(size) * 1.4;
+		overflow: hidden;
+		li{
+			float:left;
+			width: 20%;
+			margin-left: -1px;
+			padding:18px 0;
+		}
+		.cell-warp{
+			padding:0 20px;
+			border-left: 1px dashed colors(gray);
+		}
+		h3{
+			@include ellipsis;
+			a{
+				color:colors(blue);
+				&:hover{
+					color:colors(primary);
+				}
+			}
+		}
+		.amount{
+			height: 30px;
+			padding-bottom: 10px;
+			border-bottom: 1px dashed colors(gray);
+			line-height: 30px;
+			font-size: fonts(size) * 1.2;
+			@include ellipsis;
+			em{
+				font-size: fonts(size) * 2;
+				color: colors(orange);
+			}
+		}
+		.icons{
+			padding:10px 0;
+			@include ellipsis;
+		}
+		.other-info{
+			margin-top: 10px;
+			dt,dd{
+				line-height: 20px;
+				font-size: fonts(size) * 1.2;
+			}
+			dt{
+				width:60px;
+				position: absolute;
+			}
+			dd{
+				padding-left: 64px;
+				margin-bottom: 5px;
+				@include ellipsis;
+			}
+		}
+	}
+}

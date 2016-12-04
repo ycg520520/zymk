@@ -1,0 +1,33 @@
+@charset "UTF-8";
+//分享
+.share{
+	line-height: 24px;
+	strong{
+		margin-right: 4px;
+		font-size: fonts(size) * 1.2;	
+		font-weight: normal;
+	}
+	[class*="ift-"]{
+		display:inline-block;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		padding: 4px;
+		color: colors(white);
+		font-size: fonts(size) * 1.6;
+		border-radius: 50%;
+		vertical-align: top;
+	}
+	.ift-qq{
+		background-color: colors(green);
+	}
+	.ift-weixin{
+		background-color: colors(blue);
+	}
+	.ift-sina{
+		background-color: colors(red);
+	}
+	.ift-more{
+		background-color: colors(gray);
+	}
+}

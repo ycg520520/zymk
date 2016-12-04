@@ -1,0 +1,6 @@
+@mixin attrToRem($attr,$px, $u:16) {
+	#{$attr}: $px * 1px
+  /* #{$attr}: $px * 1px;
+  #{$attr}: toRem($px, $u) */
+}
+

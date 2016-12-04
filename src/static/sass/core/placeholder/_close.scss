@@ -1,0 +1,21 @@
+//占位关闭
+%close{
+  $size: 32px;
+  position: absolute;
+  width: $size;
+  height: $size;
+  line-height: $size;
+  text-align: center;
+  font-family: fonts(cn);
+  color: colors(white);
+  font-size: fonts(size) * 2;
+  // font-weight: bold;
+  background-color:colors(primary);
+  cursor: pointer;
+  border-radius:50%;
+  transition:.3s ease-in;
+  &:hover{
+    transform:rotate(360deg);
+    background-color:colors(auxiliary);
+  }
+}

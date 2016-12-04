@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.site-nav{
+	height:32px;
+	line-height: 32px;
+	border-bottom:1px solid colors(gray);
+	font-size: fonts(size) * 1.2;
+	text-align: center;
+	background-color: colors(light);
+	.customer{
+		display: inline-block;
+		height: 40px;
+		padding: 0 8px;
+		line-height: 40px;
+		background-color: colors(blue);
+		color: colors(white);
+		margin-left: 32px;
+		font-size: fonts(size) * 1.4;
+		border-radius:radius(S);
+	}
+	.ift-tel{
+		color: colors(dark);
+	}
+}

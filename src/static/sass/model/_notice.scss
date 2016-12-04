@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.notice{
+	padding: 16px 0;
+	height: 20px;
+	line-height: 20px;
+	.bd{
+		position: relative;
+		height: 20px;
+		margin-left: 24px;
+		font-size: fonts(size) * 1.4;
+		overflow: hidden;
+	}
+	.ift-sound {
+		float:left;
+		color: colors(primary);
+	}
+}

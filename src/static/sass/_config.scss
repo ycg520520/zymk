@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/**! 
+ * @author colpu
+ * @copyright mingfu network
+ * 本配置基于scss框架,在运用时请注意是否安装sass
+ */
+$ns:''!default;
+
+// 字体相关配置
+//-----------------------------------------------------
+$font:(
+	size: 10px, //0.625em, //10px,
+	line_height: 1.5,
+	cn:	(tahoma, arial, 'Hiragino Sans GB', SimSun, sans-serif), //宋体
+	yh: "Microsoft Yahei", //微软雅黑
+	ht:	"SimHei",//黑体
+	en:	(Tahoma,arial,SimSun,sans-serif),//黑体
+	family: ('Microsoft Yahei',SimSun,Tahoma,arial,SimHei,sans-serif)
+);
+
+// 颜色相关配置及相关方法
+// lighten($color, $amount)
+// darken($color, $amount)
+// opacify($color, $amount)
+// mix($color1, $color2[, $amount])
+//-----------------------------------------------------	
+$color:(
+	primary: #ff7647, //主色
+	auxiliary: #2a2b4a, //辅色
+	red:	#fd5158, //红色
+	blue:	#1c9ef6, //蓝色
+	orange:	#ff7647, //橙色
+	green:	#5ccf5a, //绿色	
+	yellow:	#fff100, //黄色
+	pink:	#ff4b85, //粉红色
+	purple:	#675fd6, //紫色
+	black:	#000,	 //黑色
+	darker:	#555, 	//深暗深灰
+	dark:	#999,	 //暗深灰
+	gray:	#ddd,	 //深灰
+	light:	#f5f5f5, //亮灰
+	white:	#fff	 //白色
+);
+
+// radius
+//-----------------------------------------------------
+$radius:(
+	normal: 0,
+	S:3px,
+	M:5px,
+	L:8px,
+	rounded:1000px
+);
+
+// z-index
+//-----------------------------------------------------
+$zIndex:(
+	bar:	1000, //顶部条
+	drop:	1010, //下拉列表
+	tip:	1020, //工具提示
+	alert:	1030, //弹出框
+	model:	1100 //弹出模块层级
+);
+
+//最小支持IE阅览器
+$browser-minimum-versions:('ie':'7'); //配置支持预览器变量
+
+//引入核心
+@import "core/core";

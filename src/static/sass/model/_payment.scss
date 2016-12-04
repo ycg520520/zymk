@@ -1,0 +1,91 @@
+@charset "UTF-8";
+// 支付方式选择
+%select-pay{
+	ul{
+		@extend %clearfix;
+		margin-bottom: 12px;
+	}
+	li{
+		float:left;
+		margin:0 16px 8px 0;
+		input[type="radio"]{
+			display: none;
+			// float:left;
+			// margin:15px 3px 15px 0;
+		}
+		label{
+			display:inline-block;
+			position:relative;
+			width:125px;
+			border:1px solid colors(gray);
+			padding:1px;
+			text-align:center;
+			background:colors(white);
+			cursor: pointer;
+			&:hover, &.active{
+				border:2px solid colors(red);
+				padding:0;
+				transition:border-color .2s ease-in;
+			}
+			&:hover{
+				border-color: lighten(colors(red), 30%);
+			}
+			&.active{
+				border-color: colors(red);
+				i{
+					position:absolute;
+					right:-2px;
+					bottom:-2px;
+				}
+			}
+		}
+		.disabled,.disabled:hover{
+			border-color:lighten(colors(gray),10%);
+			border-width:1px;
+			padding:1px;
+			img{
+				@include filter(gray);
+				opacity:.3;
+			}
+		}
+	}
+	.btn{
+		line-height: 24px;
+	}
+}
+.select-pay{
+	@extend %select-pay;
+}
+.payment{
+	font-size: fonts(size) * 1.4;
+	dt{
+		position: absolute;
+		width: 80px;
+		line-height:30px;
+		font-weight:bold;
+		text-align: right;
+	}
+	h3{
+		font-weight:normal;
+		line-height:30px;
+		margin-bottom: 6px;
+	}
+	dd {
+		padding-left:85px; 
+		margin-bottom:5px;
+	}
+	@extend %select-pay;
+	&-hd{
+		height: 30px;
+		padding-top: 6px;
+		line-height: 30px;
+		font-family: fonts(family);
+		font-size: fonts(size) * 1.6;
+		color:colors(primary);
+	}
+	&-bd{
+		border:1px solid colors(gray);
+		border-top-color:colors(primary);
+		padding:9px;
+	}
+}

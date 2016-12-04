@@ -1,0 +1,495 @@
+@charset "UTF-8";
+.headlines{
+	margin-bottom: 10px;
+	// 缩略图
+	.thumbnail{
+		float:left;
+		margin-right:10px;
+	}
+	// 标题
+	&>.title{
+		height:35px;
+		line-height:35px;
+		overflow:hidden;
+		font-weight: bold;
+		font-size:fonts(size) * 1.8;
+	}
+	// 简介样式
+	.synopsis{
+		line-height:1.8;
+		font-size: fonts(size) * 1.4;
+		text-indent:2em;
+		color:colors(darker);
+	}
+	//更多样式
+	.more{
+		color:colors(gray);
+	}
+}
+
+//文字列表
+.list{
+	&>.item{
+		line-height: 30px;
+		font-size: fonts(size) * 1.4;
+		color:colors(dark);
+		@include ellipsis;
+		a{
+			text-decoration: none;
+			transition:.3s ease-in;
+		}
+		.time{
+			@include float(right);
+			margin: 0 3px;			
+			font-size: fonts(size) * 1.2;
+		}
+		&.line{
+			padding-bottom: 16px;
+			border-bottom: 1px dotted colors(gray);
+			margin-bottom: 16px;
+		}
+	}
+}
+.list-dot{
+	&>.item{
+		&:before{
+			content:"•";
+			margin-right: 3px;
+			color: lighten(colors(primary), 10%)
+		}
+	}
+}
+
+.list-thumbnail{
+	&>.item{
+		padding: 16px 0;
+		border-bottom: 1px dotted colors(gray);
+		font-size: fonts(size) * 1.4;
+		@extend %clearfix;
+	}
+	.title{
+		height: 40px;
+		line-height: 40px;
+		font-size: fonts(size) * 2;
+		color: colors(darker);
+		font-weight: normal;
+		.type{
+			color: colors(gray);
+		}
+		strong{
+			color: colors(auxiliary);
+			font-weight: normal;
+		}
+	}
+	.thumbnail{
+		@include float;
+		width: 144px;
+		img{
+			width: 100%;
+		}
+	}
+	.describe{
+		margin-left: 160px;
+		height: 42px;
+		margin-bottom: 16px;
+		line-height: 1.5;
+		overflow: hidden;
+	}
+	.attr{
+		margin-left: 160px;
+		color: colors(dark);
+		&>span{
+			margin-right: 8px;
+		}
+	}
+	.source{}
+	.time{}
+	.read-num{}
+	.comment-num{}
+	.tags{
+		a{
+			margin: 0 4px;
+		}
+	}
+}
+
+//文字列表 结束
+.col2{
+	.item{
+		float:left;
+		width: 48%;
+		margin-right: 4%;
+		@include nth-child(2n){
+			margin-right: 0;
+		};
+	}
+}
+.col3{
+	&>.item{
+		@include float;
+		width: 31%;
+		margin:0 3.5% 3.5% 0;
+		overflow: hidden;
+		font-size: fonts(size) * 1.4;
+		@include nth-child(3n){
+			margin-right:0;
+		};
+	}
+}
+.col4{
+	&>.item{
+		@include float;
+		width: 22%;
+		margin:0 2% 16px 2%;
+		font-size: fonts(size) * 1.4;
+		@include nth-child(4n){
+			margin-right:0;
+		};
+	}
+}
+
+.col5{
+	.item{
+		float:left;
+		// width: 135px;
+		width: 17.4193548387097%;
+		// margin-right: 25px;
+		margin-right: 3.2258064516129%;
+		margin-bottom: 3.0967741935484%;
+		@include nth-child(5n){
+			margin-right: 0;
+		};
+	}
+}
+
+// 产品列表
+.comic-list{
+	.thumbnail{
+		display: block;
+		position:relative;
+		// width:100%;
+		// height:0;
+		// padding-bottom:133.33333%;
+		background-color:colors(light);
+		img{
+			// position: absolute;
+			width: 100%;
+			// height: 100%;
+			// left:0;
+			// top:0;
+		}
+		&>.title,&>.charpter,&>.group-info{
+			position: absolute;
+			height: 20px;
+			bottom: 0;
+			margin: 0;
+			padding: 0 4px;
+			box-sizing: border-box;
+			@include ellipsis;
+			font-size: fonts(size) * 1.2;
+			color: colors(white);
+		}
+		&>.charpter{
+			right: 5px;
+			bottom:5px;
+			max-width: 80%;
+			line-height: 20px;
+			text-align: right;
+			border-radius: 3px;
+			background-color: rgba(colors(black), .5)
+		}
+		.group-info{
+			width: 100%;
+			height: 30px;
+			background-image: linear-gradient(rgba(colors(black),0), rgba(colors(black),0.5));
+			padding: 0 10px;
+			.title,.charpter{
+				line-height:30px;
+				color: colors(white);
+			}
+			.title{
+				margin: 0;
+				float: left;
+				font-size: fonts(size) * 1.4;
+			}
+			.charpter{
+				float: right;
+				font-size: fonts(size) * 1.2;
+			}
+		}
+		.score{
+			position: absolute;
+			max-width: 48px;
+			top: 5px;
+			right: 5px;
+			height: 16px;
+			line-height: 16px;
+			padding: 0 4px;
+			border-radius: 3px;
+			background-color: colors(primary);
+			color: colors(white);
+			font-size: fonts(size)*1.2;
+			transform: scale(0.75);
+			transform-origin:100% 0;
+			@include ellipsis;
+		}
+	}
+	.title{
+		height: 20px;
+		margin: 10px 0 0 0;
+		line-height: 20px;
+		color: colors(darker);
+		font-size: fonts(size) * 1.4;
+		font-weight: normal;
+		@include ellipsis;
+	}
+	.desc{
+		height: 20px;
+		line-height: 20px;
+		font-size: fonts(size) * 1.2;
+		color: colors(dark);
+		@include ellipsis;
+	}
+	&.horizontal{
+		height: 0;
+		padding-bottom: 20.1680672268908%;
+		overflow: hidden;
+		&>.item{
+			float: left;
+			width: 11.3445378151261%;
+			margin-right: 2.1008403361345%;
+			margin-bottom: 10px;
+			@include last-child{
+				margin-right:0!important;
+			}
+		}
+		.thumbnail{
+			width: 100%;
+			height: 133.33333%;
+		}
+	}
+}
+
+// 打赏列表
+.reward-list{
+  &>.item{
+    height: 60px;
+    padding:5px 0;
+    border-bottom: 1px dotted colors(gray);
+    font-size: fonts(size) * 1.2;
+    &>.warp-con{
+      display:block;
+      height:48px;
+      padding:6px;
+      border-radius: 30px;
+      transition: background-color 0.3s;
+      &:hover{
+        background-color: lighten(colors(orange),30%);
+        .thumbnail{
+          transform:rotate(720deg);
+          box-shadow: 0 0 8px rgba(colors(black), .3)
+        }
+      }
+    }
+    .thumbnail{
+      float: left;
+      width: 48px;
+      height: 48px;
+      margin-right: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: 0.3s;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    // .info{
+    //   float: left;
+    // }
+    .reward-num{
+      float: right;
+      line-height: 48px;
+      color: colors(dark);
+    }
+    .title{
+      height: 24px;
+      line-height: 24px;
+      font-weight: normal;
+      font-size: fonts(size) * 1.4;
+      @include ellipsis;
+    }
+    .desc{
+      line-height: 20px;
+      color: colors(dark);
+    }
+    .attr{
+      color: colors(darker)
+    }
+    .attr-label{
+      color: colors(dark)
+    }
+    strong{
+      font-weight: normal;
+      color: colors(primary);
+      margin: 0 2px;
+    }
+  }
+}
+.fans-list{
+  &>.item{
+    height: 50px;
+    @include last-child{
+      border-bottom: 0;
+    }
+    &>.warp-con{
+      height:40px;
+      border-radius: 30px;
+    }
+    .thumbnail{
+      width: 40px;
+      height: 40px;
+    }
+    .title{
+      height: 40px;
+      line-height: 40px;
+    }
+    .reward-num{
+      line-height: 40px;
+      color: colors(dark);
+    }
+  }
+}
+
+// 排行列表
+.rank{
+  @at-root{
+    &-first,&-second,&-third,&-nor{
+      float:left;
+      width:20px;
+      height:20px;
+      margin:5px 4px 5px 0;
+      line-height:20px;
+      font-family: fonts(family);
+      font-size: fonts(size) * 1.2;
+      text-align: center;
+      color: colors(white);
+      font-style: normal;
+      background: colors(gray);
+      border-radius:50%;
+    }
+    &-first{
+      background-color:colors(primary);
+    }
+    &-second{
+      background-color:colors(blue);
+    }
+    &-third{
+      background-color:colors(green);
+    }
+    &-list{
+      .item{
+        padding:5px 0;
+        border-bottom: 1px dotted colors(gray);
+        font-size: fonts(size) * 1.2;
+        .attr{
+          height: 20px;
+          line-height: 20px;
+          color: colors(darker);
+        }
+        .attr-label{
+          color: colors(dark);
+          margin-right: 5px;
+        }
+        strong{
+          margin: 0 4px;
+          color: colors(primary);
+        }
+        .title{
+          font-weight: normal;
+          height: 30px;
+          line-height:30px;
+        }
+
+        &-hd{
+          height:30px;
+          .reward-num{
+            float:right;
+            line-height:30px;
+            margin-left: 10px;
+            color: colors(dark);
+          }
+        }
+        &-bd{
+          display: none;
+          position: relative;
+          height:100px;
+          .thumbnail{
+            float: left;
+            width: 75px;
+            height: 100px;
+            margin-right: 10px;
+            img{
+              width: 100%;
+              height: 100%
+            }
+          }
+          .title{
+            height: 40px;
+            line-height:40px;
+            margin-bottom: 10px;
+            font-size: fonts(size) * 1.8
+          }
+          .reward-num{
+            line-height:20px;
+            color: colors(dark);
+          }
+          .rank-num{
+            position:absolute;
+            right: 0;
+            top: 50%;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            margin-top: -32px;
+            border-radius: 50%;
+            font-size: fonts(size) * 1.8;
+            text-align: center;
+            background-color: lighten(colors(primary),20%);
+            color: colors(white);
+          }
+        }
+        &:hover,&.active{
+          .item-hd{
+            display: none;
+          }
+          .item-bd{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.update-list{
+  .item{
+    padding:5px 0;
+    font-weight: normal;
+    height: 30px;
+    line-height:30px;
+    font-size: fonts(size) * 1.4;
+    border-bottom: 1px dotted colors(gray);
+    .chapter{
+      font-size: fonts(size) * 1.2;
+      float: right;
+      color: colors(primary);
+      a{
+        color: colors(primary);
+      }
+    }
+  }
+}
+
+
+

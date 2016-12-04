@@ -1,0 +1,11 @@
+@mixin ellipsis($no-wrap: true,$lineClamp:2) {
+  @if $no-wrap { 
+  	white-space: nowrap;
+	  text-overflow:ellipsis;
+  }@else{
+		display: -webkit-box;
+		-webkit-line-clamp: $lineClamp;
+		-webkit-box-orient: vertical;
+  }
+  overflow: hidden;
+}

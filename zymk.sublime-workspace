@@ -1,0 +1,1401 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wid",
+				"width"
+			],
+			[
+				"spac",
+				"space3x4.gif\t(index.html)"
+			],
+			[
+				"data",
+				"data-src\t(index.html)"
+			],
+			[
+				"padding",
+				"paddingTop\t(common.js)"
+			],
+			[
+				"font-s",
+				"font-style\t(classify.scss)"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"rel",
+				"relative\t(classify.scss)"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"border-r",
+				"border-radius\t(index.scss)"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"last",
+				"last-child\t(common.css)"
+			],
+			[
+				"col",
+				"colors"
+			],
+			[
+				"mous",
+				"mouseleave"
+			],
+			[
+				"padd",
+				"padding-bottom\t(details.scss)"
+			],
+			[
+				"pa",
+				"padding-left\t(details.scss)"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"war",
+				"warp-main"
+			],
+			[
+				"m",
+				"margin-right"
+			],
+			[
+				"wa",
+				"warp-main\t(comic_detail.html)"
+			],
+			[
+				"mt",
+				"mt16\t(index.html)"
+			],
+			[
+				"fw",
+				"fw:n\tfont-weight:normal"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"tr",
+				"triangle"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pt",
+				"padding-top"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"co",
+				"colors"
+			],
+			[
+				"ml",
+				"margin-left"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"bac",
+				"background-color\t(details.scss)"
+			],
+			[
+				"cl",
+				"clearfix"
+			],
+			[
+				"comi",
+				"comic-cover"
+			],
+			[
+				"wi",
+				"width\t(comic_detail.html)"
+			],
+			[
+				"space",
+				"space.gif"
+			],
+			[
+				"char",
+				"charpter\t(index.html)"
+			],
+			[
+				"remo",
+				"remove〔function〕"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"la",
+				"lazyload\t(index.html)"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"op",
+				"opacity(50\t(_header.scss)"
+			],
+			[
+				"ift",
+				"ift-next\t(index.html)"
+			],
+			[
+				"nor",
+				"no-repeat\t(index.css)"
+			],
+			[
+				"al",
+				"align-left"
+			],
+			[
+				"mr",
+				"margin-right"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"setTi",
+				"setTimeout〔function〕"
+			],
+			[
+				"load",
+				"loading\t(base.js)"
+			],
+			[
+				"err",
+				"error\t(base.js)"
+			],
+			[
+				"sli",
+				"siblings〔function〕"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"th",
+				"thumbnail\t(index.html)"
+			],
+			[
+				"dar",
+				"dark\t(_footer.scss)"
+			],
+			[
+				"lh",
+				"line-height"
+			],
+			[
+				"boo",
+				"border-bottom\t(_footer.scss)"
+			],
+			[
+				"tran",
+				"transition\t(_footer.scss)"
+			],
+			[
+				"light",
+				"lighten\t(_footer.scss)"
+			],
+			[
+				"dat",
+				"data-src"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"spa",
+				"space3x4"
+			],
+			[
+				"img",
+				"img\tTag"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ite",
+				"itemW"
+			],
+			[
+				"len",
+				"length\t(common.js)"
+			],
+			[
+				"ou",
+				"outerWidth〔function〕"
+			],
+			[
+				"clas",
+				"classify"
+			],
+			[
+				"cle",
+				"clearfix\t(header.html)"
+			],
+			[
+				"wor",
+				"word-break"
+			],
+			[
+				"sta",
+				"static"
+			],
+			[
+				"clea",
+				"clearfix\t(threepart.html)"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"j",
+				"jQuery"
+			],
+			[
+				"border-",
+				"border-bottom\t(_tabs.scss)"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"ovh",
+				"ov:h\toverflow:hidden"
+			],
+			[
+				"pr",
+				"primary"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"imag",
+				"images"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/app/comic_read.html",
+			"settings":
+			{
+				"buffer_size": 5317,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/static/sass/read.scss",
+			"settings":
+			{
+				"buffer_size": 1844,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/static/js/models/base.js",
+			"settings":
+			{
+				"buffer_size": 18737,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/static/js/plugins/jquery.lazyload.js",
+			"settings":
+			{
+				"buffer_size": 8021,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/static/sass/_config.scss",
+			"settings":
+			{
+				"buffer_size": 1412,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/index.html",
+			"settings":
+			{
+				"buffer_size": 79810,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/static/js/models/common.js",
+			"settings":
+			{
+				"buffer_size": 2923,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/comic_detail.html",
+			"settings":
+			{
+				"buffer_size": 57791,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/static/sass/classify.scss",
+			"settings":
+			{
+				"buffer_size": 2127,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/static/sass/model/_box.scss",
+			"settings":
+			{
+				"buffer_size": 2613,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/static/sass/model/_tabs.scss",
+			"settings":
+			{
+				"buffer_size": 1950,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/static/sass/model/_header.scss",
+			"settings":
+			{
+				"buffer_size": 4348,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/static/sass/fonts/iconfont.css",
+			"settings":
+			{
+				"buffer_size": 2284,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "min",
+		"selected_items":
+		[
+			[
+				"min",
+				"View: Toggle Minimap"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"r",
+				"Package Control: Remove Package"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"vue",
+				"Snippet: Object Value JS"
+			],
+			[
+				"scs",
+				"Set Syntax: CSS"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"css",
+				"Plugin Development: Convert Syntax to .sublime-syntax"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"ba",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"pre",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"set sys",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"preferences:br",
+				"Preferences: Browse Packages"
+			],
+			[
+				"preferences",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"pref",
+				"Preferences: Settings"
+			],
+			[
+				"pr",
+				"Preferences: Settings – Syntax Specific"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 345.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/yangchaoguo/Documents/website/zymk",
+		"/Users/yangchaoguo/Documents/website/zymk/dist",
+		"/Users/yangchaoguo/Documents/website/zymk/src",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/models",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins",
+		"/Users/yangchaoguo/Documents/website/zymk/src/upload",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass/fonts"
+	],
+	"file_history":
+	[
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/read.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/public/footer.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/common.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/404.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/_config.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/public/header.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_search.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/fonts/_fonts.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/details.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass/filter.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/fonts/iconfont.css",
+		"/Users/yangchaoguo/Downloads/x0hp5p/README.md",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/app/product/filter.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_tabs.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_header.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/details.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/models/common.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_pages.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/index.html",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/static/css/common.css",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_box.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_list.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/fonts/demo_fontclass.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_comments.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_unit.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/core/mixin/_ellipsis.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/static/css/details.css",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/index.js",
+		"/Users/yangchaoguo/Documents/website/maigouwang/dist/app/product/details.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_crumb.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/dist/app/index.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/models/base.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins/jquery.lazyload.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/index.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/static/js/index.js",
+		"/Users/yangchaoguo/Documents/website/zymk/gulpfile.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/images/icon/zymk.svg",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/images/icon/more.svg",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/static/css/index.css",
+		"/Users/yangchaoguo/Documents/website/zymk/webpack.config.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins/jquery.ps.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_rank.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_footer.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_grid.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/core/mixin/_grid.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass/core/mixin/_grid.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass/model/_list.scss",
+		"/Users/yangchaoguo/Downloads/public.js",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/app/index.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/public/threepart.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/public/link.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_links.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/js/plugins/layer/skin/layer.css",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/vendor/_layer.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins/jquery.cookie.js",
+		"/Users/yangchaoguo/Documents/website/maigouwang/webpack.config.js",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/static/js/common.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins/jquery.easing.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins/jquery.js",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/js/models/common.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins/swiper.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/plugins/jquery.placeholder.min.js",
+		"/Users/yangchaoguo/Documents/website/zymk/.eslintrc.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/core/mixin/_float.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass/base.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass/index.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/model/_public.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/vendor/_swiper.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/vendor/_select.scss",
+		"/Users/yangchaoguo/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/yangchaoguo/Documents/website/zymk/.editorconfig",
+		"/Users/yangchaoguo/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/yangchaoguo/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (OSX).sublime-keymap",
+		"/Users/yangchaoguo/Documents/soft/sublime/sublime插件清单.txt",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/public/head.html",
+		"/usr/local/etc/nginx/nginx.conf",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/base.scss",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/public/browser.html",
+		"/Users/yangchaoguo/Documents/website/maigouwang/gulpfile.js",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/js/index.js",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/js/models/mouseAnInfo.js",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/static/js/filter.js",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/js/filter.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/.eslintrc.js",
+		"/Users/yangchaoguo/Documents/website/zymk/eslintrc.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/package.json",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/index2.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/6.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/index3.html",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/app/index3.html",
+		"/Users/yangchaoguo/Documents/website/maigouwang/src/static/sass/common.scss",
+		"/Users/yangchaoguo/Documents/website/maigouwang/package.json",
+		"/Users/yangchaoguo/Documents/website/zymk/dist/app/404.html",
+		"/Users/yangchaoguo/Documents/website/zymk/src/static/sass/order.scss",
+		"/Users/yangchaoguo/Documents/website/vueStudy/.eslintignore",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/usercenter/add_dog_info.html",
+		"/Users/yangchaoguo/Documents/website/webpack-init/config/webpack.default.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/build/webpack.base.conf.js",
+		"/Users/yangchaoguo/Documents/website/zymk/package.json",
+		"/Users/yangchaoguo/Documents/website/zymk/src/app/usercenter/sale_dog.html",
+		"/Users/yangchaoguo/Documents/website/zhiyinmanke/gulpfile.js",
+		"/Users/yangchaoguo/Documents/website/zhiyinmanke/src/js/news-detail.js",
+		"/Users/yangchaoguo/Documents/website/zhiyinmanke/src/app/index.html",
+		"/Users/yangchaoguo/Documents/website/zhiyinmanke/src/css/help.less",
+		"/Users/yangchaoguo/Documents/website/webpack-init/src/static/js/page_500.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/config/prod.env.js",
+		"/Users/yangchaoguo/Documents/website/webpack-init/src/views/page_500.html",
+		"/Users/yangchaoguo/Documents/website/webpack-init/dist/views/index.html",
+		"/Users/yangchaoguo/Documents/website/vueStudy/src/assets/scss/a.scss",
+		"/Users/yangchaoguo/Documents/website/webpack-init/src/static/sass/error.scss",
+		"/Users/yangchaoguo/Documents/website/webpack-init/dist/static/styles/common.6384c0f0.css",
+		"/Users/yangchaoguo/Documents/website/vueStudy/dist/static/css/main.8ba65c50.css.map",
+		"/Users/yangchaoguo/Documents/website/vueStudy/config/index.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/build/webpack.prod.conf.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/dist/index.html",
+		"/Users/yangchaoguo/Documents/website/webpack-init/gulpfile.js",
+		"/Users/yangchaoguo/Documents/website/webpack-init/bower.json",
+		"/Users/yangchaoguo/Documents/website/webpack-init/config/webpack.dev.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/index.html",
+		"/Users/yangchaoguo/Documents/website/vueStudy/build/webpack.dev.conf.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/src/index.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/build/utils.js",
+		"/Users/yangchaoguo/Documents/website/vueStudy/src/App.vue",
+		"/Users/yangchaoguo/Documents/website/vueStudy/README.md",
+		"/Users/yangchaoguo/Documents/website/webpack-init/src/static/sass/login.scss",
+		"/Users/yangchaoguo/Documents/.zshrc",
+		"/Users/yangchaoguo/.zshrc",
+		"/Users/yangchaoguo/.oh-my-zsh/.zshrc"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 163.0,
+		"where_history":
+		[
+			"/Users/yangchaoguo/Documents/website/zymk/src/static/sass",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"upload",
+			"   ",
+			"     ",
+			"      ",
+			"     ",
+			"<span class=\"fr-charpter\">",
+			"<!-- <a href=\"#\"><span",
+			"<i class=\"close\">&times;</i>",
+			"attr-other-val",
+			"dt",
+			"    ",
+			"全部\n              少男\n              少女\n              青年",
+			"    ",
+			" ",
+			"新更\n        人气\n        打赏\n        评分\n        月票",
+			"e623",
+			"<li>",
+			"update-list",
+			"box2",
+			"auxiliary",
+			"comments-hd",
+			"comments-",
+			"from",
+			" class=\"hd\"",
+			"class=\"bd\"",
+			"&>.",
+			"&>.hd",
+			"comments",
+			" class=\"bd\"",
+			"class=\"hd\"",
+			"tags-",
+			"fans粉丝排行",
+			"<a href=\"\" class=\"more\"><i class=\"ift-more\"></i><span class=\"txt\">更多</span></a>",
+			"<a href=\"\" class=\"more\">",
+			"\n        ",
+			";\n",
+			")\n",
+			"i",
+			"star",
+			"9b9bd5",
+			"'#",
+			"src=\"images/space.gif\"",
+			"data-src=\"images/comments",
+			"<li>            <span",
+			"<li>",
+			"href=\"\"",
+			"bd",
+			"div",
+			"href=\"\"",
+			"</li>",
+			"<li>",
+			"score",
+			"1亿4521万",
+			"laz",
+			"belowthefold",
+			"slide",
+			"<img src=\"static/images/space3x4.gif\"",
+			"<img src=\"static/images/space3x4.gif\" data-src=\"",
+			"class=\"swiper-slide\"",
+			" data-src",
+			"show",
+			"101",
+			"<div class=\"row mt24\"#>",
+			"<span class=\"more\"><i class=\"ift-more\"></i></span>",
+			"<span class=\"charpter\">232话</span>",
+			"<h3 class=\"title\">铁将纵横2012</h3>",
+			"<h3>铁将纵横2012</h3>",
+			"%;\n",
+			"supportCss",
+			"<h3 class=\"title\"><a href=\"#\">斗罗大陆</a></h3>",
+			"</i>\n                     <h3 class=\"title\"><a href=\"#\">斗罗大陆</a></h3>",
+			"<h3 class=\"title\"><a href=\"#\">斗罗大陆</a></h3>",
+			"{\n",
+			"<h3 class=\"title\">斗罗大陆</h3>",
+			"<strong>3398962元</strong>",
+			"storng",
+			"<div class=\"reward-num\">共被打赏\n                       <storng>3398962元</storng>\n                     </div>",
+			"本月月票",
+			"<a href=\"\">",
+			"<a href=\"#\"><a href=\"\">",
+			"</a>>",
+			"<div class=\"thumbnail\">",
+			"<li class=\"item\"><a href=\"\">",
+			"一五七社&文子",
+			"被打赏",
+			"rank-list-bd",
+			"rank-list-hd",
+			"<strong>1</strong>",
+			"})\n",
+			">\n",
+			"grid_unit_base",
+			"漫画家",
+			"更新记录",
+			";\n",
+			"%'\n",
+			"item swiper-slide",
+			"slide",
+			"horizontal",
+			"   ",
+			"    ",
+			"Swip",
+			"<div class=\"score\">7.4</div>",
+			"<span class=\"score\">.*?</span>",
+			"<div class=\"score\">.*?</div>",
+			"lipsum2",
+			"();",
+			"word",
+			"source",
+			";\n",
+			"pro-list",
+			"lipsum2",
+			"thumbnail",
+			"最酷炫典藏风",
+			"book经典",
+			"aside",
+			"<li><a href=\"\">",
+			" ",
+			"    ",
+			"合作伙伴",
+			" src=\"static/images/space37x16.gif\"",
+			"skip_invisible",
+			"false",
+			"J_u",
+			"')",
+			"cookie",
+			"chose",
+			"/*!",
+			"attrHooks"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<span class=\"score\">7.4</span>",
+			"<div class=\"score\">7.4</div>",
+			"首页\n      分类\n      新番\n      排行\n      更新\n      名家\n      专题\n      书单\n      漫画圈",
+			"$1",
+			"157.240.0.17"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/yangchaoguo/Documents/website/zymk"
+		},
+		{
+			"path": "/Users/yangchaoguo/Documents/website/maigouwang"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app/comic_read.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3212,
+								3216
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"colorcode": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 527.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/static/sass/read.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1167,
+								1165
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 353.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/static/js/models/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2166,
+								2177
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1289.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/static/js/plugins/jquery.lazyload.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1181,
+								1181
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 705.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/static/sass/_config.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								414
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 79810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7619,
+								2946
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1370.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/static/js/models/common.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1476,
+								1476
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"colorcode": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 686.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/app/comic_detail.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23856,
+								23645
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"colorcode": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10428.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/static/sass/classify.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								810,
+								810
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 376.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/static/sass/model/_box.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1891,
+								1890
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1628.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/static/sass/model/_tabs.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								845,
+								845
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 545.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/static/sass/model/_header.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2375.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/static/sass/fonts/iconfont.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								641,
+								2282
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1407.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 122.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

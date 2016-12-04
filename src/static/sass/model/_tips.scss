@@ -1,0 +1,33 @@
+@charset "UTF-8";
+//提示信息框
+.tips{
+	@extend %tips;
+	@at-root{
+		&-close{
+			@extend %tips;
+			padding:9px 32px 9px 9px;
+			.J_close{
+				@extend %close;
+				padding:2px;
+				top:4px;
+				right:4px;
+				background-color:colors(orange);
+			}
+		}
+		&-blue{
+			background-color:lighten(colors(blue),58%);
+			border-color:lighten(colors(blue),48%);
+			color: colors(darker);
+		}
+		&-icon{
+			padding-left: 32px;
+			.ift-warn{
+				@include float;
+				margin-left: -24px;
+				line-height: 1.2;
+				color:colors(auxiliary);
+				font-size: fonts(size) * 2;
+			}
+		}
+	}
+}

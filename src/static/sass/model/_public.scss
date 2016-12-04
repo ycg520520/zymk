@@ -1,0 +1,62 @@
+@charset "UTF-8";
+//全局常用颜色
+.red{ color:colors(red);}
+.orange{color:colors(orange);}
+.yellow{color:colors(yellow);}
+.blue{color:colors(blue);}
+.purple{color:colors(purple);}
+.green{color:colors(green);}
+.dark{color:colors(dark);}
+.gray{color:colors(gray);}
+.white{color:colors(white);}
+
+.bg-red{ background-color: lighten(colors(red),45%);}
+.bg-orange{background-color: lighten(colors(orange),45%);}
+.bg-yellow{background-color: lighten(colors(yellow),30%);}
+.bg-blue{background-color: lighten(colors(blue),55%);}
+.bg-purple{background-color: lighten(colors(purple),55%);}
+.bg-green{background-color: lighten(colors(green),58%);}
+.bg-gray{background-color: colors(light);}
+.bg-white{background-color: colors(white);}
+
+//文本控制
+.tac{text-align: center;}
+.tal{text-align: left;}
+.tar{text-align: right;}
+.f12{font-size: fonts(size) * 1.2;}
+.f14{font-size: fonts(size) * 1.4;}
+.f16{font-size: fonts(size) * 1.6;}
+.f18{font-size: fonts(size) * 1.8;}
+.f24{font-size: fonts(size) * 2.4;}
+.del{text-decoration:line-through;}
+.blod{font-weight: bold;}
+.fwn{font-weight: normal;}
+.italic{font-style: italic;}
+
+//显示影藏和块级元素
+.hide{display: none;}
+.show,.block{display: block;}
+.hidden{visibility: hidden;}
+.visible{visibility:visible;}
+.inline{display: inline-block;}
+
+//浮动
+.fl{float:left;}
+.fr{float:right;}
+
+.clear,.clearfix{@extend %clearfix;}
+.cursor{cursor:pointer;}
+.radius{border-radius:radius(rounded);}
+//其它
+.pt8{padding-top: 8px;}
+.pb8{padding-bottom: 8px;}
+.pt16{padding-top: 16px;}
+.pb16{padding-bottom: 16px;}
+.pt24{padding-top: 24px;}
+.pb24{padding-bottom: 24px;}
+.mt8{margin-top: 8px;}
+.mt16{margin-top: 16px;}
+.mt24{margin-top: 24px;}
+.mb8{margin-bottom: 8px;}
+.mb16{margin-bottom: 16px;}
+.mb24{margin-bottom: 24px;}

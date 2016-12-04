@@ -1,0 +1,54 @@
+@import "../config";
+@import "swiper/swiper";
+.swiper-pagination{
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+.swiper-container-horizontal{
+	&>.swiper-pagination-bullets{
+		.swiper-pagination-bullet{
+			margin: 0 4px;
+		}
+	}
+}
+.swiper-pagination-bullet{
+	background-color: colors(white);
+	@include opacity();
+}
+.swiper-pagination-bullet-active{
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	@include opacity(100);
+}
+.swiper-container{
+	height: 100%;
+	//下面是前/后按钮代码，如果不需要删除即可
+	.ift-prev,.ift-next {
+		position: absolute;
+		top: 50%;
+		padding: 10px 5px;
+		margin-top: -20px;
+		z-index: 1;
+		cursor: pointer;
+		@include opacity(50);
+		background-color: colors(black);
+		color: colors(white);
+		font-size: fonts(size) * 2.4;
+		&:hover{
+			transition:0.3s;
+			@include opacity(75);
+		}
+	}
+	.ift-prev {
+		left: 0;
+		border-radius: 0 3px 3px 0;
+	}
+	.ift-next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+}

@@ -1,0 +1,465 @@
+@charset "UTF-8";
+//产品详情展示
+//产品画廊
+.zoomMask{
+	background:colors(auxiliary) url("repeat.gif");
+	opacity:.3;
+}
+.pro-gallery{
+	float:left;
+	margin-right: 20px;
+	.gallery-pic{
+		position: relative;
+		width: 350px;
+		height: 350px;
+		border: 1px solid colors(gray);
+		overflow: hidden;
+		.zoom{
+			position: absolute;
+			right:0;
+			bottom:0;
+			padding: 8px;
+			background-color: colors(light);
+			opacity:.8;
+			cursor: pointer;
+		}		
+	}
+	.gallery-thumb{
+		position: relative;
+		width: 352px;
+		height: 54px;
+		margin: 10px 0;
+		.bd{
+			width: 310px;
+			height: 54px;
+			margin: 0 21px;
+			overflow: hidden;
+		}
+		ul{
+			width: 540px;
+		}		
+		li{
+			position: relative;
+			float:left;
+			width: 50px;
+			height: 50px;
+			padding:1px;
+			border:1px solid colors(gray);
+			margin-right:10px;
+			cursor: pointer;
+			img{
+				width: 50px;
+				height: 50px;
+			}
+			&:hover{
+				border-color:lighten(colors(primary), 20%);
+			}
+			&.active{
+				padding:0;
+				border-color:colors(primary);
+				border-width:2px;
+				.i{
+					position: absolute;
+					right: 0;
+					bottom:0;
+				}
+			}
+
+		}		
+		.prev,.next{
+			position: absolute;
+			top: 0;
+			width: 12px;
+			height: 54px;
+			border:1px solid lighten(colors(gray),10%);
+			background-color: colors(light);
+			cursor: pointer;
+			&:hover{
+				background-color: darken(colors(light),5%);
+			}
+			.i{
+				display: block;
+				margin: 23px auto;
+			}
+		}
+		.prev{
+			left: 0;
+		}
+		.next{
+			right: 0;
+		}
+	}
+}
+
+.pro-detail{
+	padding-left:372px;
+	h1{
+		line-height:24px;
+		font-size: fonts(size) * 1.6;
+		font-weight: bold;
+		padding:6px 0 19px 0;
+		border-bottom:1px dotted colors(gray);
+	}
+	dl{
+		padding:10px;
+	}
+	dt{
+		position: absolute;
+		width: 64px;
+		font-size: fonts(size) * 1.2;
+		text-align: right;
+		line-height: 30px;
+		color:darken(colors(dark), 20%);		
+	}
+	dd{
+		padding-left: 72px;
+		font-size: fonts(size) * 1.2;
+		line-height: 30px;
+		font-family: fonts(en);
+	}
+	.price{
+		font-size: fonts(size) * 1.8;
+		font-weight: bold;
+		color:colors(red);
+		font-family: fonts(family);
+	}
+	.pro-attr{}
+	.pro-sku{
+		margin-bottom: 10px;
+		border:1px dotted colors(gray);
+		border-width:1px 0;
+		dl{padding:19px 10px 9px;}
+		&.active{
+			border:1px solid colors(primary);
+			background-color: colors(light);
+			position: relative;
+			dl{padding:19px 9px 9px;}
+			.J_close{
+				display: block;
+			}
+		}		
+		dd{
+			margin-bottom: 10px;
+		}
+		.J_close{
+			@extend %close;
+			top: 10px;
+			right: 10px;			
+			padding:2px;		
+			background-color: colors(red);
+			display: none;
+		}
+	}
+	.auction-bid{
+		height: 188px;
+		border:1px solid colors(gray);
+		padding-right:240px;
+		margin-top: 8px;
+		background-color:colors(light);
+		@extend %clearfix;
+		dl{padding:19px 9px 9px;}
+		dt{
+			line-height: 35px;
+		}
+		dd{
+			margin-bottom: 18px;
+		}
+		.select{
+			width: 180px;
+		}
+		.gray{
+			color:colors(dark);
+		}
+		.fr{
+			position: relative;
+			width: 240px;
+			height: 188px;
+			margin-right: -240px;
+			border-left:1px solid colors(gray);
+			background-color: colors(white);
+			.switch{
+				position: absolute;
+				left:-12px;
+				top:50%;
+				width: 10px;
+				height: 46px;
+				margin:-24px 0;
+				border:1px solid colors(gray);
+				background-color: colors(white);
+				cursor: pointer;
+				.i{
+					display: block;
+					margin:19px auto;
+				}
+			}
+		}		
+	}
+	.auction-end,.auction-time{
+		height: 50px;
+		padding:60px 0;
+		text-align: center;
+		font-size: fonts(size) * 1.2;
+		line-height: 20px;
+		p{
+			margin:5px 0;
+		}
+		strong{
+			font-size: fonts(size) * 1.8;
+			font-family: fonts(family);
+		}
+		a{
+			font-weight: bold;
+		}
+	}
+	.auction-time{
+		.time{
+			font-size:fonts(size) * 1.2;
+			vertical-align: middle;
+			color:colors(dark);
+		}
+		strong{
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+		.hour,.minute,.second{
+			display:inline-block;
+			padding:2px 5px;
+			margin:0 3px;
+			font-family: fonts(family);
+			font-size: fonts(size) * 1.6;
+			vertical-align: middle;
+			color:colors(white);
+			background-color: colors(red);
+			box-shadow:0 10px 0 0 rgba(white, .2; inset);
+		}
+	}
+	.btn{
+		height: 35px;
+		line-height: 32px;
+		font-size: fonts(size) * 1.8;
+		font-weight: normal;
+		font-family: fonts(family);
+		margin-right: 5px;
+	}
+	.pro-other{
+		padding-left:82px;
+		.share{
+			margin-bottom: 5px;
+		}
+	}
+	.collect{
+		@extend %clearfix;
+		font-size: fonts(size) * 1.2;
+		line-height: 16px;
+		margin-left: 46px;
+		.i{
+			float:left;
+			margin-right:4px;
+		}
+	}
+}
+
+//产品详情结构模块
+.pro-section{
+	margin-top: 20px;
+	.pro-section-bd{
+		border:1px solid colors(gray);
+		margin-top:-1px;	
+		padding-right:200px;
+		background-color: colors(light);
+		overflow: hidden;
+		@extend %clearfix;
+	}
+	.tab-hd{
+		height: 46px;
+		border:1px solid colors(gray);
+		background-color: colors(light);
+		h2{			
+			height: 36px;
+			padding:10px 30px 0;
+			margin-right: 0;
+			border-right: 1px solid colors(gray);
+			line-height: 36px;
+			font-size: fonts(size) * 1.4;
+			font-family: fonts(cn);
+			&.active{
+				border-top:2px solid colors(primary);
+				padding:9px 30px 1px;
+				margin: -1px 0;
+				background-color: colors(white);
+			}
+			strong{
+				font-size: fonts(size) * 1.6;
+				font-family: fonts(en);
+				font-weight: bold;
+				color:colors(red);
+				vertical-align: middle;
+			}
+		}
+	}	
+	.tab-bd{
+		height: 100%;
+		padding:20px 20px 99999px 20px;
+		margin-bottom: -99979px;
+		background-color: colors(white);
+		border-right:1px solid colors(gray);
+	}
+	.aside{
+		@include float(right);
+		width:200px;
+		border-left:1px solid colors(gray);
+		margin-right: -200px;	
+	}	
+}
+
+////产品详情属性
+.pro-detail-attr{
+	margin-bottom: 20px;
+	li{
+		float:left;
+		width: 30%;
+		height: 25px;
+		line-height:25px;
+		margin-right: 5%;
+		padding-left:0;
+		color:colors(darker);
+		font-size: fonts(size) * 1.2;
+		@include nth-child(3n){
+			margin-right:0;
+		};
+		strong{
+			color:colors(dark);
+		}
+	}
+
+	thead{
+		background-color:colors(light);
+		th{
+			text-align: left;
+		}
+	}
+	tbody{
+		th{
+			border-color:lighten(colors(gray),5%);
+			color:colors(dark);
+			text-align: right;
+		}
+	}
+	.sub-attr{
+		th{
+			text-align: left;
+			color:colors(darker);
+			background-color:colors(light);
+			font-weight: 700;
+			border-color:lighten(colors(gray),5%);
+		}
+	}
+}
+
+.pro-bewrite{
+}
+
+//产品议价
+.pro-consult{
+	width:600px;
+	.form{
+		dt{
+			position: absolute;
+			width: 120px;
+			line-height: 36px;
+			text-align: right;
+			color:darken(colors(dark), 10%);
+		}
+		dd{
+			padding-left:125px;
+			font-size: fonts(size) * 1.4;
+			line-height: 35px;
+		}
+		.input, .textarea{
+			width: 240px;
+		}
+		.textarea{
+			height: 80px;
+			resize: none;
+		}
+		h3{
+			padding-left:125px;			
+			margin: 30px 0 10px;
+			font-weight: bold;
+			font-size: fonts(size) * 1.4;
+			@extend %clearfix;
+		}
+		.btn{
+			line-height: 24px;
+		}
+	}
+	.fr{
+		width: 100px;
+	}
+}
+
+//拍卖出价记录
+.bid-recod{
+	overflow: hidden;
+	.bid-recod-hd{
+		height: 32px;
+		padding:0 10px;
+		line-height: 32px;
+		.more{
+			@include float(right);
+			font-size:fonts(size) * 1.2;
+			color:colors(gray);
+		}	
+		h2{
+			font-size:fonts(size) * 1.2;
+			font-weight: bold;
+			color:colors(blue);
+		}
+	}
+	.bid-recod-bd{
+		font-size: fonts(size) * 1.2;
+	}
+	.no-recod{		
+		height: 120px;
+		line-height: 120px;
+		color:colors(dark);
+	}
+	.table{
+		border:none;
+		th,td{border:none;}
+		thead{
+			tr{
+				border:1px dotted lighten(colors(gray), 10%);
+				border-width:1px 0;
+				th{
+					height: 30px;
+					padding:0 5px;
+					background: lighten(colors(blue),40%);
+					font-size: fonts(size) * 1.2;
+					font-weight: normal;
+					text-align: left;
+				}
+			}
+		}
+		tbody{
+			tr{				
+				border-bottom:1px dotted lighten(colors(gray), 10%);
+				td{
+					height:24px;
+					padding:0 5px;
+				}
+			}
+		}
+	}
+}
+.bid-recod2{
+	.table{
+		tbody{
+			tr{
+				td{
+					height:30px;
+				}
+			}
+		}
+	}
+}

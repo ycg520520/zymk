@@ -1,0 +1,228 @@
+@charset "UTF-8";
+#header{
+	// overflow: hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	// z-index:2;
+	width: 100%;
+	height:68px;
+	padding-top: 4px;
+	background: url('/static/images/header_bg.jpg') center top no-repeat;
+	.aside{
+		@include float(right);
+	}
+	//网站logo
+	@at-root{
+		#logo{
+			float:left;
+			display:block;
+			margin-top: 4px;
+			height:48px;
+			.figuire{
+				float:left;
+			}
+			.slogo{
+				display: none;
+				color: colors(primary);
+			}
+		  [class^="ift-"]{
+		    // font-size: fonts(size) * 6.4;
+		    color:colors(primary);
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    -webkit-text-stroke-width: none;
+		  }
+		}
+		#nav{
+			@include float;
+			position: relative;
+			height: 40px;
+			margin:8px 0 0 32px;
+			li{
+				@include float;				
+				height: 40px;
+				line-height: 40px;
+				font-size: fonts(size) * 1.6;				
+				&:active{
+					a{
+						color: colors(primary);
+					}
+				}
+				
+			}
+			a{
+				transition:.3s ease-in;
+				padding: 0 10px;
+				color: colors(white);
+			}
+			.modify{
+				content: "";
+				position: absolute;
+				left: 10px;
+				bottom: 0;
+				width: 32px;
+				height: 3px;
+				background-color: colors(primary);
+			}
+		}
+		#aside-nav{
+			// display: none;
+			float:left;
+			&>li{
+				float:left;
+				width:56px;
+				height: 56px;
+				margin-left: 10px;
+			}
+			.user{
+				position: relative;
+				height:80px;
+				margin-bottom: -24px;
+				&:hover{
+					.user-bd{
+						display: block;
+					}
+				}
+				@at-root {
+					&-hd{
+						width:56px;
+						height:56px;
+						line-height: 56px;
+						// background-color: darken(colors(blue),35%);
+						background-color: rgba(colors(black),.5);
+						border-radius:50%;
+						// @include opacity(50);
+						.ift-user{
+							display:block;
+							text-align: center;
+							font-size: fonts(size) * 3.2;
+							color: colors(white);
+							@include opacity(50);
+						}
+					}
+					&-bd{
+						display: none;
+						position: absolute;
+						right: 0;
+						top: 72px;
+						width: 280px;
+						max-height: 360px;
+						background-color:colors(white);
+						border-radius:3px;
+						&:before{
+							position:absolute;
+							top: -9px;
+							right: 19px;
+							@include triangle(top, 9px, colors(light))
+						}
+						.logout,.clean{
+							position: absolute;
+							height:30px;
+							line-height: 30px;
+							font-size: fonts(size)*1.2;
+						}
+						.logout{
+							left: 10px;
+						}
+						.clean{
+							right: 10px;
+						}
+					}
+					&-collect{
+						margin: 10px 0 0;
+						padding: 0 10px;
+					}
+					&-history{
+						margin: 5px 0;
+						padding: 0 10px;
+						.item{
+							@extend %clearfix;
+							padding: 5px 0;
+							border-bottom: 1px dotted lighten(colors(gray), 5%);
+							@include last-child(){
+								border-bottom:0;
+							}
+							.info{
+								margin-left: 83px;
+							}
+							.title{
+								height:28px;
+								line-height:28px;
+								margin:4px 0 0 0;
+								color: colors(auxiliary);
+								font-size: fonts(size) * 1.4;
+							}
+							.time,.attr{
+								font-size: fonts(size) * 1.2;
+								line-height: 20px;
+							}
+							.time,.attr-label{
+								color: colors(gray);
+							}
+							.time{
+								@include reset-float;
+							}
+							.attr{
+								color: colors(darker);
+							}
+						}
+						.thumbnail{
+							float:left;
+							width: 75px;
+						}
+					}
+				}
+			}
+			.mobile-web{
+				margin: 8px 0 8px 10px;
+				width: 40px;
+				height: 40px;
+				border-radius:50%;
+				// background-color: darken(colors(yellow),15%);
+				background-color: #fee385;
+				.ift-phone{
+					display: block;
+					line-height: 40px;
+					text-align: center;
+					font-size: fonts(size) * 2.4;
+				}
+			}
+
+			.tabs{
+				box-shadow: 0 0 8px rgba(colors(black),.2);
+				@at-root{
+					&-hd{
+						height: 30px;
+						background-color: colors(light);
+						border-radius: 3px 3px 0 0;
+						ul{
+							width: 60%;
+							margin: 0 auto;
+						}
+						li{
+							width: 50%;
+							margin:0;
+						  padding: 0;
+							line-height:30px;
+						}
+						&:before,.modify{
+							left: calc(25%)
+						}
+					}
+					&-ft{
+						height: 30px;
+						border-top: 1px solid lighten(colors(gray), 5%);
+						line-height:30px;
+						font-size: fonts(size) * 1.2;
+						background-color: colors(light);
+						text-align: center;
+						border-radius: 0 0 3px 3px;
+					}
+				}
+			}
+		}
+	}
+}
+
+

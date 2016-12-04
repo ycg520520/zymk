@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/**
+ * 重设form基础设置
+ */
+
+fieldset {
+	border: none;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	font-size: fonts(size) * 1.6;
+	line-height: inherit;
+	color: colors(dark);
+	border-bottom: 1px solid colors(gray);
+	padding-bottom: 0.5rem;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+// 重写盒子模型表现方式
+input[type="search"] {
+	box-sizing: border-box;
+}
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+	/* margin: 4px 0 0;
+	margin-top: 1px \9; // IE8-9
+	line-height: normal; */  
+	margin:-2px 3px 0 0;
+	vertical-align:-2px;
+	cursor: pointer;
+	*margin:-1px 0 0 0;
+	overflow: hidden;
+}
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+	height: auto;
+}
+
+// Fix optgroup Firefox bug per https://github.com/twbs/bootstrap/issues/7611
+select optgroup {
+	font-size: inherit;
+	font-style: inherit;
+	font-family: inherit;
+}
+
+// Focus for select, file, radio, and checkbox
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+	// Default
+	outline: thin dotted;
+	// WebKit
+	outline: 1px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+// Fix for Chrome number input
+// Setting certain font-sizes causes the `I` bar to appear on hover of the bottom increment button.
+// See https://github.com/twbs/bootstrap/issues/8350 for more.
+input[type="number"] {
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		height: auto;
+	}
+}
+
+// Adjust output element
+output {
+	vertical-align: middle;
+}
+
+.#{$ns}form{
+	font-size: fonts(size) * 1.4;
+	/* select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"], // `datetime` has been removed from WHATWG HTML https://github.com/whatwg/html/issues/336
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"], */
+	@at-root &-control{
+		display: block;
+		width: 100%;
+		padding: .5rem;
+		font-size: fonts(size) * 1.4;
+		color: colors(dark);
+		vertical-align: middle;
+		background-color: colors(white);
+		background-image: none;
+		border: 1px solid colors(gray);
+		-webkit-appearance: none;
+		transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+		box-sizing: border-box;
+		// :focus 时的状态
+		&:focus,&.from-success{
+			outline: 0;
+			border-color:lighten(colors(primary), 10%);
+			box-shadow:0 2px 3px 0 lighten(colors(gray), 5%) inset, 0 0 5px 0 lighten(colors(primary), 20%);
+		}
+		&.from-warning {
+			outline: 0;
+			color: colors(orange);
+			border-color:lighten(colors(orange), 20%);
+			box-shadow:0 2px 3px 0 lighten(colors(gray), 5%) inset, 0 0 5px 0 lighten(colors(orange), 30%);
+		}
+		&.from-error {
+			outline: 0;
+			color: colors(red);
+			border-color:lighten(colors(red), 10%);
+			box-shadow:0 2px 3px 0 lighten(colors(gray), 5%) inset, 0 0 5px 0 lighten(colors(red), 20%);
+		}
+		
+		// placeholder样式
+		&::placeholder {
+			color: colors(gray);
+		}
+		&::-moz-placeholder {
+			opacity: 1;
+		}
+
+		// 禁用和只读属性
+		&[disabled],
+		&[readonly],
+		fieldset[disabled] & {
+			cursor: not-allowed;
+			background-color: lighten(colors(gray), 2%);
+		}
+	}
+	textarea{
+		line-height: 1.5;
+	}
+}
+
+
+.#{$ns}form {
+	// Reset height for block field
+	textarea,
+	select[multiple],
+	select[size]{
+		height: auto;
+	}
+	select{
+		// via Foundation
+		-webkit-appearance: none !important;
+		-moz-appearance: none !important; // since Firefox 31 ?
+		padding-right:1.6em;
+		background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSItNzQgNzkuNCAxNiAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtNzQgNzkuNCAxNiAyNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNDQ0NDQ0M7fTwvc3R5bGU+PHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSItNjEuOCw4OC40IC02MS44LDg4LjQgLTY2LDkyLjYgLTcwLjIsODguNCAtNzAuMiw4OC40IC03MS4xLDg4LjQgLTcxLjEsODkuMyAtNjYsOTQuNCAtNjAuOSw4OS4zIC02MC45LDg4LjQgIi8+PC9zdmc+') no-repeat 100% center;
+		&[multiple="multiple"],&[multiple]{
+			background-image: none;
+		}
+		option{
+			line-height: 1.5;
+		}
+	}
+}
+
+
+/**
+ * help text
+ */
+.#{$ns}form-help,.#{$ns}form-help-block{
+	color: colors(gray);
+	font-size: fonts(size) * 1.2;
+	line-height: 1.5;
+}
+.#{$ns}form-help-block {
+	display: block;
+	margin: 4px 0 8px;
+}
+
+/**
+ * form group
+ */
+.#{$ns}form-group {
+	margin-bottom: 1.6em;
+}
+
+/* Horizontal forms */
+.#{$ns}form-horizontal {
+	.#{$ns}control-label,
+	.#{$ns}radio,
+	.#{$ns}checkbox,
+	.#{$ns}radio-inline,
+	.#{$ns}checkbox-inline {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 0.6em;
+		padding-right: 0.6em;
+	}
+	.#{$ns}radio-inline,
+	.#{$ns}checkbox-inline {
+		label{
+			margin-right: 1em;
+			// color: colors(dark);
+		}
+	}
+
+	.#{$ns}form-group {
+		@extend %clearfix;
+	}
+
+	// @include min-screen(641px) {
+		// & .#{$ns}control-label {
+		.#{$ns}control-label {
+			text-align: right;
+			color: colors(dark);
+		}
+	// }
+}
+
+/* Inline form elements */
+.#{$ns}form-inline {
+	.#{$ns}form-control {
+		display: inline-block;
+		width: auto;
+		vertical-align: middle;
+	}
+
+	.#{$ns}control-label {
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+
+	// Remove default margin on radios/checkboxes that were used for stacking, and
+	// then undo the floating of radios and checkboxes to match (which also avoids
+	.#{$ns}radio,
+	.#{$ns}checkbox {
+		display: inline-block;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		vertical-align: middle;
+	}
+
+	.#{$ns}radio input[type="radio"],
+	.#{$ns}checkbox input[type="checkbox"] {
+		float: none;
+		margin-left: 0;
+	}
+
+}

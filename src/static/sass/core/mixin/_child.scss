@@ -1,0 +1,33 @@
+@charset "UTF-8";
+//nth-chilid生成伪类和对应类名
+@mixin nth-child($n){
+  //解决ie8不支持伪类的问题伪类将被解析是错误，故不能讲其写在一行
+  #{"&:nth-child(#{$n})"}{
+    @content;
+  }
+  #{"&.nth-#{$n}"}{
+    // lt:ie8;
+    @content;
+  }  
+  //解决ie8不支持伪类的问题伪类将被解析是错误，故不能讲其写在一行
+  
+}
+@mixin first-child{
+	#{"&:first-child"}{
+    @content;
+  }
+  #{"&.first-child,&.first"}{
+    // lt:ie8;
+		@content;
+	}
+}
+
+@mixin last-child{
+	#{"&:last-child"}{
+    @content;
+  }
+  #{"&.last-child,&.last"}{
+    // lt:ie8;
+		@content;
+	}  
+}

@@ -1,0 +1,6 @@
+//hover 生成对应的伪类
+@mixin hover{  
+  &:hover,&.hover{
+    @content;
+  }
+}

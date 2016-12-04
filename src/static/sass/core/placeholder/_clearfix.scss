@@ -1,0 +1,10 @@
+@charset "UTF-8";
+//tab切换
+%clearfix{
+	&:before,&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	zoom:1;
+}

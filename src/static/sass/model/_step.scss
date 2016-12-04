@@ -1,0 +1,177 @@
+@charset "UTF-8";
+//radio步奏样式
+.step-radio{
+	$len: 5;
+	$w: 680px;
+	$radiusW: 20px;
+	position: relative;
+	height:100px;
+	background-color:colors(light);
+	border: 1px solid colors(gray);
+	border-radius:radius(S);
+	overflow: hidden;
+	.step-layer-d,.step-layer-u{
+		position: absolute;
+		top: 60%;
+		left: 0;
+		width: 80%;
+		margin:0 10%;
+		ol{
+			position:relative;
+		}
+	}
+	.step-layer-d{
+		@for $i from 1 through $len {
+		  .step-#{$i} {
+	  		position: absolute;
+				z-index: $len * $len - $i * $i + 1;
+	  	  top: 50%;
+		  	left: percentage(($i - 1) / ($len - 1));
+		  	width:$radiusW;
+		  	height: $radiusW;
+		  	margin: -($radiusW / 2);
+		  	line-height: $radiusW;
+	  	  background-color: lighten(colors(gray),10%);
+				border-radius:50%;
+				box-shadow:inset 1px 1px 2px rgba(0,0,0,.5);
+		  }
+		  @if $i < $len {
+			  .progress-#{$i}{
+			  	position: absolute;
+			  	z-index: $len * $len - $i * $i;
+			  	left: percentage(($i - 1) / ($len - 1));
+					width: percentage(1 / ($len - 1)) - percentage($radiusW / 2 / $w);
+					padding-right: percentage($radiusW / 4 / $w);
+					height: $radiusW / 2;
+					margin: -($radiusW / 4) 0;
+					line-height: $radiusW / 2;
+	  	  	background-color: lighten(colors(gray),10%);
+					border-radius:0 $radiusW / 4 0 0;
+					box-shadow:inset 4px 1px 2px rgba(0,0,0,.4);
+			  }
+		  }
+		}
+	}
+	.step-layer-u{
+		z-index: $len * $len + 1;
+		@for $i from 1 through $len {
+		  .step-#{$i}{
+	  		position: absolute;
+	  		z-index: $len * $len - $i * $i + 1;
+	  	  top: 50%;
+		  	left: percentage(($i - 1) / ($len - 1));
+		  	width:$radiusW - 8;
+		  	height: $radiusW - 8;
+		  	margin: -(($radiusW - 8) / 2);
+		  	line-height: $radiusW - 8;
+	  	  // background-color: darken(colors(gray),10%);
+	  	  background-color: colors(white);
+		  }
+		  .step-#{$i}{
+				border-radius:50%;
+		  }
+		  @if $i < $len {
+			  .progress-#{$i}{
+			  	position: absolute;
+			  	z-index: $len * $len - $i * $i;
+			  	top: 50%;
+			  	left: percentage(($i - 1) / ($len - 1));
+					width: percentage(1 / ($len - 1));
+					height: ($radiusW - 16) / 2;
+					margin: -($radiusW - 16) / 4 0;
+					line-height: ($radiusW - 16) / 2;
+	  	  	// background-color: darken(colors(gray),10%);
+	  	  	background-color: colors(white);
+			  }
+		  }
+		}
+		.current{
+			background-color: lighten(colors(blue), 40%);
+			.step-txt{
+				color:colors(blue);
+			}
+		}
+		.done{
+			.progress{
+				width: 100%;
+			}
+		}
+		.doing{
+			.progress{
+				width: 50%;
+			}
+		}
+
+		.step-txt{
+			position:absolute;
+			width: 160px;
+			height: 20px;
+			top:-25px;
+			left: 50%;
+			margin-left: -80px;
+			font-family: fonts(family);
+			font-size: fonts(size) * 1.4;
+			text-align: center;
+			color:colors(dark);
+			@include ellipsis;
+		}
+		.progress{
+			width: 0;
+			height: ($radiusW - 16) / 2;
+			line-height: ($radiusW - 16) / 2;
+			background-color: lighten(colors(blue), 40%);
+		}
+	}
+}
+
+//箭头指向样式
+.step-arrow{
+	height: 32px;
+	background-color: colors(gray);
+	font-family: fonts(family);
+	li{
+		position: relative;
+		@include float(left);
+		width: 33.3%;
+		line-height: 32px;
+		color: colors(white);
+		text-align: center;
+		background-color: colors(gray);
+		i{
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: -20px;
+			width: 20px;
+			height: 32px;
+			background:url("step/step.png") left -32px no-repeat;
+		}
+		&.active{
+			// color: colors(white);
+			background-color:colors(blue);
+			i{
+				background-position: 0 0;
+			}
+		}
+		@include last-child{
+			i{
+				display: none;
+			}
+		};
+	}
+}
+.step-2{
+	li{
+		width: 50%
+	}
+}
+.step-4{
+	li{
+		width: 25%
+	}
+}
+.step-5{
+	li{
+		width: 20%
+	}
+}
