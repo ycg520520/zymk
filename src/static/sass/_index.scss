@@ -1,0 +1,201 @@
+@import 'config';
+@import 'model/links';
+
+.comic-aside{
+  float: left;
+  width: 30.2521008403361%;
+  .superSlide{
+    width: 100%;
+    height: 0;
+    padding-bottom: 133.333333333333%
+  }
+}
+.comic-main{
+  margin-left: 34.8739495798319%;
+  width: 65.1260504201681%;
+  overflow: hidden;
+}
+
+// 漫画分类
+.classify{
+  background-color: colors(light);
+  border-radius: 3px;
+  overflow: hidden;
+  &>.hd{
+    position:relative;
+    float:left;
+    width:40px;
+    height: 40px;
+    padding:8px;
+    font-size: fonts(size) * 1.6;
+    color: colors(white);
+    text-align: center;
+    background-color: colors(primary);
+    &:after{
+      position: absolute;
+      top:50%;
+      left:100%;
+      margin-top: -9px;
+      @include triangle(right,9px,colors(primary))
+    }
+  }
+  &>.bd{
+    margin-left: 72px;
+    padding: 8px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+    .item {
+      font-size: fonts(size) * 1.4;
+      display: inline-block;
+      margin-right: 16px;
+    }
+  }
+}
+
+.slider-horizontal{
+  position: relative;
+  overflow: hidden;
+  .ift-prev,.ift-next{
+    display: none;
+    position:absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    font-size: fonts(size) * 2;
+    background-color: rgba(colors(white),.75);
+    box-shadow:0 0 16px rgba(colors(black),0.75);
+    &:before{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      top: 50%;
+      left: 0;
+      margin-top: -20px;
+    }
+  }
+  .ift-prev{
+    left:0;
+  }
+  .ift-next{
+    right: 0;
+  }
+}
+
+// 排序盒子
+.rank{
+  // width: 95.7983193277311%;
+  width: 93%;
+  &>.hd{
+    position: relative;
+    height: 0;
+    padding-bottom: 21.0526315789474%;
+    margin-bottom: 10px;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// 漫画更新记录
+.comic-update{
+  // width: 93%;
+  .item{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 31%;
+    margin-right: 3.5%;
+    border-bottom: 1px solid colors(white);
+    background-color: lighten(colors(blue), 45%);
+    @include nth-child(3n){
+      margin-right: 0;
+    }
+    // &:nth-child(even){
+    &.even{
+      background-color: lighten(colors(blue), 42%);
+      .time{
+        background-color: lighten(colors(primary), 30%);
+      }
+    }
+  }
+  .time,.charpter{
+    height: 40px;
+    font-size: fonts(size) * 1.2;
+  }
+  .time{
+    float: left;
+    width: 56px;
+    margin-right: 10px;
+    text-align: center;
+    color: colors(dark);
+    background-color: lighten(colors(primary), 32%);
+  }
+  .charpter{
+    float: right;
+    margin-right: 10px;
+    color: colors(primary);
+  }
+  .title{
+    font-weight: normal;
+    font-size: fonts(size) * 1.4;
+  }
+}
+
+
+// .slider-main {
+//   min-width:960px;
+//   height: 560px;
+//   .swiper-wrapper {
+//       height: 560px;
+//   }
+//   .swiper-slide {
+//     position: relative;
+//     background-position:center;
+//     .title{
+//       position:absolute;
+//       bottom:0;
+//       left:0;
+//       width:100%;
+//       height:32px;
+//       color: colors(white);
+//       background-image:linear-gradient(transparent, rgba(0, 0, 0, 0.8))
+//     }
+//     h3{font-weight: normal;}
+//   }
+//   .swiper-pagination{
+//     text-align: right;
+//   }
+//   .swiper-pagination-bullet{
+//     margin:0 4px;
+//     background: none;
+//     font-size: 12px;
+//     color: colors(white);
+//     vertical-align: middle;
+//     &:before{
+//       font-family:"zymk" !important;
+//       font-style:normal;
+//       -webkit-font-smoothing: antialiased;
+//       -webkit-text-stroke-width: 0.2px;
+//       -moz-osx-font-smoothing: grayscale;
+//       content: "\e68a";
+//     }
+//   }
+//   .swiper-pagination-bullet-active{
+//     font-size: 16px;
+//     color: colors(primary);
+//     // background-color:colors(primary);
+//   }
+//   .ift-prev,.ift-next{
+//     background: colors(black);
+//     // display: none;
+//   }
+// }
+

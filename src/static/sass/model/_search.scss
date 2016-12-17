@@ -4,9 +4,9 @@
 	margin-top: 12px;
 	float:left;
 	@at-root{
-		&-bd{
+		&>.bd{
 			position: relative;
-			width: 160px;
+			width: 140px;
 			height: 32px;
 			.input{
 				width:100%;
@@ -91,6 +91,7 @@
 				float: right;
 				font-size: fonts(size) * 1.2;
 				color: colors(blue);
+				cursor: pointer;
 			}
 			
 		}
@@ -166,6 +167,15 @@
 				strong{
 					font-weight: normal;
 				}
+			}
+			.no-info{
+				text-align: center;
+				color: colors(dark);
+				padding: 10px 0;
+				strong{
+					color: colors(primary);
+				}
+
 			}
 			.close{
 				font-size: fonts(size) * 1.4;

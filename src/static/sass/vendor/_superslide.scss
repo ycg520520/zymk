@@ -1,0 +1,57 @@
+@import "../config";
+.superSlide{
+	position:relative;
+	.bd{
+		position:relative;
+		li{
+			float: left;
+			img{
+				width:100%;
+				vertical-align:top;
+			}
+		}
+	}
+	.hd{
+		$paginationHeight: 32px;
+		position:absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+		width: 100%;
+		height: $paginationHeight;
+		line-height: $paginationHeight;
+		text-align:center;
+		font-size: 0;
+		li{
+			width: 16px;
+			font-size: fonts(size) * 1.2;
+			display: inline-block;
+			cursor: pointer;
+		}
+	}
+	//下面是前/后按钮代码，如果不需要删除即可
+	.ift-prev,.ift-next {
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		padding: 10px 5px;
+		margin-top: -20px;
+		cursor: pointer;
+		@include opacity(50);
+		background-color: colors(black);
+		color: colors(white);
+		font-size: fonts(size) * 2.4;
+		&:hover{
+			transition:0.3s;
+			@include opacity(75);
+		}
+	}
+	.ift-prev {
+		left: 0;
+		border-radius: 0 3px 3px 0;
+	}
+	.ift-next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+}

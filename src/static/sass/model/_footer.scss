@@ -54,9 +54,11 @@
 	}
 	@at-root .ft-rqCode{
 		text-align: center;
-		font-size: 0;
+		font-size: 0; 
+		*padding-right: 40%;
 		.item{
 			display: inline-block;
+			*float: right;
 			margin: 0 8px;
 		}
 		.thumbnail{
@@ -90,6 +92,7 @@
 				font-size: fonts(size) * 1.2;
 				position: relative;
 				display:inline-block;
+				*float:left;
 				width: 48px;
 				height: 48px;
 				margin-left: 8px;
@@ -141,7 +144,7 @@
 				background-color: colors(green);
 			}
 			.ift-sina{
-				background-color: colors(red);
+				background-color: colors(orange);
 			}
 		}
 	}

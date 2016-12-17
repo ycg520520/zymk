@@ -1,0 +1,132 @@
+/*************** SCROLLBAR BASE CSS ***************/
+.scroll-wrapper {
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative;
+  & > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+
+    &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+    }
+  }
+  &.scroll--rtl {
+    direction: rtl;
+  }
+}
+
+.scroll-element {
+  box-sizing: content-box;
+  display: none;
+  div {
+    box-sizing: content-box;
+  }
+  .scroll-bar, .scroll-arrow {
+    cursor: pointer;
+  }
+  &.scroll-x.scroll-scrollx_visible, &.scroll-y.scroll-scrolly_visible {
+    display: block;
+  }
+}
+
+.scroll-textarea {
+  border: 1px solid colors(gray);
+  border-top-color: colors(dark);
+
+  & > .scroll-content {
+    overflow: hidden !important;
+    & > textarea {
+      border: none !important;
+      box-sizing: border-box;
+      height: 100% !important;
+      margin: 0;
+      max-height: none !important;
+      max-width: none !important;
+      overflow: scroll !important;
+      outline: none;
+      padding: 2px;
+      position: relative !important;
+      top: 0;
+      width: 100% !important;
+      &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+}
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+.scroll-element, .scroll-element div{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  z-index: 10;
+
+}
+.scroll-element {
+  &.scroll-x {
+    width: 100%;
+    height: 8px;
+    bottom: 2px;
+    left: 0;
+  }
+  &.scroll-y {
+    width: 8px;
+    height: 100%;
+    right: 3px;
+    top: 0;
+  }
+  .scroll-element_outer, .scroll-element_track, .scroll-bar {
+    border-radius: 8px;
+  }
+  .scroll-element_outer {
+    overflow: hidden;
+  }
+  .scroll-element_track,.scroll-bar {
+    @include opacity(40)
+  }
+  .scroll-element_track {
+    background-color: colors(light);
+  }
+  .scroll-bar{
+    background-color:colors(gray);
+  }
+  &:hover, &.scroll-draggable{
+    .scroll-bar{
+      background-color: colors(dark);
+    }
+  }
+  &.scroll-x.scroll-scrolly_visible{
+    .scroll-element_track {
+      left: -12px;
+    }
+    .scroll-element_size {
+      left: -12px;
+    }
+  }
+  &.scroll-y.scroll-scrollx_visible{
+    .scroll-element_track {
+      top: -12px;
+    }
+    .scroll-element_size {
+      top: -12px;
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+@import 'config';
+.role{
+  $asideWidth: 230px;
+  $asideSpace: 20px;
+  @at-root{
+    &-main{
+      // 这里不想用用 Overflow避免某些需要展现在盒子模型外侧
+      float: left;
+      width: 100%;
+      margin-right: -100%;
+      .warp-main{
+        margin-right: $asideWidth + $asideSpace;
+      }
+    }
+    &-aside{
+      position: relative;
+      float: right;
+      width: $asideWidth;
+    }
+  }
+}
+

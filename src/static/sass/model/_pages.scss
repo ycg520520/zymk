@@ -4,7 +4,8 @@
 	color: colors(gray);
 	a,span{
 		display: inline-block;
-		width:40px;
+		min-width:30px;
+		padding: 0 5px;
 		height:40px;
 		margin: 0 8px;
 		line-height:40px;
@@ -12,14 +13,24 @@
 		text-align:center;
 		color: colors(darker);
 		font-family:Arial;
-		border-radius:50%;
+		border-radius:20px;
 		vertical-align: middle;
 		transition: .3s ease-in-out;
 		&.prev,&.next{
-			background-color: colors(gray);
-			color: colors(white);
 			font-family: fonts(cn);
 			font-size:fonts(size) * 2.4;
+			color: colors(white);
+		}
+	}
+	span{
+		&.prev,&.next{
+			// color: colors(dark);
+			background-color: colors(gray);
+		}
+	}
+	a{
+		&.prev,&.next{
+			background-color: colors(primary); 
 		}
 	}
 	a:hover{
@@ -36,5 +47,12 @@
 			color: colors(white);
 			background-color: colors(primary); 
 		}
+	}
+	[class^="ift-"]{
+		display: inline-block;
+		width: 30px;
+		vertical-align: top;
+		line-height: 40px;
+		font-size: fonts(size) * 2;
 	}
 }

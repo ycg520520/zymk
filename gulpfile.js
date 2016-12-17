@@ -29,7 +29,7 @@ const config = {
 gulp.task('sass:build',() => {
   return gulp.src(config.sass)
     .pipe($.sourcemaps.init()) // 生产soucrcemap
-    .pipe($.sass())
+    .pipe($.sass({outputStyle: 'compressed'}))
     .on('error', $.sass.logError)
     .pipe($.autoprefixer('last 2 version')) // 自动处理阅览器厂商前缀
     .pipe($.sourcemaps.write('.')) // 将sourcemaps写在当前目录下

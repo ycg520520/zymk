@@ -1,4 +1,8 @@
 @import "../vendor/normalize"; // 同意所有阅览器默认样式
+@import "scrollbar"; // 更改默认滚蛋样式
+html, body{
+	width: 100%;
+}
 body{
 	font-size: fonts(size) * 1.6;
 	color:colors(darker);
@@ -19,9 +23,6 @@ hr{
 	*margin:3px 0 2px 0;
 }
 li{list-style:none;}
-
-// 这是注释
-
-// .ycg{
-// 	color:#000;
-// }
+.fullscreen{
+	overflow: auto;
+}

@@ -24,7 +24,7 @@ function getEntry() {
 }
 
 var entres = getEntry();
-    entres.common=['jquery','cookie','swiper','lazyload','layer','base','common','pseudo']; // 公共文件打包
+    entres.common=['jquery','cookie','placeholder','swiper','layer','base','common','json2','scrollbar','config']; // 公共文件打包
 
 module.exports = {
   cache: true,
@@ -42,15 +42,21 @@ module.exports = {
     alias: {
       jquery: srcDir + '/static/js/plugins/jquery.js',
       cookie: srcDir + '/static/js/plugins/jquery.cookie.js',
+      placeholder: srcDir + '/static/js/plugins/jquery.placeholder.min.js',
       layer: srcDir + '/static/js/plugins/layer/layer.js',
-      swiper: srcDir + '/static/js/plugins/swiper.js',
+      // swiper: srcDir + '/static/js/plugins/swiper.js',
+      // swiper: srcDir + '/static/js/plugins/swiper2.js',
+      swiper: srcDir + '/static/js/plugins/jquery.superslider.js',
       chosen : srcDir + '/static/js/plugins/chosen.jquery.js',
       icheck : srcDir + '/static/js/plugins/icheck.js',
+      validform: srcDir + '/static/js/plugins/validform/validform_v5.3.2.js',
+      // lazyload: srcDir + '/static/js/plugins/jquery.lazyload.js',
+      json2: srcDir + '/static/js/plugins/json2.js',
+      scrollbar: srcDir + '/static/js/plugins/scrollbar.js',
       base: srcDir + '/static/js/models/base.js',
       common: srcDir + '/static/js/models/common.js',
-      validform: srcDir + '/static/js/plugins/validform/validform_v5.3.2.js',
-      lazyload: srcDir + '/static/js/plugins/jquery.lazyload.js',
-      pseudo: srcDir + '/static/js/plugins/jquery.pseudo.js', // 让ie678支持before,after插件
+      config: srcDir + '/static/js/models/config.js',
+      // pseudo: srcDir + '/static/js/plugins/jquery.pseudo.js', // 让ie678支持before,after插件
     }
   },
   module: {

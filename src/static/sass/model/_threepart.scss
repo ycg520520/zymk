@@ -1,33 +1,4 @@
 @import "config";
-@import "fonts/fonts"; // 站点相关字体样式
-@import "model/reset"; // 重设默认样式
-@import "model/grid"; // 栅格栏样式
-@import "model/public"; // 公共样式
-// @import "model/button"; // 按钮样式
-@import "model/header"; // 头部
-@import "model/search"; // 搜索
-@import "model/footer"; // 页脚
-@import "model/list"; // 列表样式
-@import "model/crumb"; // 面包屑
-@import "model/pages"; // 分页
-@import "model/box"; // 盒子基础样式
-// @import "model/share"; // 分享类
-@import "model/tabs"; // tabs 基础样式
-@import "model/browser"; // 阅览器下载
-// @import "model/tips"; // 提示样式
-// @import "model/tags"; // 标签样式
-@import "model/comments"; // 评论样式
-// @import "model/table"; // 评论样式
-// @import "model/form"; // 表单样式
-@import "model/unit"; // 表单样式
-
-// @import "model/site-nav"; // 站点导航
-// @import "model/nav"; // 导航
-// @import "model/validform"; // 注册登录
-// @import "model/scroller"; // 模拟滚动
-@import "vendor/layer"; // layer弹出层
-
-
 
 // 三方登陆样式
 .threepart{

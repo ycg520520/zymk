@@ -1,1 +1,124 @@
 @charset "UTF-8";
+// 排行列表
+.rank{
+  @at-root{
+    &-first,&-second,&-third,&-nor{
+      float:left;
+      width:20px;
+      height:20px;
+      margin:5px 4px 5px 0;
+      line-height:20px;
+      font-family: fonts(family);
+      font-size: fonts(size) * 1.2;
+      text-align: center;
+      color: colors(white);
+      font-style: normal;
+      background: colors(gray);
+      border-radius:50%;
+    }
+    &-first{
+      background-color:colors(primary);
+    }
+    &-second{
+      // background-color:colors(blue);
+      background-color:#ff9450;
+    }
+    &-third{
+      // background-color:colors(green);
+      background-color: #ffbc4e;
+    }
+    &-list{
+      .item{
+        padding:5px 0;
+        border-bottom: 1px dotted colors(gray);
+        font-size: fonts(size) * 1.2;
+        .attr,.charpter{
+          height: 25px;
+          line-height: 20px;
+          color: colors(darker);
+        }
+        .attr-label,.charpter-label{
+          color: colors(dark);
+          margin-right: 5px;
+        }
+        strong{
+          margin: 0 4px;
+          color: lighten(colors(primary),20%);
+        }
+        .title{
+          font-weight: normal;
+          height: 30px;
+          line-height:30px;
+          overflow: hidden;
+          .charpter{
+            font-size: fonts(size) * 1.2;
+            margin-left: 4px;
+            color: colors(gray);
+            font-weight: normal;
+          }
+        }
+
+        &-hd{
+          height:30px;
+          .reward-num{
+            float:right;
+            line-height:30px;
+            margin-left: 10px;
+            color: colors(dark);
+          }
+        }
+        &-bd{
+          display: none;
+          position: relative;
+          height:100px;
+          .thumbnail{
+            float: left;
+            width: 75px;
+            height: 100px;
+            margin-right: 10px;
+            img{
+              width: 100%;
+              height: 100%
+            }
+          }
+          .title{
+            height: 40px;
+            line-height:40px;
+            margin-bottom: 10px;
+            font-size: fonts(size) * 1.8
+          }
+
+          .reward-num{
+            line-height:20px;
+            color: colors(dark);
+          }
+          .rank-num{
+            position:absolute;
+            right: 0;
+            top: 50%;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            margin-top: -32px;
+            border-radius: 50%;
+            font-size: fonts(size) * 1.8;
+            text-align: center;
+            background-color: colors(primary);
+            color: colors(white);
+          }
+        }
+        &:hover,&.active{
+          .item-hd{
+            display: none;
+          }
+          .item-bd{
+            display: block;
+          }
+        }
+      }
+      [class^="ift-"]{
+        color: colors(gray);
+      }
+    }
+  }
+}

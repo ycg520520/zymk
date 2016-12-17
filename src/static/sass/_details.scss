@@ -176,7 +176,12 @@
             border: 1px solid colors(gray);
             border-radius: 3px;
             .desc-con{
-              height: auto;
+              height: 80px;
+            }
+          }
+          .ift-down{
+            &:before{
+              content:'\e645';
             }
           }
         }
@@ -194,13 +199,15 @@
           overflow: hidden;
           height: 40px;
           line-height: 20px;
+          transition: height .3s;
         }
         &-switch{
           height: 20px;
           line-height: 20px;
           text-align: right;
         }
-        .ift-down,.ift-up{
+        .ift-down {
+          color: colors(gray);
           font-size: fonts(size) * 1.2;
         }
       }
@@ -261,11 +268,26 @@
         .ift-share{
           display: block;
         }
+        a{
+          float: none;
+          font-size: inherit;
+          padding-left: inherit;
+          line-height: inherit;
+          height: inherit;
+          background-image: inherit;
+          background-repeat: inherit;
+          cursor: pointer;
+          margin:inherit;
+          color:inherit;
+          &:hover{
+            color: colors(dark);
+          }
+        }
       }
       .ift-read{
         color: colors(primary);
       }
-      .ift-collect{
+      .ift-collect, .ift-rss{
         color: #6ec4e9;
       }
       .ift-gratuity{
@@ -290,54 +312,54 @@
   border-radius: 62px 5px 5px 5px;
   border: 1px solid colors(gray);
   background-color: colors(light);
+  &>.hd{
+    position: relative;
+    height: 96px;
+    .title{
+      position: absolute;
+      top: -21px;
+      right: 0;
+      width: 48px;
+      height: 25px;
+      padding: 5px 0 0 5px;
+      font-size: fonts(size) * 1.4;
+      text-align: center;
+      color: rgba(colors(black),.3);
+      text-shadow: 1px 1px 0 rgba(colors(white), .2);
+      background: url(/static/images/skin.png) no-repeat -245px -75px;
+    }
+  }
+  &>.bd{
+    $colors: #b4dce3;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: fonts(size) * 1.2;
+    color: colors(white);
+    line-height: 1.5;
+    background-color: #b4dce3;
+    &:after{
+      position: absolute;
+      top: -12px;
+      left: 38px;
+      @include triangle(top, 12px, $colors)
+    }
+    .no-info{
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #d9edf1;
+      .ift-sorry{
+        vertical-align: middle;
+        font-size: fonts(size) * 4;
+        margin-right: 8px;
+        // @include opacity(50);
+      }
+    }
+  }
+  
   @at-root{
-    &-hd{
-      position: relative;
-      height: 96px;
-      .title{
-        position: absolute;
-        top: -21px;
-        right: 0;
-        width: 48px;
-        height: 25px;
-        padding: 5px 0 0 5px;
-        font-size: fonts(size) * 1.4;
-        text-align: center;
-        color: rgba(colors(black),.3);
-        text-shadow: 1px 1px 0 rgba(colors(white), .2);
-        background: url(/static/images/skin.png) no-repeat -245px -75px;
-      }
-
-    }
-    &-bd{
-      $colors: #b4dce3;
-      position: relative;
-      margin-top: 20px;
-      padding: 20px;
-      border-radius: 6px;
-      font-size: fonts(size) * 1.2;
-      color: colors(white);
-      line-height: 1.5;
-      background-color: #b4dce3;
-      &:after{
-        position: absolute;
-        top: -12px;
-        left: 38px;
-        @include triangle(top, 12px, $colors)
-      }
-      .no-info{
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
-        color: #d9edf1;
-        .ift-sorry{
-          vertical-align: middle;
-          font-size: fonts(size) * 4;
-          margin-right: 8px;
-          // @include opacity(50);
-        }
-      }
-    }
     &-con{
       height: 100px;
       overflow: hidden;
@@ -475,4 +497,44 @@
 }
 
 
-
+// 相关推荐
+.related{
+  .related-toggle{
+    float: right;
+    margin-right: 5px;
+    ul{
+      float:left;
+      font-size: 0;
+    }
+    li{
+      display: inline-block;
+      padding: 0 2px;
+      height: 46px;
+      line-height: 46px;
+      cursor: pointer;
+      &.active{
+        .ift-smile{
+          font-size: fonts(size) * 1.6;
+          color: colors(primary);
+        }
+      }
+    }
+    .ift-smile{
+      font-size: fonts(size) * 1.1;
+      color: colors(dark);
+    }
+    .ift-prev,.ift-next{
+      line-height: 46px;
+      padding: 0 5px;
+      font-size: fonts(size) * 1.2;
+      color: colors(dark);
+      cursor: pointer;
+    }
+    .ift-prev{
+      float: left;
+    }
+    .ift-next{
+      float: right;
+    }
+  }
+}

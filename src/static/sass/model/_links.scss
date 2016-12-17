@@ -1,6 +1,6 @@
 @charset "UTF-8";
 //友情链接
-.link-box{
+.link{
   margin-top: 40px;
   background-color: colors(light);
 }
@@ -9,6 +9,7 @@
   &>.item{
     float: left;
     width: 12.4%;
+    *width: 12%;
     height: 64px;
     margin-right: 2.2%;
     @include last-child{
@@ -20,7 +21,7 @@
   }
 }
 
-.link{
+.link-list{
   margin-bottom: 24px;
   &>.item{
     float: left;

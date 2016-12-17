@@ -167,20 +167,19 @@
 	.thumbnail{
 		display: block;
 		position:relative;
-		// width:100%;
-		// height:0;
-		// padding-bottom:133.33333%;
+		width:100%;
+		height:0;
+		padding-bottom:133.33333%;
 		background-color:colors(light);
 		img{
-			// position: absolute;
+			position: absolute;
 			width: 100%;
-			// height: 100%;
-			// left:0;
-			// top:0;
+			height: 100%;
+			left:0;
+			top:0;
 		}
 		&>.title,&>.charpter,&>.group-info{
 			position: absolute;
-			height: 20px;
 			bottom: 0;
 			margin: 0;
 			padding: 0 4px;
@@ -188,7 +187,11 @@
 			@include ellipsis;
 			font-size: fonts(size) * 1.2;
 			color: colors(white);
+      box-sizing: border-box;
 		}
+    &>.title,&>.charpter{
+      height: 20px;
+    }
 		&>.charpter{
 			right: 5px;
 			bottom:5px;
@@ -198,25 +201,7 @@
 			border-radius: 3px;
 			background-color: rgba(colors(black), .5)
 		}
-		.group-info{
-			width: 100%;
-			height: 30px;
-			background-image: linear-gradient(rgba(colors(black),0), rgba(colors(black),0.5));
-			padding: 0 10px;
-			.title,.charpter{
-				line-height:30px;
-				color: colors(white);
-			}
-			.title{
-				margin: 0;
-				float: left;
-				font-size: fonts(size) * 1.4;
-			}
-			.charpter{
-				float: right;
-				font-size: fonts(size) * 1.2;
-			}
-		}
+		
 		.score{
 			position: absolute;
 			max-width: 48px;
@@ -243,6 +228,7 @@
 		font-weight: normal;
 		@include ellipsis;
 	}
+
 	.desc{
 		height: 20px;
 		line-height: 20px;
@@ -268,6 +254,28 @@
 			height: 133.33333%;
 		}
 	}
+  .group-info{
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(rgba(colors(black),0), rgba(colors(black),0.5));
+    padding: 0;
+    .title,.charpter{
+      height: 30px;
+      line-height:30px;
+      color: colors(white);
+    }
+    .title{
+      padding-left:10px;
+      margin: 0;
+      float: left;
+      font-size: fonts(size) * 1.4;
+    }
+    .charpter{
+      padding-right:10px;
+      float: right;
+      font-size: fonts(size) * 1.2;
+    }
+  }
 }
 
 // 打赏列表
@@ -331,11 +339,42 @@
     }
     strong{
       font-weight: normal;
-      color: colors(primary);
+      color: lighten(colors(primary),20%);
       margin: 0 2px;
     }
   }
+  .ift-reward{
+    color: colors(gray);
+    @extend .ift-gratuity;
+  }
 }
+.align-center{
+  .reward-list{
+    .ift-reward{
+      color: colors(gray);
+      @extend .ift-fans;
+    }
+  }
+  .rank-list{
+    .ift-gratuity{
+      @extend .ift-rss;
+    }
+  }
+}
+.align-right{
+  .reward-list{
+    .ift-reward{
+      color: colors(gray);
+      @extend .ift-ticket;
+    }
+  }
+  .rank-list{
+    .ift-gratuity{
+      @extend .ift-ticket;
+    }
+  }
+}
+
 .fans-list{
   &>.item{
     height: 50px;
@@ -357,117 +396,6 @@
     .reward-num{
       line-height: 40px;
       color: colors(dark);
-    }
-  }
-}
-
-// 排行列表
-.rank{
-  @at-root{
-    &-first,&-second,&-third,&-nor{
-      float:left;
-      width:20px;
-      height:20px;
-      margin:5px 4px 5px 0;
-      line-height:20px;
-      font-family: fonts(family);
-      font-size: fonts(size) * 1.2;
-      text-align: center;
-      color: colors(white);
-      font-style: normal;
-      background: colors(gray);
-      border-radius:50%;
-    }
-    &-first{
-      background-color:colors(primary);
-    }
-    &-second{
-      background-color:colors(blue);
-    }
-    &-third{
-      background-color:colors(green);
-    }
-    &-list{
-      .item{
-        padding:5px 0;
-        border-bottom: 1px dotted colors(gray);
-        font-size: fonts(size) * 1.2;
-        .attr{
-          height: 20px;
-          line-height: 20px;
-          color: colors(darker);
-        }
-        .attr-label{
-          color: colors(dark);
-          margin-right: 5px;
-        }
-        strong{
-          margin: 0 4px;
-          color: colors(primary);
-        }
-        .title{
-          font-weight: normal;
-          height: 30px;
-          line-height:30px;
-        }
-
-        &-hd{
-          height:30px;
-          .reward-num{
-            float:right;
-            line-height:30px;
-            margin-left: 10px;
-            color: colors(dark);
-          }
-        }
-        &-bd{
-          display: none;
-          position: relative;
-          height:100px;
-          .thumbnail{
-            float: left;
-            width: 75px;
-            height: 100px;
-            margin-right: 10px;
-            img{
-              width: 100%;
-              height: 100%
-            }
-          }
-          .title{
-            height: 40px;
-            line-height:40px;
-            margin-bottom: 10px;
-            font-size: fonts(size) * 1.8
-          }
-          .reward-num{
-            line-height:20px;
-            color: colors(dark);
-          }
-          .rank-num{
-            position:absolute;
-            right: 0;
-            top: 50%;
-            width: 64px;
-            height: 64px;
-            line-height: 64px;
-            margin-top: -32px;
-            border-radius: 50%;
-            font-size: fonts(size) * 1.8;
-            text-align: center;
-            background-color: lighten(colors(primary),20%);
-            color: colors(white);
-          }
-        }
-        &:hover,&.active{
-          .item-hd{
-            display: none;
-          }
-          .item-bd{
-            display: block;
-          }
-        }
-      }
     }
   }
 }

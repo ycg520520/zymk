@@ -1,0 +1,107 @@
+@import "config";
+@import "fonts/fonts"; // 站点相关字体样式
+@import "model/reset"; // 重设默认样式
+@import "model/grid"; // 栅格栏样式
+@import "model/public"; // 公共样式
+// @import "model/button"; // 按钮样式
+@import "model/header"; // 头部
+@import "model/search"; // 搜索
+@import "model/footer"; // 页脚
+@import "model/list"; // 列表样式
+@import "model/rank"; // 排行列表样式
+@import "model/crumb"; // 面包屑
+@import "model/pages"; // 分页
+@import "model/box"; // 盒子基础样式
+// @import "model/share"; // 分享类
+@import "model/tabs"; // tabs 基础样式
+@import "model/browser"; // 阅览器下载
+// @import "model/tips"; // 提示样式
+// @import "model/tags"; // 标签样式
+// @import "model/comments"; // 评论样式
+// @import "model/table"; // 评论样式
+// @import "model/form"; // 表单样式
+@import "model/unit"; // 表单样式
+@import "model/threepart"; // 表单样式
+
+// @import "model/site-nav"; // 站点导航
+// @import "model/nav"; // 导航
+// @import "model/validform"; // 注册登录
+@import "vendor/scrollbar"; // 模拟滚动
+@import "vendor/layer"; // layer弹出层
+// @import 'vendor/swiper';
+@import 'vendor/superslide';
+.superSlide{
+  overflow: hidden;
+  .bd{
+    li{
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      
+      a{
+        display: block;
+        &>.title{
+          position: absolute;
+          z-index: 3;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 32px;
+          color: colors(white);
+          background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8))
+        }
+      }
+    }
+    
+  }
+  &.full-screen{
+    $slideHeight: 560px;
+    min-width:960px;
+    height: $slideHeight;
+    .bd{
+      height: $slideHeight;
+      ul{
+        height: $slideHeight;
+      }
+      li{
+        height: $slideHeight;
+        a{
+          height: $slideHeight;
+        }
+      }
+    }
+    .hd{
+      text-align: right;
+      // background: colors(black);
+      // @include opacity(60);
+      li{
+        background: none;
+        font-size: 12px;
+        color: colors(white);
+        line-height: 33px;
+        vertical-align: middle;
+        text-align: center;
+        &:before{
+          font-family:"zymk" !important;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+          content: "\e68a";
+        }
+        &.active{
+          font-size: 16px;
+          color: colors(primary);
+        }
+      }
+    }
+    .ift-prev,.ift-next{
+      // display: none;
+      background: colors(black);
+    }
+  }
+}
+
+
+
+

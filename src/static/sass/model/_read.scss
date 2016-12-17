@@ -1,0 +1,195 @@
+@import 'config';
+.headpage, .footpage {
+  position: relative;
+  padding: 20px 0;
+  // background: colors(white);
+  height: 40px;
+  font-size: 0;
+  z-index: 1;
+  &>.btn{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 5px;
+    padding: 5px 20px;
+    color: colors(white);
+    font-size: fonts(size) * 1.4;
+    background-color: colors(blue);
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    &:hover{
+      background-color: lighten(colors(blue), 10%);
+    }
+  }
+  .selectpage,.readmode{
+    height: 30px;
+    min-width: 120px;
+    margin: 0 5px;
+    vertical-align: top;
+    font-size: fonts(size) * 1.4;
+  }
+}
+
+.comicpage{
+  .comicimg{
+
+  }
+  .loading{
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    line-height: 120px;
+    border: 1px dotted colors(gray);
+    color: colors(gray);
+    font-size: fonts(size) * 1.4;
+    background-color: colors(white);
+    border-radius: 5px;
+  }
+  .loaderr{
+    font-size: 0;
+    .btn{
+      display:inline-block;
+      padding: 4px 8px;
+      margin: 0 8px;
+      font-size: fonts(size) * 1.2;
+      color: colors(white);
+      background-color: colors(primary);
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+  }
+  .page-info{
+    text-align: center;
+    padding: 10px 0;
+    font-size: fonts(size) * 1.2;
+  }
+}
+
+.bgcolor {
+  display: inline-block;
+  font-size: fonts(size) * 1.2;
+  cursor: pointer;
+  &:hover{
+    position: relative;
+    background-color: colors(primary);
+    ul{
+      display: block;
+    }
+  }
+  ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    li{
+      height: 25px;
+      line-height: 25px;
+    }
+  }
+}
+
+
+.readend{
+  max-width: 560px;
+  min-width: 400px;
+  border-radius: 5px;
+  background-color: colors(white);
+  display:none;
+  &>.bd{
+    padding: 40px 20px;
+  }
+  .title{
+    font-size: fonts(size) * 1.8;
+    text-align: center;
+    line-height: 1.5;
+    strong{
+      color: colors(primary);
+    }
+  }
+  .switch{
+    padding-top: 40px;
+    height: 128px;
+    font-size: 0;
+    li {
+      float:left;
+      width: 33.333%;
+      height: 128px;
+      font-size: fonts(size) * 1.2;
+      text-align: center;
+      color: colors(dark);
+      &:hover{
+        color: colors(primary);
+      }
+    }
+    [class^="ift-"]{
+      display: block;
+      width: 72px;
+      height: 72px;
+      margin: 12px auto 6px;
+      border-radius: 50%;
+      background-color: colors(blue);
+      text-align: center;
+      line-height: 72px;
+      color: colors(white);
+      font-size: fonts(size) * 3;
+      cursor: pointer;
+      &:hover{
+        @include opacity(75);
+      }
+    }
+    .ift-prev{
+      text-indent: -4px;
+    }
+    .ift-next{
+      text-indent: 4px;
+    }
+    .ift-charpter{
+      width: 96px;
+      height: 96px;
+      margin-top: 0;
+      line-height: 96px;
+      font-size: fonts(size) * 4;
+      background-color: colors(primary);
+    }
+  }
+  &>.ft{
+    padding: 20px;
+    line-height: 20px;
+    font-size: fonts(size) * 1.2;
+    background-color: colors(light);
+  }
+  .share{
+    padding-top: 10px;
+    text-align: center;
+    a{
+      margin: 0 10px;
+    }
+  }
+}
+.layui-layer-setwin .readend-close{
+  border-radius: 50%;
+  position: absolute;
+  right: -28px;
+  top: -28px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  font-size: fonts(size) * 2.4;
+  color: colors(white);
+  cursor: pointer;
+  background-color: colors(primary);
+}
+
+.ggbox {
+  width: 960px;
+  overflow: hidden;
+  margin: 0 auto
+}
+.ggwarp {
+  overflow: hidden
+}

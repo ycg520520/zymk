@@ -8,7 +8,7 @@
 node_modules/*
 bower_components/*
 #修改bower安装的三方组件
-src/static/js/plugins*
+src/static/js/plugins/*
 src/upload/*
 dist/*
 npm-debug.log*

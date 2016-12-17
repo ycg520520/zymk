@@ -1,16 +1,26 @@
 'use strict';
-(function() {
-  var randomColorArr = ['c1','c2','c3','c4','c5']; // 对应css样式
-  var  objTags = $('#randomColor .tags');
-  var tagsLen = objTags.length;
-  objTags.each(function(i,v){
+$(function(){
+  randomTagsColor($('#randomColor .tags'));
+});
+
+/**
+ * [randomTagsColor 随机指定背景颜色]
+ * @param  {[object]} obj [要指定的随机jquery对象]
+ * @param  {[array]} arr [要随机的颜色类名]
+ */
+function randomTagsColor(obj, arr) {
+  var randomColorArr = arr || ['c1','c2','c3','c4','c5']; // 对应css样式
+  var tagsLen = obj.length;
+  obj.each(function(i,v){
     var colorArrLen = randomColorArr.length;
     var random = 0;
     if(colorArrLen < i){
       random = Math.floor(Math.random() * colorArrLen);
     }else{
       random = Math.floor(Math.random() * tagsLen);
-      if(colorArrLen <= random) random = random - colorArrLen;
+      if(colorArrLen <= random){
+        random = random - colorArrLen;
+      }
     }
     
     $(this).addClass(randomColorArr[random<0?0:random]);
@@ -20,7 +30,6 @@
     if(colorArrLen <= i){
       randomColorArr.splice(random,1)
     }
-
    })
-}())
+}
 

@@ -3,7 +3,7 @@
     <!-- 站点logo 开始 -->
     <div id="logo">
       <a href="/" class="figuire">
-        <i class="ift-logo"><img src="static/images/logo.png" alt="买购网-www.maigouwang.com"></i>
+        <i class="ift-logo"><img src="../static/images/logo.png" alt="买购网-www.maigouwang.com"></i>
         <i class="ift-maigouwang"></i>
       </a>
       <span class="slogo">年少有梦,  青春有爱</span>
@@ -12,7 +12,7 @@
     <!-- 网站导航 开始 -->
     <div id="nav">
       <ul>
-        <li><a href="">首页</a></li>
+        <li class="active"><a href="">首页</a></li>
         <li><a href="">分类</a></li>
         <li><a href="">新番</a></li>
         <li><a href="">排行</a></li>
@@ -28,7 +28,7 @@
     <div class="aside">
       <!-- 站内搜索 开始 -->
       <form action="#" method="post" class="search">
-        <div class="search-bd">
+        <div class="bd">
           <input type="text" name="search" placeholder="输入漫画斗罗大陆" class="input" id="search">
           <button type="submit" class="search-submit" id="J_search_btn"><label for="search" class="ift-search"></label></button>
           <!-- 搜索输入关联下拉列表 开始 -->
@@ -62,108 +62,293 @@
       <!-- 站内搜索 结束 -->
       <ul id="aside-nav">
         <li class="user">
-          <div class="user-hd">
+          <div class="hd">
             <i class="ift-user"></i>
           </div>
-          <div class="user-bd tabs tabs-switch">
-            <div class="tabs-hd">
+          <div class="bd tabs tabs-switch">
+            <div class="hd">
               <a href="#" class="logout green">退出</a> 
               <ul>
-                <li class="active">我的收藏</li>
+                <li class="active">我的订阅</li>
                 <li>阅读历史</li>
               </ul>
-              <a href="#" class="clean blue">清空</a>
+              <span id="J_clean_userData" class="clean blue">清空</span>
               <i class="modify"></i>
             </div>
-            <div class="tabs-bd">
-              <div class="tabs-item">
-                <ul class="comic-list col3 clearfix user-collect">
-                  <li class="item">
-                    <a href="">
+            <div class="bd">
+              <div class="tabs-item user-collect">
+                <div class="scroll" style="height: 235px;">
+                  <ul class="comic-list clearfix">
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/1.jpg" alt=""/>
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">勇者是女孩</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/2.jpg" alt=""/>
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">雀灵神域</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
                       <div class="thumbnail">
-                        <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/1.jpg" alt=""/>
-                        <h3 class="title">勇者是女孩</h3>
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/3.jpg" alt="">
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                        <div class="group-info">
+                          <h3 class="title">哑舍</h3>
+                        </div>
                       </div>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/4.jpg" alt="">
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">愚人之旅</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/5.jpg" alt="">
+                          <div class="group-info">
+                            <h3 class="title">暴走邻家</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/6.jpg" alt="">
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">第七魔女</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/1.jpg" alt=""/>
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">勇者是女孩</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/2.jpg" alt=""/>
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">雀灵神域</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
                       <div class="thumbnail">
-                        <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/2.jpg" alt=""/>
-                        <h3 class="title">雀灵神域</h3>
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/3.jpg" alt="">
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                        <div class="group-info">
+                          <h3 class="title">哑舍</h3>
+                        </div>
                       </div>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <div class="thumbnail">
-                      <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/3.jpg" alt="">
-                      <h3 class="title">哑舍</h3>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <div class="thumbnail">
-                        <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/4.jpg" alt="">
-                        <h3 class="title">愚人之旅</h3>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <div class="thumbnail">
-                        <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/5.jpg" alt="">
-                        <h3 class="title">暴走邻家</h3>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <div class="thumbnail">
-                        <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/6.jpg" alt="">
-                        <h3 class="title">第七魔女</h3>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/4.jpg" alt="">
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">愚人之旅</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/5.jpg" alt="">
+                          <div class="group-info">
+                            <h3 class="title">暴走邻家</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="">
+                        <div class="thumbnail">
+                          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/6.jpg" alt="">
+                          <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                          <div class="group-info">
+                            <h3 class="title">第七魔女</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="tabs-item hide">
-                <ul class="comic-list user-history">
-                  <li class="item">
-                    <div class="thumbnail">
-                      <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/7.jpg" alt=""/>
-                    </div>
-                    <div class="info">
-                      <h3 class="title"><a href="">勇敢者是女孩</a></h3>
-                      <p class="time">10分钟前</p>
-                      <p class="attr">
-                        <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
-                      </p>
-                      <p class="attr">
-                        <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
-                      </p>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="thumbnail">
-                      <img class="lazyload" src="static/images/space3x4.gif" data-src="upload/comic_cover/8.jpg" alt=""/>
-                    </div>
-                    <div class="info">
-                      <h3 class="title"><a href="">愚人之旅</a></h3>
-                      <p class="time">
-                        2016.11.17
-                      </p>
-                      <p class="attr">
-                        <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
-                      </p>
-                      <p class="attr">
-                        <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+              <div class="tabs-item user-history hide">
+                <div class="scroll">
+                  <ul class="comic-list">
+                    <li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/7.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">勇敢者是女孩</a></h3>
+                        <p class="time">10分钟前</p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/8.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">愚人之旅</a></h3>
+                        <p class="time">
+                          2016.11.17
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li><li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/7.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">勇敢者是女孩</a></h3>
+                        <p class="time">10分钟前</p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/8.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">愚人之旅</a></h3>
+                        <p class="time">
+                          2016.11.17
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li><li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/7.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">勇敢者是女孩</a></h3>
+                        <p class="time">10分钟前</p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/8.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">愚人之旅</a></h3>
+                        <p class="time">
+                          2016.11.17
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li><li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/7.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">勇敢者是女孩</a></h3>
+                        <p class="time">10分钟前</p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="thumbnail">
+                        <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/8.jpg" alt=""/>
+                      </div>
+                      <div class="info">
+                        <h3 class="title"><a href="">愚人之旅</a></h3>
+                        <p class="time">
+                          2016.11.17
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">阅读至:</span> <a href="#">第2话  破晓</a>
+                        </p>
+                        <p class="attr">
+                          <span class="attr-label">下一话:</span> <a href="#">第3话  终于要说再见</a>
+                        </p>
+                        <div class="opt-del"><i class="ift-del"></i><span class="text">删除</span></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="tabs-ft">
+            <div class="ft">
               <!-- <a href="#">用户中心</a> -->
               <a href="#" class="green" id="J_user">登录</a> <span class="orange">后将能永久保存记录并获得更新通知</span>
             </div>

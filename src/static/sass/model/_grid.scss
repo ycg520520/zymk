@@ -10,7 +10,7 @@ $max_width: 1190px;
 $def_gutter: 0px; //槽间距
 $columns: 24;
 @include auto_grids; //自动创建栅格类
-
+.col-8{*width:33%;}
 // 对盒子模型对齐方式
 .align-left{
   margin: 0 auto 0 0;
