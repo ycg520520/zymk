@@ -1,0 +1,110 @@
+@import 'config';
+.rank{
+  $asideWidth: 230px;
+  $asideSpace: 20px;
+  @at-root{
+    &-main{
+      // 这里不想用用 Overflow避免某些需要展现在盒子模型外侧
+      float: right;
+      width: 100%;
+      margin-left: -100%;
+      .warp-main{
+        margin-left: $asideWidth + $asideSpace;
+      }
+    }
+    &-aside{
+      position: relative;
+      float: left;
+      width: $asideWidth;
+      .ift-classify{
+        font-size: fonts(size) * 2.4;
+      }
+    }
+  }
+}
+
+// 排行页面
+.rank-type{
+  &>.hd{
+    padding: 16px 0 8px 0;
+    font-size: fonts(size) * 1.4;
+    color: colors(darker);
+  }
+  &>.bd{
+    font-size: 0;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted colors(gray);
+    @include last-child{
+      border-bottom: 0;
+    }
+    a{
+      font-size: fonts(size) * 1.2;
+      display: block;
+      height: 20px;
+      line-height: 19px;
+      padding: 0 8px;
+      margin:0 6px 6px 0;
+      border-radius: 3px;
+      &:hover,&.active{
+        color: colors(white);
+        background-color: colors(primary);
+      }
+    }
+  }
+}
+
+.rank-type-box{
+  position: relative;
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    width: 0;
+    border-right: 1px dotted colors(gray);
+  }
+  &:after {
+    left: 32.666666%;
+  }
+  &:before {
+    left: 67.666666%;
+  }
+  .rank-list {
+    width: 85%;
+  }
+  .tabs-item {
+    margin: 0 10px;
+  }
+  .rank-list {
+    line-height: 30px;
+    font-size: fonts(size) * 1.4;
+    .item{
+      height:30px;
+      @include ellipsis;
+    }
+    .rank-num{
+      display: inline-block;
+      background-color: colors(light);
+      height: 20px;
+      margin-right: 4px;
+      min-width: 12px;
+      padding: 0 4px;
+      text-align: center;
+      line-height: 20px;
+      border-radius: 11px;
+      color: colors(dark);
+      font-size: fonts(size) * 1.2;
+      border:1px solid colors(gray);
+    }
+    .count-num{
+      float: right;
+      border-radius: 50%;
+      font-size: fonts(size) * 1.2;
+      color: colors(dark);
+      strong{
+        color: colors(primary);
+      }
+    }
+  }
+}
+

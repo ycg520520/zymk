@@ -1,7 +1,14 @@
 // Opacity
 // lte8使用filter兼容
-@mixin opacity($opacity:50) {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity)";
-  filter: alpha(opacity=$opacity);
-  opacity: $opacity / 100;
+@mixin opacity($opacity:50,$important:false) {
+  @if $important{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity)"!important;
+    filter: alpha(opacity=$opacity)!important;
+    opacity: $opacity / 100 !important;
+  }@else{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity)";
+    filter: alpha(opacity=$opacity);
+    opacity: $opacity / 100;
+  }
+  
 }

@@ -4,47 +4,46 @@
 	<meta charset="UTF-8">
 	<!--#include virtual="/app/public/head.html"-->
 	<link rel="stylesheet" type="text/css" href="../static/css/read.css">
-  <script>
-  // window.comic_info = ;
-  </script>
-<script src="../static/js/common.js"></script>
-<script src="../static/js/read.js"></script>
+  <!--[if lt IE 8]>
+  <script src="/static/js/json2.js"></script>
+  <![endif]-->
+  <script src="../static/js/base.js"></script>
+  <script src="../static/js/pc_read.js"></script>
 </head>
-<body class="fullscreen">
+<body class="read-view">
 <div class="container">
-  <div id="header">
+  <div class="header">
     <div class="row">
     <div class="crumbs"><a href="/">知音漫客</a>&gt;<a href="#">偷星九月天漫画</a></div>
-    <h1 class="title">第402话 装备</h1>
+    <h1 class="title" title="第402话 装备">第402话 装备</h1>
     <div class="pages-num"><strong>1</strong>/<span class="total-pages">20</span></div>
     </div>
   </div>
   <div id="content">
-
     <div class="headpage">
-      <!-- <a href="#" class="btn prevbook">上一章</a> -->
+      <a href="#" class="btn prevbook">上一章</a>
       <span class="btn prevpage">上一页</span>
       <select class="selectpage"></select>
-      <!-- <select class="readmode"></select> -->
-      <!-- <span class="btn bgcolor"></span> -->
+      <select class="readmode"></select>
+      <span class="btn bgcolor"></span>
       <span class="btn nextpage">下一页</span>
-      <!-- <a href="#" class="btn nextbook">下一章</a> -->
+      <a href="#" class="btn nextbook">下一章</a>
     </div>
     <div class="comiclist">
       <script type="text/javascript">
       __cr.init({
-        // chapter_addr: 'J/绝世唐门/90话/',
-        chapter_addr: 'O(5I(H<(EH(<<(H9(<:(;I5(H9(;5(EF(H7(ED(D4(H;(;3(;8(H7(E<(;E(H:(<H(E6(5I(H:(DF(DF86(H;(DI(<G(5I',
+        //chapter_addr: 'J/绝世唐门/90话/',
+       chapter_addr: 'O(5I(H<(EH(<<(H9(<:(;I5(H9(;5(EF(H7(ED(D4(H;(;3(;8(H7(E<(;E(H:(<H(E6(5I(H:(DF(DF86(H;(DI(<G(5I',
         start_var: 1,
         end_var: 24,
         comic_id: 286,
         comic_name: '斗罗大陆',
-        charpter_id: 173673,
-        charpter_name: '第90话 唐门绝学',
+        chapter_id: 173673,
+        chapter_name: '第90话 唐门绝学',
         nextid: 1216041,
         nextname: '第91话 唐门绝学2',
-        previd:1216040,
-        prevname:'第89话 1唐门绝学',
+        // previd:1216040,
+        // prevname:'第89话 1唐门绝学',
         readmode: 1, // 阅读模式
         maxpreload: 5, // 预加载页数
         defaultminline: 1, // 默认线路
@@ -53,13 +52,13 @@
       </script>
     </div>
     <div class="footpage">
-      <!-- <a href="#" class="btn prevbook">上一章</a> -->
+      <a href="#" class="btn prevbook">上一章</a>
       <a href="#" class="btn prevpage">上一页</a>
       <select class="selectpage"></select>
-      <!-- <select class="readmode"></select> -->
-      <!-- <span class="btn bgcolor"></span> -->
+      <select class="readmode"></select>
+      <span class="btn bgcolor"></span>
       <a href="#" class="btn nextpage">下一页</a>
-      <!-- <a href="#" class="btn nextbook">下一章</a> -->
+      <a href="#" class="btn nextbook">下一章</a>
     </div>
   </div>
   
@@ -68,7 +67,7 @@
       <h2 class="title">您已阅读完毕 <strong>偷星九月天第402话</strong> , 您还可以</h2>
       <ul class="switch clearfix">
         <li class="prev"><i class="ift-prev"></i><span class="text">上一话第401话</span></li>
-        <li class="chapter"><i class="ift-charpter"></i><span class="text">偷星九月天漫画目录</span></li>
+        <li class="chapter"><i class="ift-chapter"></i><span class="text">偷星九月天漫画目录</span></li>
         <li class="next"><i class="ift-next"></i><span class="text">立即阅读下一话</span></li>
       </ul>
     </div>
@@ -100,13 +99,13 @@
     <li class="item">
       <div class="hd" title="章节">
         <span class="text">章</span>
-        <i class="ift-charpter"></i>
+        <i class="ift-chapter"></i>
       </div>
       <div class="bd">
-        <div class="charpter-box">
+        <div class="chapter-box">
         <div class="hd"><a href="#">上一章</a><a href="#" class="catalog">目录</a><a href="#">下一章</a></div>
         <div class="bd hide">
-          <ul class="charpter-list">
+          <ul class="chapter-list">
             <li><a href="">预告1</a></li>
             <li><a href="">第1话</a></li>
             <li><a href="">第2话</a></li>
@@ -228,7 +227,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/1.jpg">
-              <span class="charpter">第14话 狙击者</span>
+              <span class="chapter">第14话 狙击者</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">勇者是女孩</a></h3>
@@ -238,7 +237,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/2.jpg">
-              <span class="charpter">第14话 黑暗降临</span>
+              <span class="chapter">第14话 黑暗降临</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">雀灵神域</a></h3>
@@ -248,7 +247,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/3.jpg">
-              <span class="charpter">第32话 无字牌</span>
+              <span class="chapter">第32话 无字牌</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">哑舍</a></h3>
@@ -258,7 +257,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/4.jpg">
-              <span class="charpter">第8话 满月</span>
+              <span class="chapter">第8话 满月</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">愚人之旅</a></h3>
@@ -268,7 +267,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/5.jpg">
-              <span class="charpter">第32话 无字牌</span>
+              <span class="chapter">第32话 无字牌</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">大清第一男秘</a></h3>
@@ -278,7 +277,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/6.jpg">
-              <span class="charpter">第14话 狙击者</span>
+              <span class="chapter">第14话 狙击者</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">仙灵传</a></h3>
@@ -288,7 +287,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/7.jpg">
-              <span class="charpter">第14话 黑暗降临</span>
+              <span class="chapter">第14话 黑暗降临</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">卡灵</a></h3>
@@ -298,7 +297,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/8.jpg">
-              <span class="charpter">第32话 无字牌</span>
+              <span class="chapter">第32话 无字牌</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">洛小妖</a></h3>
@@ -308,7 +307,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/9.jpg">
-              <span class="charpter">第8话 满月</span>
+              <span class="chapter">第8话 满月</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">我是天庭扫把星</a></h3>
@@ -318,7 +317,7 @@
           <li class="item">
             <a href="" class="thumbnail">
               <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/10.jpg">
-              <span class="charpter">第8话 满月</span>
+              <span class="chapter">第8话 满月</span>
               <span class="score">7.4</span></a>
             <div class="info">
               <h3 class="title"><a href="">妹sister</a></h3>

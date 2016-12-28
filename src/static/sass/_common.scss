@@ -1,5 +1,5 @@
 @import "config";
-@import "fonts/fonts"; // 站点相关字体样式
+@import "fonts"; // 站点相关字体样式
 @import "model/reset"; // 重设默认样式
 @import "model/grid"; // 栅格栏样式
 @import "model/public"; // 公共样式
@@ -27,17 +27,17 @@
 // @import "model/nav"; // 导航
 // @import "model/validform"; // 注册登录
 @import "vendor/scrollbar"; // 模拟滚动
-@import "vendor/layer"; // layer弹出层
+// @import "vendor/layer"; // layer弹出层
 // @import 'vendor/swiper';
 @import 'vendor/superslide';
 .superSlide{
   overflow: hidden;
   .bd{
+    
     li{
       position: relative;
       z-index: 1;
       width: 100%;
-      
       a{
         display: block;
         &>.title{
@@ -58,6 +58,7 @@
     $slideHeight: 560px;
     min-width:960px;
     height: $slideHeight;
+    background: colors(black);
     .bd{
       height: $slideHeight;
       ul{

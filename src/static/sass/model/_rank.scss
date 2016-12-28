@@ -32,12 +32,12 @@
         padding:5px 0;
         border-bottom: 1px dotted colors(gray);
         font-size: fonts(size) * 1.2;
-        .attr,.charpter{
+        .attr,.chapter{
           height: 25px;
           line-height: 20px;
           color: colors(darker);
         }
-        .attr-label,.charpter-label{
+        .attr-label,.chapter-label{
           color: colors(dark);
           margin-right: 5px;
         }
@@ -50,7 +50,7 @@
           height: 30px;
           line-height:30px;
           overflow: hidden;
-          .charpter{
+          .chapter{
             font-size: fonts(size) * 1.2;
             margin-left: 4px;
             color: colors(gray);
@@ -91,6 +91,9 @@
           .reward-num{
             line-height:20px;
             color: colors(dark);
+            strong {
+              color: colors(primary);
+            }
           }
           .rank-num{
             position:absolute;
@@ -106,6 +109,7 @@
             background-color: colors(primary);
             color: colors(white);
           }
+          
         }
         &:hover,&.active{
           .item-hd{

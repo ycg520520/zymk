@@ -11,7 +11,7 @@ body{
   padding-top:$headerHeight;
 }
 
-#header{
+.header{
   position: fixed;
   left: 0;
   top: 0;
@@ -193,7 +193,7 @@ body{
     color: colors(dark);
     line-height: 40px;
   }
-  .charpter-box{
+  .chapter-box{
     width: 200px;
     &>.hd{
       padding: 8px 0;
@@ -213,7 +213,7 @@ body{
       }
     }
   }
-  .charpter-list{
+  .chapter-list{
     line-height: 30px;
     max-height: 180px;
     overflow-y: auto;
@@ -304,6 +304,7 @@ body{
       width: 32px;
       height: 32px;
       margin: 0 3px;
+      padding:0;
       text-align: center;
       line-height: 32px;
       border-radius: 16px;
@@ -395,3 +396,16 @@ body{
     right: 0;
   }
 }
+
+.read-view{
+  overflow: auto;
+  transition:all .3s;
+  padding-top: 72px;
+}
+.fullscreen{
+  padding-top: 0;
+  .header{
+    display: none;
+  }
+}
+

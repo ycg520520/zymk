@@ -3,15 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<!--#include virtual="/app/public/head.html"-->
-  <link rel="stylesheet" type="text/css" href="../static/css/all.css">
-	<link rel="stylesheet" type="text/css" href="http://res.layui.com/layui/build/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/pc_all.css">
 </head>
-<body>
+<body class="top-padding">
 <div class="container">
   <!-- 面包屑 开始 -->
   <div class="row">
     <div class="crumb">
-      <em>当前位置</em> > <a href="#">知音漫客</a> > <a href="#">少女漫画</a> > <strong>偷星九月天</strong>
+      <em>当前位置</em> > <a href="#" title="知音漫客">知音漫客</a> > <a href="#" title="少女漫画">少女漫画</a> > <strong title="偷星九月天">偷星九月天</strong>
     </div>
   </div>
   <!-- 面包屑 结束 -->
@@ -19,7 +18,7 @@
     <div class="detail-main">
       <div class="warp-main">
         <div class="comic-cover">
-          <img src="../static/images/space3x4.gif" data-src="../upload/comic_cover/1.jpg">
+          <img src="../static/images/space3x4.gif" alt="seo_cover" data-src="../upload/comic_cover/1.jpg">
         </div>
         <div class="comic-intro">
           <!-- 漫画评分 -->
@@ -31,24 +30,37 @@
             <div class="score-num"><strong>8.9</strong>分</div>
             <div class="rated"><strong>25</strong>人评价</div>
           </div>
-          <h1 class="title" data-comic_id="268">偷星九月天<span class="update-time">每周一、四更新</span></h1>
+          <div class="title-warper">
+            <h1 class="title" data-comic_id="268" title="偷星九月天">偷星九月天</h1><span class="update-time">每周一、四更新</span>
+          </div>
           <!-- 漫画属性 -->
           <div class="attr" id="randomColor">
-            <span class="tags">连载</span>
-            <span class="tags">少女</span>
-            <span class="tags">恋爱</span>
-            <span class="tags">冒险</span>
-            <span class="tags">玄幻</span>
-            <span class="tags">连载</span>
-            <span class="tags">少女</span>
-            <span class="tags">恋爱</span>
-            <span class="tags">冒险</span>
-            <span class="tags">玄幻</span>
+            <a href="#" title="连载" class="tags">连载</a>
+            <a href="#" title="少女" class="tags">少女</a>
+            <a href="#" title="恋爱" class="tags">恋爱</a>
+            <a href="#" title="冒险" class="tags">冒险</a>
+            <a href="#" title="玄幻" class="tags">玄幻</a>
+            <a href="#" title="连载" class="tags">连载</a>
+            <a href="#" title="少女" class="tags">少女</a>
+            <a href="#" title="恋爱" class="tags">恋爱</a>
+            <a href="#" title="冒险" class="tags">冒险</a>
+            <a href="#" title="玄幻" class="tags">玄幻</a>
           </div>
           <!-- 漫画描述 -->
-          <div class="desc">
+          <div class="desc" id="comic_desc">
             <div class="desc-bd">
-              <div class="desc-con">随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</div>
+              <div id="layerOpenCon">
+                <div class="desc-con">
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                  <p>随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起随着第六天魔王自我肢解，被后人称作「天魔遗物」的魔舍利子散落人间！欲望、野心、痛苦、挣扎……人类的情感与「天魔遗物」缠绕到一起...</p>
+                </div>
+              </div>
               <div class="desc-switch">
                 <i class="ift-down"></i>
               </div>
@@ -59,40 +71,40 @@
             <ul>
               <li class="item" id="read">
                 <i class="ift-read"></i>
-                <span class="type">阅读</span>
-                <p class="type-show">1亿4521万</p>
+                <span class="type" title="阅读">阅读</span>
+                <p class="type-show" title="1亿4521万">1亿4521万</p>
               </li>
-              <li class="item" id="collect" data-comic="2323,sdfsfsfs">
+              <li class="item" id="collect">
                 <!-- <i class="ift-collect"></i> -->
                 <i class="ift-rss"></i>
-                <span class="type">订阅</span>
-                <p class="type-show"><strong>88731</strong>人</p>
+                <span class="type" title="订阅">订阅</span>
+                <p class="type-show" title="88731人"><strong>88731</strong>人</p>
               </li>
-              <li class="item" id="gratuity">
-                <i class="ift-gratuity"></i>
-                <span class="type">打赏</span>
-                <p class="type-show"><strong>88921</strong>元</p>
+              <li class="item" id="reward">
+                <i class="ift-reward"></i>
+                <span class="type" title="打赏">打赏</span>
+                <p class="type-show" title="88731人"><strong>88921</strong>元</p>
               </li>
               <li class="item" id="monthticket">
                 <i class="ift-ticket"></i>
-                <span class="type">月票</span>
-                <p class="type-show"><strong>8871</strong>张</p>
+                <span class="type" title="月票">月票</span>
+                <p class="type-show" title="88731人"><strong>8871</strong>张</p>
               </li>
               <li class="item" id="recommend">
                 <i class="ift-fire"></i>
-                <span class="type">推荐</span>
-                <p class="type-show"><strong>12311</strong>次</p>
+                <span class="type" title="推荐">推荐</span>
+                <p class="type-show" title="12311次"><strong>12311</strong>次</p>
               </li>
               <li class="item" id="comment">
                 <i class="ift-comment"></i>
-                <span class="type">评论</span>
-                <p class="type-show"><strong>21231</strong>条</p>
+                <span class="type" title="评论">评论</span>
+                <p class="type-show" title="12311次"><strong>21231</strong>条</p>
               </li>
             </ul>
             <!-- 漫画分享 -->
             <div class="share bdsharebuttonbox" data-tag="1">
-              <a class="bds_more" data-cmd="more"><i class="ift-share"></i>分享</a>
-              <a class="bds_count hide" data-cmd="count"></a>
+              <a class="bds_more" data-cmd="more" title="分享" rel="nofollow"><i class="ift-share"></i>分享</a>
+              <a class="bds_count hide" data-cmd="count" rel="nofollow"></a>
             </div>
           </div>
         </div>
@@ -107,9 +119,9 @@
             <img src="../static/images/space.gif" data-src="../upload/head/1.jpg" alt="">
           </div>
           <div class="author-info">
-            <p class="name">周洪宾&nbsp;小松、周洪宾</p>
-            <p class="attr"><span class="attr-label">代表作品:</span><a href="#">斗破苍穹</a>
-              <a href="#">斗罗大陆</a><a href="#">绝世唐门</a></p>
+            <h3 class="name" title="周洪宾 小松、周洪宾">周洪宾&nbsp;小松、周洪宾</h3>
+            <p class="attr"><span class="attr-label">代表作品:</span><a href="#" title="斗破苍穹">斗破苍穹</a>
+              <a href="#" title="斗罗大陆">斗罗大陆</a><a href="#" title="绝世唐门">绝世唐门</a></p>
           </div>
         </div>
         <div class="bd">
@@ -129,54 +141,54 @@
         <!-- 漫画章节 -->
         <div class="box box2">
           <div class="hd">
-            <h2 class="title"><i class="ift-charpter"></i>漫画章节</h2>
-            <div class="operate" id="charpterRank">
+            <h2 class="title"><i class="ift-chapter"></i>漫画章节</h2>
+            <div class="operate" id="chapterRank">
               <i class="ift-sort"></i>
             </div>
             <p class="update">最后更新: 2016-10-11</p>
           </div>
           <div class="bd">
-            <ul class="charpter-list clearfix" id="charpterList">
-              <li class="item newest"><a href="#">第1话</a><i class="ift-new"></i></li>
-              <li class="item readed"><a href="#">第2话</a><i class="ift-read"></i></li>
-              <li class="item"><a href="#">第3话</a></li>
-              <li class="item"><a href="#">第4话</a></li>
-              <li class="item"><a href="#">第5话</a></li>
-              <li class="item"><a href="#">第6话</a></li>
-              <li class="item"><a href="#">第7话</a></li>
-              <li class="item"><a href="#">第8话</a></li>
-              <li class="item"><a href="#">第9话</a></li>
-              <li class="item"><a href="#">第10话</a></li>
-              <li class="item"><a href="#">第11话</a></li>
-              <li class="item"><a href="#">第12话</a></li>
-              <li class="item"><a href="#">第13话</a></li>
-              <li class="item"><a href="#">第14话</a></li>
-              <li class="item"><a href="#">第15话</a></li>
-              <li class="item"><a href="#">第16话</a></li>
-              <li class="item"><a href="#">第17话</a></li>
-              <li class="item"><a href="#">第18话</a></li>
-              <li class="item"><a href="#">第19话</a></li>
-              <li class="item"><a href="#">第20话</a></li>
-              <li class="item"><a href="#">第21话</a></li>
-              <li class="item"><a href="#">第22话</a></li>
-              <li class="item"><a href="#">第23话</a></li>
-              <li class="item"><a href="#">第24话</a></li>
-              <li class="item"><a href="#">第25话</a></li>
-              <li class="item"><a href="#">第26话</a></li>
-              <li class="item"><a href="#">第27话</a></li>
-              <li class="item"><a href="#">第28话</a></li>
-              <li class="item"><a href="#">第29话</a></li>
-              <li class="item"><a href="#">第30话</a></li>
-              <li class="item"><a href="#">第31话</a></li>
-              <li class="item"><a href="#">第32话</a></li>
-              <li class="item"><a href="#">第33话</a></li>
-              <li class="item"><a href="#">第34话</a></li>
-              <li class="item"><a href="#">第35话</a></li>
-              <li class="item"><a href="#">第36话</a></li>
-              <li class="item"><a href="#">第37话</a></li>
-              <li class="item"><a href="#">第38话</a></li>
-              <li class="item"><a href="#">第39话</a></li>
-              <li class="item"><a href="#">第40话</a></li>
+            <ul class="chapter-list clearfix" id="chapterList">
+              <li class="item newest"><a href="#" title="第1话">第1话</a><i class="ift-new"></i></li>
+              <li data-id="173673" class="item"><a href="#" title="第2话">第2话</a></li>
+              <li class="item"><a href="#" title="第3话">第3话</a></li>
+              <li class="item"><a href="#" title="第4话">第4话</a></li>
+              <li class="item"><a href="#" title="第5话">第5话</a></li>
+              <li class="item"><a href="#" title="第6话">第6话</a></li>
+              <li class="item"><a href="#" title="第7话">第7话</a></li>
+              <li class="item"><a href="#" title="第8话">第8话</a></li>
+              <li class="item"><a href="#" title="第9话">第9话</a></li>
+              <li class="item"><a href="#" title="第10话">第10话</a></li>
+              <li class="item"><a href="#" title="第11话">第11话</a></li>
+              <li class="item"><a href="#" title="第12话">第12话</a></li>
+              <li class="item"><a href="#" title="第13话">第13话</a></li>
+              <li class="item"><a href="#" title="第14话">第14话</a></li>
+              <li class="item"><a href="#" title="第15话">第15话</a></li>
+              <li class="item"><a href="#" title="第16话">第16话</a></li>
+              <li class="item"><a href="#" title="第17话">第17话</a></li>
+              <li class="item"><a href="#" title="第18话">第18话</a></li>
+              <li class="item"><a href="#" title="第19话">第19话</a></li>
+              <li class="item"><a href="#" title="第20话">第20话</a></li>
+              <li class="item"><a href="#" title="第21话">第21话</a></li>
+              <li class="item"><a href="#" title="第22话">第22话</a></li>
+              <li class="item"><a href="#" title="第23话">第23话</a></li>
+              <li class="item"><a href="#" title="第24话">第24话</a></li>
+              <li class="item"><a href="#" title="第25话">第25话</a></li>
+              <li class="item"><a href="#" title="第26话">第26话</a></li>
+              <li class="item"><a href="#" title="第27话">第27话</a></li>
+              <li class="item"><a href="#" title="第28话">第28话</a></li>
+              <li class="item"><a href="#" title="第29话">第29话</a></li>
+              <li class="item"><a href="#" title="第30话">第30话</a></li>
+              <li class="item"><a href="#" title="第31话">第31话</a></li>
+              <li class="item"><a href="#" title="第32话">第32话</a></li>
+              <li class="item"><a href="#" title="第33话">第33话</a></li>
+              <li class="item"><a href="#" title="第34话">第34话</a></li>
+              <li class="item"><a href="#" title="第35话">第35话</a></li>
+              <li class="item"><a href="#" title="第36话">第36话</a></li>
+              <li class="item"><a href="#" title="第37话">第37话</a></li>
+              <li class="item"><a href="#" title="第38话">第38话</a></li>
+              <li class="item"><a href="#" title="第39话">第39话</a></li>
+              <li class="item"><a href="#" title="第40话">第40话</a></li>
             </ul>
           </div>
         </div>
@@ -204,306 +216,306 @@
             <div class="warp-slider">
               <ul class="comic-list col5">
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/1.jpg">
-                    <span class="charpter">第14话 狙击者</span>
+                  <a href="#" title="第14话 狙击者" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="第14话 狙击者" data-src="../upload/comic_cover/1.jpg">
+                    <span class="chapter">第14话 狙击者</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">勇者是女孩</a></h3>
+                    <h3 class="title"><a href="#" title="勇者是女孩">勇者是女孩</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/2.jpg">
-                    <span class="charpter">第14话 黑暗降临</span>
+                  <a href="#" title="第14话 黑暗降临" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/2.jpg">
+                    <span class="chapter">第14话 黑暗降临</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">雀灵神域</a></h3>
+                    <h3 class="title"><a href="#" title="雀灵神域">雀灵神域</a></h3>
                     <p class="desc">以朱雀之名，守护这个世界！</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/3.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/3.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">哑舍</a></h3>
+                    <h3 class="title"><a href="#" title="哑舍">哑舍</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/4.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/4.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">愚人之旅</a></h3>
+                    <h3 class="title"><a href="#" title="愚人之旅">愚人之旅</a></h3>
                     <p class="desc">塔罗的力量之源，美尼斯卡牌</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/5.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/5.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">大清第一男秘</a></h3>
+                    <h3 class="title"><a href="#" title="大清第一男秘">大清第一男秘</a></h3>
                     <p class="desc">“肯卓尔斯”学院，学霸云集，天才倍出</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/6.jpg">
-                    <span class="charpter">第14话 狙击者</span>
+                  <a href="#" title="第14话 狙击者" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/6.jpg">
+                    <span class="chapter">第14话 狙击者</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">仙灵传</a></h3>
+                    <h3 class="title"><a href="#" title="仙灵传">仙灵传</a></h3>
                     <p class="desc">女主若水孤苦伶仃的长大，后来无意间救了神仙沈沐生</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/7.jpg">
-                    <span class="charpter">第14话 黑暗降临</span>
+                  <a href="#" title="第14话 黑暗降临" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/7.jpg">
+                    <span class="chapter">第14话 黑暗降临</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">卡灵</a></h3>
+                    <h3 class="title"><a href="#" title="卡灵">卡灵</a></h3>
                     <p class="desc">英国著名的卡牌师大家族的三小姐</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/8.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/8.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">洛小妖</a></h3>
+                    <h3 class="title"><a href="#" title="洛小妖">洛小妖</a></h3>
                     <p class="desc">书生春坨在郊外的路上，遭遇了狐妖</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/9.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/9.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">我是天庭扫把星</a></h3>
+                    <h3 class="title"><a href="#" title="我是天庭扫把星">我是天庭扫把星</a></h3>
                     <p class="desc">职者高阳被一块从天而降的板砖砸到了脑袋</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/10.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/10.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">妹sister</a></h3>
+                    <h3 class="title"><a href="#" title="妹sister">妹sister</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
               </ul>
               <ul class="comic-list col5">
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/1.jpg">
-                    <span class="charpter">第14话 狙击者</span>
+                  <a href="#" title="第14话 狙击者" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/1.jpg">
+                    <span class="chapter">第14话 狙击者</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">勇者是女孩</a></h3>
+                    <h3 class="title"><a href="#" title="勇者是女孩">勇者是女孩</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/2.jpg">
-                    <span class="charpter">第14话 黑暗降临</span>
+                  <a href="#" title="第14话 黑暗降临" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/2.jpg">
+                    <span class="chapter">第14话 黑暗降临</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">雀灵神域</a></h3>
+                    <h3 class="title"><a href="#" title="雀灵神域">雀灵神域</a></h3>
                     <p class="desc">以朱雀之名，守护这个世界！</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/3.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/3.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">哑舍</a></h3>
+                    <h3 class="title"><a href="#" title="哑舍">哑舍</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/4.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/4.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">愚人之旅</a></h3>
+                    <h3 class="title"><a href="#" title="愚人之旅">愚人之旅</a></h3>
                     <p class="desc">塔罗的力量之源，美尼斯卡牌</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/5.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/5.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">大清第一男秘</a></h3>
+                    <h3 class="title"><a href="#" title="大清第一男秘">大清第一男秘</a></h3>
                     <p class="desc">“肯卓尔斯”学院，学霸云集，天才倍出</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/6.jpg">
-                    <span class="charpter">第14话 狙击者</span>
+                  <a href="#" title="第14话 狙击者" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/6.jpg">
+                    <span class="chapter">第14话 狙击者</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">仙灵传</a></h3>
+                    <h3 class="title"><a href="#" title="仙灵传">仙灵传</a></h3>
                     <p class="desc">女主若水孤苦伶仃的长大，后来无意间救了神仙沈沐生</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/7.jpg">
-                    <span class="charpter">第14话 黑暗降临</span>
+                  <a href="#" title="第14话 黑暗降临" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/7.jpg">
+                    <span class="chapter">第14话 黑暗降临</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">卡灵</a></h3>
+                    <h3 class="title"><a href="#" title="卡灵">卡灵</a></h3>
                     <p class="desc">英国著名的卡牌师大家族的三小姐</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/8.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/8.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">洛小妖</a></h3>
+                    <h3 class="title"><a href="#" title="洛小妖">洛小妖</a></h3>
                     <p class="desc">书生春坨在郊外的路上，遭遇了狐妖</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/9.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/9.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">我是天庭扫把星</a></h3>
+                    <h3 class="title"><a href="#" title="我是天庭扫把星">我是天庭扫把星</a></h3>
                     <p class="desc">职者高阳被一块从天而降的板砖砸到了脑袋</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/10.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/10.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">妹sister</a></h3>
+                    <h3 class="title"><a href="#" title="妹sister">妹sister</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
               </ul>
               <ul class="comic-list col5">
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/1.jpg">
-                    <span class="charpter">第14话 狙击者</span>
+                  <a href="#" title="第14话 狙击者" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/1.jpg">
+                    <span class="chapter">第14话 狙击者</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">勇者是女孩</a></h3>
+                    <h3 class="title"><a href="#" title="勇者是女孩">勇者是女孩</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/2.jpg">
-                    <span class="charpter">第14话 黑暗降临</span>
+                  <a href="#" title="第14话 黑暗降临" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/2.jpg">
+                    <span class="chapter">第14话 黑暗降临</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">雀灵神域</a></h3>
+                    <h3 class="title"><a href="#" title="雀灵神域">雀灵神域</a></h3>
                     <p class="desc">以朱雀之名，守护这个世界！</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/3.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/3.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">哑舍</a></h3>
+                    <h3 class="title"><a href="#" title="哑舍">哑舍</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/4.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/4.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">愚人之旅</a></h3>
+                    <h3 class="title"><a href="#" title="愚人之旅">愚人之旅</a></h3>
                     <p class="desc">塔罗的力量之源，美尼斯卡牌</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/5.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/5.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">大清第一男秘</a></h3>
+                    <h3 class="title"><a href="#" title="大清第一男秘">大清第一男秘</a></h3>
                     <p class="desc">“肯卓尔斯”学院，学霸云集，天才倍出</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/6.jpg">
-                    <span class="charpter">第14话 狙击者</span>
+                  <a href="#" title="第14话 狙击者" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/6.jpg">
+                    <span class="chapter">第14话 狙击者</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">仙灵传</a></h3>
+                    <h3 class="title"><a href="#" title="仙灵传">仙灵传</a></h3>
                     <p class="desc">女主若水孤苦伶仃的长大，后来无意间救了神仙沈沐生</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/7.jpg">
-                    <span class="charpter">第14话 黑暗降临</span>
+                  <a href="#" title="第14话 黑暗降临" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/7.jpg">
+                    <span class="chapter">第14话 黑暗降临</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">卡灵</a></h3>
+                    <h3 class="title"><a href="#" title="卡灵">卡灵</a></h3>
                     <p class="desc">英国著名的卡牌师大家族的三小姐</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/8.jpg">
-                    <span class="charpter">第32话 无字牌</span>
+                  <a href="#" title="第32话 无字牌" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/8.jpg">
+                    <span class="chapter">第32话 无字牌</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">洛小妖</a></h3>
+                    <h3 class="title"><a href="#" title="洛小妖">洛小妖</a></h3>
                     <p class="desc">书生春坨在郊外的路上，遭遇了狐妖</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/9.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/9.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">我是天庭扫把星</a></h3>
+                    <h3 class="title"><a href="#" title="我是天庭扫把星">我是天庭扫把星</a></h3>
                     <p class="desc">职者高阳被一块从天而降的板砖砸到了脑袋</p>
                   </div>
                 </li>
                 <li class="item">
-                  <a href="" class="thumbnail">
-                    <img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/10.jpg">
-                    <span class="charpter">第8话 满月</span>
+                  <a href="#" title="第8话 满月" class="thumbnail">
+                    <img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/10.jpg">
+                    <span class="chapter">第8话 满月</span>
                     <span class="score">7.4</span></a>
                   <div class="info">
-                    <h3 class="title"><a href="">妹sister</a></h3>
+                    <h3 class="title"><a href="#" title="妹sister">妹sister</a></h3>
                     <p class="desc">男女互换身体后发生的种种趣事</p>
                   </div>
                 </li>
@@ -533,13 +545,13 @@
         <div class="bd clearfix">
           <ul class="role col3">
             <li class="item">
-              <a href="#">
+              <a href="#" title="seo">
                 <div class="thumbnail"><img src="../static/images/space.gif" alt="" data-src="../upload/role/1.jpg"></div>
                 <h3 class="role-name">唐三</h3>
               </a>
             </li>
             <li class="item">
-              <a href="#">
+              <a href="#" title="seo">
                 <div class="thumbnail"><img src="../static/images/space.gif" alt="" data-src="../upload/role/2.jpg"></div>
                 <h3 class="role-name">唐三</h3>
               </a>
@@ -576,9 +588,9 @@
         </div>
       </div>
       <!-- 粉丝排行 -->
-      <div class="tabs fans-tabs mt24">
+      <div class="tabs tabs-hover fans-tabs mt24">
         <div class="hd clearfix">
-          <h2 class="title"><i class="ift-fans"></i>粉丝排行</h2>
+          <h2 class="title"><i class="ift-fans2"></i>粉丝排行</h2>
           <ul>
             <li class="active">活跃榜</li>
             <li>打赏榜</li>
@@ -588,46 +600,46 @@
           <ul class="reward-list fans-list">
             <li class="item">
               <div class="warp-con">
-                <div class="thumbnail"><a href="#"><img src="../static/images/space.gif" alt="" data-src="../upload/head/6.jpg"></a></div>
+                <div class="thumbnail"><a href="#" title="seo"><img src="../static/images/space.gif" alt="" data-src="../upload/head/6.jpg"></a></div>
                 <span class="reward-num">共有粉丝<strong>19478</strong>人</span>
                 <div class="info">
-                  <h3 class="title"><a href="#">龅牙凤</a></h3>
+                  <h3 class="title"><a href="#" title="seo">龅牙凤</a></h3>
                 </div>
               </div>
             </li>
             <li class="item">
               <div class="warp-con">
-                <div class="thumbnail"><a href="#"><img src="../static/images/space.gif" alt="" data-src="../upload/head/7.jpg"></a></div>
+                <div class="thumbnail"><a href="#" title="seo"><img src="../static/images/space.gif" alt="" data-src="../upload/head/7.jpg"></a></div>
                 <span class="reward-num">共有粉丝<strong>19478</strong>人</span>
                 <div class="info">
-                  <h3 class="title"><a href="#">橘花散里&saremi</a></h3>
+                  <h3 class="title"><a href="#" title="seo">橘花散里&saremi</a></h3>
                 </div>
               </div>
             </li>
             <li class="item">
               <div class="warp-con">
-                <div class="thumbnail"><a href="#"><img src="../static/images/space.gif" alt="" data-src="../upload/head/8.jpg"></a></div>
+                <div class="thumbnail"><a href="#" title="seo"><img src="../static/images/space.gif" alt="" data-src="../upload/head/8.jpg"></a></div>
                 <span class="reward-num">共有粉丝<strong>19478</strong>人</span>
                 <div class="info">
-                  <h3 class="title"><a href="#">白二道长</a></h3>
+                  <h3 class="title"><a href="#" title="seo">白二道长</a></h3>
                 </div>
               </div>
             </li>
             <li class="item">
               <div class="warp-con">
-                <div class="thumbnail"><a href="#"><img src="../static/images/space.gif" alt="" data-src="../upload/head/9.jpg"></a></div>
+                <div class="thumbnail"><a href="#" title="seo"><img src="../static/images/space.gif" alt="" data-src="../upload/head/9.jpg"></a></div>
                 <span class="reward-num">共有粉丝<strong>19478</strong>人</span>
                 <div class="info">
-                  <h3 class="title"><a href="#">mk米二</a></h3>
+                  <h3 class="title"><a href="#" title="seo">mk米二</a></h3>
                 </div>
               </div>
             </li>
             <li class="item">
               <div class="warp-con">
-                <div class="thumbnail"><a href="#"><img src="../static/images/space.gif" alt="" data-src="../upload/head/10.jpg"></a></div>
+                <div class="thumbnail"><a href="#" title="seo"><img src="../static/images/space.gif" alt="" data-src="../upload/head/10.jpg"></a></div>
                 <span class="reward-num">共有粉丝<strong>19478</strong>人</span>
                 <div class="info">
-                  <h3 class="title"><a href="#">潜艇工作室</a></h3>
+                  <h3 class="title"><a href="#" title="seo">潜艇工作室</a></h3>
                 </div>
               </div>
             </li>
@@ -635,7 +647,7 @@
         </div>
       </div>
       <!-- 热门漫画 -->
-      <div class="tabs tabs-switch mt24">
+      <div class="tabs tabs-hover tabs-switch mt24">
         <div class="hd">
           <h3 class="title"><i class="ift-fire"></i>热门漫画</h3>
           <ul>
@@ -653,12 +665,12 @@
                    <strong>3398962日</strong>元
                  </div>
                  <i class="rank-first">1</i>
-                 <h3 class="title"><a href="#">勇者是女孩</a></h3>
+                 <h3 class="title"><a href="#" title="勇者是女孩">勇者是女孩</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/1.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/1.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">勇者是女孩</a></h3>
+                   <h3 class="title"><a href="#" title="勇者是女孩">勇者是女孩</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -671,12 +683,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-second">2</i>
-                 <h3 class="title"><a href="#">雀灵神域</a></h3>
+                 <h3 class="title"><a href="#" title="雀灵神域">雀灵神域</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/2.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/2.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">雀灵神域</a></h3>
+                   <h3 class="title"><a href="#" title="雀灵神域">雀灵神域</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -689,12 +701,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-third">3</i>
-                 <h3 class="title"><a href="#">哑舍</a></h3>
+                 <h3 class="title"><a href="#" title="哑舍">哑舍</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/3.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/3.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">哑舍</a></h3>
+                   <h3 class="title"><a href="#" title="哑舍">哑舍</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -707,12 +719,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">4</i>
-                 <h3 class="title"><a href="#">愚人之旅</a></h3>
+                 <h3 class="title"><a href="#" title="愚人之旅">愚人之旅</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/4.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/4.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">愚人之旅</a></h3>
+                   <h3 class="title"><a href="#" title="愚人之旅">愚人之旅</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -725,12 +737,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">5</i>
-                 <h3 class="title"><a href="#">大清第一男秘</a></h3>
+                 <h3 class="title"><a href="#" title="大清第一男秘">大清第一男秘</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/5.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/5.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">大清第一男秘</a></h3>
+                   <h3 class="title"><a href="#" title="大清第一男秘">大清第一男秘</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -743,12 +755,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">6</i>
-                 <h3 class="title"><a href="#">仙灵传</a></h3>
+                 <h3 class="title"><a href="#" title="仙灵传">仙灵传</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/6.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/6.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">仙灵传</a></h3>
+                   <h3 class="title"><a href="#" title="仙灵传">仙灵传</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -761,12 +773,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">7</i>
-                 <h3 class="title"><a href="#">卡灵</a></h3>
+                 <h3 class="title"><a href="#" title="卡灵">卡灵</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/7.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/7.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">卡灵</a></h3>
+                   <h3 class="title"><a href="#" title="卡灵">卡灵</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -779,12 +791,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">8</i>
-                 <h3 class="title"><a href="#">洛小妖</a></h3>
+                 <h3 class="title"><a href="#" title="洛小妖">洛小妖</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/8.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/8.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">洛小妖</a></h3>
+                   <h3 class="title"><a href="#" title="洛小妖">洛小妖</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -797,12 +809,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">9</i>
-                 <h3 class="title"><a href="#">我是天庭扫把星</a></h3>
+                 <h3 class="title"><a href="#" title="我是天庭扫把星">我是天庭扫把星</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/9.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/9.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">我是天庭扫把星</a></h3>
+                   <h3 class="title"><a href="#" title="我是天庭扫把星">我是天庭扫把星</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -815,12 +827,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">10</i>
-                 <h3 class="title"><a href="#">妹sister</a></h3>
+                 <h3 class="title"><a href="#" title="妹sister">妹sister</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/10.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/10.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">妹sister</a></h3>
+                   <h3 class="title"><a href="#" title="seo">妹sister</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -837,12 +849,12 @@
                    <strong>3398962月</strong>元
                  </div>
                  <i class="rank-first">1</i>
-                 <h3 class="title"><a href="#">勇者是女孩</a></h3>
+                 <h3 class="title"><a href="#" title="seo">勇者是女孩</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/1.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/1.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">勇者是女孩</a></h3>
+                   <h3 class="title"><a href="#" title="seo">勇者是女孩</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -855,12 +867,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-second">2</i>
-                 <h3 class="title"><a href="#">雀灵神域</a></h3>
+                 <h3 class="title"><a href="#" title="seo">雀灵神域</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/2.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/2.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">雀灵神域</a></h3>
+                   <h3 class="title"><a href="#" title="seo">雀灵神域</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -873,12 +885,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-third">3</i>
-                 <h3 class="title"><a href="#">哑舍</a></h3>
+                 <h3 class="title"><a href="#" title="seo">哑舍</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/3.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/3.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">哑舍</a></h3>
+                   <h3 class="title"><a href="#" title="seo">哑舍</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -891,12 +903,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">4</i>
-                 <h3 class="title"><a href="#">愚人之旅</a></h3>
+                 <h3 class="title"><a href="#" title="seo">愚人之旅</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/4.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/4.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">愚人之旅</a></h3>
+                   <h3 class="title"><a href="#" title="seo">愚人之旅</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -909,12 +921,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">5</i>
-                 <h3 class="title"><a href="#">大清第一男秘</a></h3>
+                 <h3 class="title"><a href="#" title="seo">大清第一男秘</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/5.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/5.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">大清第一男秘</a></h3>
+                   <h3 class="title"><a href="#" title="seo">大清第一男秘</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -927,12 +939,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">6</i>
-                 <h3 class="title"><a href="#">仙灵传</a></h3>
+                 <h3 class="title"><a href="#" title="seo">仙灵传</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/6.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/6.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">仙灵传</a></h3>
+                   <h3 class="title"><a href="#" title="seo">仙灵传</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -945,12 +957,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">7</i>
-                 <h3 class="title"><a href="#">卡灵</a></h3>
+                 <h3 class="title"><a href="#" title="seo">卡灵</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/7.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/7.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">卡灵</a></h3>
+                   <h3 class="title"><a href="#" title="seo">卡灵</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -963,12 +975,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">8</i>
-                 <h3 class="title"><a href="#">洛小妖</a></h3>
+                 <h3 class="title"><a href="#" title="seo">洛小妖</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/8.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/8.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">洛小妖</a></h3>
+                   <h3 class="title"><a href="#" title="seo">洛小妖</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -981,12 +993,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">9</i>
-                 <h3 class="title"><a href="#">我是天庭扫把星</a></h3>
+                 <h3 class="title"><a href="#" title="seo">我是天庭扫把星</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/9.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/9.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">我是天庭扫把星</a></h3>
+                   <h3 class="title"><a href="#" title="seo">我是天庭扫把星</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -999,12 +1011,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">10</i>
-                 <h3 class="title"><a href="#">妹sister</a></h3>
+                 <h3 class="title"><a href="#" title="seo">妹sister</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/10.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/10.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">妹sister</a></h3>
+                   <h3 class="title"><a href="#" title="seo">妹sister</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1021,12 +1033,12 @@
                    <strong>3398962总</strong>元
                  </div>
                  <i class="rank-first">1</i>
-                 <h3 class="title"><a href="#">勇者是女孩</a></h3>
+                 <h3 class="title"><a href="#" title="seo">勇者是女孩</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/1.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/1.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">勇者是女孩</a></h3>
+                   <h3 class="title"><a href="#" title="seo">勇者是女孩</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1039,12 +1051,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-second">2</i>
-                 <h3 class="title"><a href="#">雀灵神域</a></h3>
+                 <h3 class="title"><a href="#" title="seo">雀灵神域</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/2.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/2.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">雀灵神域</a></h3>
+                   <h3 class="title"><a href="#" title="seo">雀灵神域</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1057,12 +1069,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-third">3</i>
-                 <h3 class="title"><a href="#">哑舍</a></h3>
+                 <h3 class="title"><a href="#" title="seo">哑舍</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/3.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/3.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">哑舍</a></h3>
+                   <h3 class="title"><a href="#" title="seo">哑舍</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1075,12 +1087,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">4</i>
-                 <h3 class="title"><a href="#">愚人之旅</a></h3>
+                 <h3 class="title"><a href="#" title="seo">愚人之旅</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/4.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/4.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">愚人之旅</a></h3>
+                   <h3 class="title"><a href="#" title="seo">愚人之旅</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1093,12 +1105,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">5</i>
-                 <h3 class="title"><a href="#">大清第一男秘</a></h3>
+                 <h3 class="title"><a href="#" title="seo">大清第一男秘</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/5.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/5.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">大清第一男秘</a></h3>
+                   <h3 class="title"><a href="#" title="seo">大清第一男秘</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1111,12 +1123,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">6</i>
-                 <h3 class="title"><a href="#">仙灵传</a></h3>
+                 <h3 class="title"><a href="#" title="seo">仙灵传</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/6.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/6.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">仙灵传</a></h3>
+                   <h3 class="title"><a href="#" title="seo">仙灵传</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1129,12 +1141,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">7</i>
-                 <h3 class="title"><a href="#">卡灵</a></h3>
+                 <h3 class="title"><a href="#" title="seo">卡灵</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/7.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/7.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">卡灵</a></h3>
+                   <h3 class="title"><a href="#" title="seo">卡灵</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1147,12 +1159,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">8</i>
-                 <h3 class="title"><a href="#">洛小妖</a></h3>
+                 <h3 class="title"><a href="#" title="seo">洛小妖</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/8.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/8.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">洛小妖</a></h3>
+                   <h3 class="title"><a href="#" title="seo">洛小妖</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1165,12 +1177,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">9</i>
-                 <h3 class="title"><a href="#">我是天庭扫把星</a></h3>
+                 <h3 class="title"><a href="#" title="seo">我是天庭扫把星</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/9.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/9.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">我是天庭扫把星</a></h3>
+                   <h3 class="title"><a href="#" title="seo">我是天庭扫把星</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1183,12 +1195,12 @@
                    <strong>3398962</strong>元
                  </div>
                  <i class="rank-nor">10</i>
-                 <h3 class="title"><a href="#">妹sister</a></h3>
+                 <h3 class="title"><a href="#" title="seo">妹sister</a></h3>
                </div>
                <div class="item-bd">
-                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="" data-src="../upload/comic_cover/10.jpg"></div>
+                 <div class="thumbnail"><img src="../static/images/space3x4.gif" alt="seo" data-src="../upload/comic_cover/10.jpg"></div>
                  <div class="info">
-                   <h3 class="title"><a href="#">妹sister</a></h3>
+                   <h3 class="title"><a href="#" title="seo">妹sister</a></h3>
                    <p class="attr"><span class="attr-label">题材:</span>魔幻&nbsp;&nbsp;动作&nbsp;&nbsp;少年</p>
                    <p class="reward-num">共被打赏<strong>9172385</strong>元</p>
                  </div>
@@ -1209,21 +1221,21 @@
         </div>
         <div class="bd">
           <ul class="update-list">
-            <li class="item"><span class="chapter"><a href="#">55话</a></span><a href="#">翻滚吧赞逗鸡</a></li>
-            <li class="item"><span class="chapter"><a href="#">第60话 演武（十五）</a></span><a href="#">御灵师</a></li>
-            <li class="item"><span class="chapter"><a href="#">第98话</a></span><a href="#">当无火葬场的小镇里钟声鸣响时</a></li>
-            <li class="item"><span class="chapter"><a href="#">第26话</a></span><a href="#">邻家的吸血鬼小妹</a></li>
-            <li class="item"><span class="chapter"><a href="#">第25话</a></span><a href="#">初体验野兽</a></li>
-            <li class="item"><span class="chapter"><a href="#">第166话 潜入与订婚</a></span><a href="#">穿越西元3000后</a></li>
-            <li class="item"><span class="chapter"><a href="#">第132话 白粉姥姥（上）</a></span><a href="#">寻找前世之旅</a></li>
-            <li class="item"><span class="chapter"><a href="#">第57话 一家之主（三）</a></span><a href="#">凤逆天下</a></li>
-            <li class="item"><span class="chapter"><a href="#">第218话 囚笼之鸟（上）</a></span><a href="#">三眼哮天录</a></li>
-            <li class="item"><span class="chapter"><a href="#">第50话 金眼的童话（上）</a></span><a href="#">奇怪的苏夕</a></li>
-            <li class="item"><span class="chapter"><a href="#">第181话</a></span><a href="#">Acma:Game</a></li>
-            <li class="item"><span class="chapter"><a href="#">第168话 纯技术流攻防</a></span><a href="#">星海镖师</a></li>
-            <li class="item"><span class="chapter"><a href="#">第16话 封印（五）</a></span><a href="#">山海迷踪</a></li>
-            <li class="item"><span class="chapter"><a href="#">第37话</a></span><a href="#">银狼血骨</a></li>
-            <li class="item"><span class="chapter"><a href="#">第12话 一击之力</a></span><a href="#">虚之结社</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">55话</a></span><a href="#" title="seo">翻滚吧赞逗鸡</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第60话 演武（十五）</a></span><a href="#" title="seo">御灵师</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第98话</a></span><a href="#" title="seo">当无火葬场的小镇里钟声鸣响时</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第26话</a></span><a href="#" title="seo">邻家的吸血鬼小妹</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第25话</a></span><a href="#" title="seo">初体验野兽</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第166话 潜入与订婚</a></span><a href="#" title="seo">穿越西元3000后</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第132话 白粉姥姥（上）</a></span><a href="#" title="seo">寻找前世之旅</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第57话 一家之主（三）</a></span><a href="#" title="seo">凤逆天下</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第218话 囚笼之鸟（上）</a></span><a href="#" title="seo">三眼哮天录</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第50话 金眼的童话（上）</a></span><a href="#" title="seo">奇怪的苏夕</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第181话</a></span><a href="#" title="seo">Acma:Game</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第168话 纯技术流攻防</a></span><a href="#" title="seo">星海镖师</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第16话 封印（五）</a></span><a href="#" title="seo">山海迷踪</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第37话</a></span><a href="#" title="seo">银狼血骨</a></li>
+            <li class="item"><span class="chapter"><a href="#" title="seo">第12话 一击之力</a></span><a href="#" title="seo">虚之结社</a></li>
           </ul>
         </div>
       </div>
@@ -1232,7 +1244,11 @@
   <!--#include virtual="/app/public/header.html"-->
   <!--#include virtual="/app/public/footer.html"-->
 </div>
-<script src="../static/js/common.js"></script>
-<script src="../static/js/details.js"></script>
+<!--[if lt IE 8]>
+<script src="/static/js/json2.js"></script>
+<![endif]-->
+<script src="../static/js/base.js"></script>
+<script src="../static/js/pc_common.js"></script>
+<script src="../static/js/pc_details.js"></script>
 </body>
 </html>

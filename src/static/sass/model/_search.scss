@@ -41,6 +41,7 @@
 			cursor: pointer;
 			border-radius: 0;
 			cursor: pointer;
+			outline: none;
 		}
 		.ift-search{
 			color:colors(white);
@@ -74,7 +75,14 @@
 				margin-left: -9px;
 				@include triangle(top, 9px, colors(white))
 			}
-
+			.no-info{
+				text-align: center;
+				color: colors(dark);
+				padding: 10px 0;
+				strong{
+					color: colors(primary);
+				}
+			}
 			dt{
 				height: 30px;
 				padding: 0 10px;
@@ -102,10 +110,31 @@
 			max-height: 60px;
 			overflow: hidden;
 			a{
-				height:18px;
+				height:20px;
+				padding: 0 4px;
+				line-height: 20px;
 				line-height: 18px;
 				margin:5px 10px 5px 0;
 				display: inline-block;
+				border-radius: 3px;
+				&.c1,&.c2,&.c3,&.c4,&.c5{
+            color: colors(white);
+          }
+          &.c1{
+            background-color:#c78590;
+          }
+          &.c2{
+            background-color:#f3bd7e;
+          }
+          &.c3{
+            background-color:#6ec4e9;
+          }
+          &.c4{
+            background-color:#66c9bb;
+          }
+          &.c5{
+            background-color:#9b9bd5;
+          }
 			}
 			/* a{
 				position:relative;
@@ -138,12 +167,12 @@
 			} */
 		}
 
-		&-history{
+		&-history, &-content{
 			margin: 5px 0;
 			max-height: 186px;
 			overflow-y: auto;
 			position:relative;
-			&>a{
+			&>.item{
 				display:block;
 				height:30px;
 				padding: 0 10px;
@@ -151,6 +180,7 @@
 				color:colors(darker);
 				border-bottom: 1px solid colors(light);
 				transition: color 0.3s;
+				overflow-y: hidden;
 				&:last-child{
 					border:0;
 				}
@@ -160,29 +190,32 @@
 						color: colors(primary);
 					}
 				}
+				strong {
+					margin: 0 4px;
+					color: colors(primary);
+				}
 			}
-			.fr-charpter{
+			.fr-chapter{
 				float: right;
+				width: 50%;
+				height: 30px;
+				line-height: 30px;
+				text-align: right;
+				overflow-y: hidden;
 				color: colors(dark);
 				strong{
 					font-weight: normal;
 				}
 			}
-			.no-info{
-				text-align: center;
-				color: colors(dark);
-				padding: 10px 0;
-				strong{
-					color: colors(primary);
-				}
-
-			}
 			.close{
+				float: right;
+				margin-left: 4px;
 				font-size: fonts(size) * 1.4;
-				line-height:28px;
+				line-height:30px;
 				vertical-align:middle;
 				color: colors(gray);
 				transition: color 0.3s;
+				cursor: pointer;
 			}
 		}
 		

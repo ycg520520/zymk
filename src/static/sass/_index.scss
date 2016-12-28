@@ -11,7 +11,8 @@
   }
 }
 .comic-main{
-  margin-left: 34.8739495798319%;
+  float: right;
+  // margin-left: 34.8739495798319%;
   width: 65.1260504201681%;
   overflow: hidden;
 }
@@ -126,7 +127,7 @@
       }
     }
   }
-  .time,.charpter{
+  .time,.chapter{
     height: 40px;
     font-size: fonts(size) * 1.2;
   }
@@ -138,12 +139,16 @@
     color: colors(dark);
     background-color: lighten(colors(primary), 32%);
   }
-  .charpter{
+  .chapter{
     float: right;
-    margin-right: 10px;
-    color: colors(primary);
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: lighten(colors(primary), 20%);
   }
   .title{
+    width: 60%;
     font-weight: normal;
     font-size: fonts(size) * 1.4;
   }

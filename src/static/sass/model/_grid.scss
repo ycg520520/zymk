@@ -21,3 +21,30 @@ $columns: 24;
 .align-right{
   margin: 0 0 0 auto;
 }
+
+// 三列等高布局
+.equal-height{
+  border: 1px solid colors(gray);
+  position: relative;
+}
+.equal-main {
+  margin: 0 200px 0 200px;
+  padding: 0 20px;
+  border: 1px solid colors(gray);
+  border-width: 0 1px;
+}
+.equal-aside-left{
+  position: absolute;
+  top: 0;
+  width: 200px;
+  background-color: colors(light);
+}
+.equal-aside-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  padding: 0 10px;
+  background-color: colors(light);
+}
+

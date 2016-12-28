@@ -11,8 +11,9 @@ const config = {
   // 路径配置不能以./开头，否则不能时时监控到新曾文件的编译
   src: 'src/',
   sass: 'src/static/sass/**/*.scss', // sass文件
-  fonts: 'src/static/sass/fonts/*.{eot,svg,ttf,woff}', // 字体文件
-  js: 'src/static/js/**/*.{js,coffee}', // js文件
+  fonts: 'src/static/fonts/*.{eot,svg,ttf,woff}', // 字体文件
+  js: 'src/static/js/*.{js,coffee}', // js文件
+  jscopy: 'src/static/js/**/*.{css,png,js,jpg,gif}', // gulp 拷贝js文件
   images: 'src/static/images/**/*.{jpg,png,gif,svg}', // 多文件支持
   upload: 'src/upload/**/*.{jpg,png,gif}', // 多文件支持
   html:'src/app/**/*.{htm,html,shtm,shtml,ico,txt}', // 多文件支持
@@ -41,6 +42,7 @@ gulp.task('sass:build',() => {
 // 将图片拷贝到目标目录并做压缩处理
 gulp.task('images:copy', () => {
   return gulp.src(config.images)
+
     .pipe($.imagemin())
     .pipe($.changed(config.dist+'static/images',{hasChanged: $.changed.compareSha1Digest})) // 只对发生改变的文件进行编译操作
     .pipe(gulp.dest(config.dist+'static/images')) // 写入图片
@@ -54,6 +56,18 @@ gulp.task('upload:copy', () => {
     .pipe($.notify({message:'upload图片压缩处理完成!'})) // 编译提示信息
 });
 
+gulp.task('js:copy', ()=>{
+  return gulp.src(config.js)
+    .pipe($.eslint()) // js语法解析
+        // .pipe($.eslint.format())
+    // .pipe($.sourcemaps.init()) // 生产soucrcemap
+    .pipe($.uglify()) // 压缩js文件
+        // .pipe($.rename({suffix:'.min'})) // 文件重命名
+    // .pipe($.sourcemaps.write('.')) // 将sourcemaps写在当前目录下
+    .pipe(gulp.dest(config.dist + 'static/js'))
+    .pipe($.notify({message:'copyPluginsJs完成!'})) // 编译提示信息
+    // .pipe(browserSync.stream())
+});
 // webpack对js进行打包压缩操作
 gulp.task('js:webpack', () => {
   return gulp.src(config.js)
@@ -79,8 +93,8 @@ gulp.task('html:copy', () => {
 // 处理字体
 gulp.task('fonts:copy', () => {
   return gulp.src(config.fonts)
-    .pipe($.changed(config.dist+'static/css/fonts',{hasChanged: $.changed.compareSha1Digest}))
-    .pipe(gulp.dest(config.dist+'static/css/fonts'))
+    .pipe($.changed(config.dist+'static/fonts',{hasChanged: $.changed.compareSha1Digest}))
+    .pipe(gulp.dest(config.dist+'static/fonts'))
     .pipe($.notify({message:'字体文件处理完毕!'})) // 编译提示信息
 });
 
@@ -92,12 +106,14 @@ gulp.task('watch', () => {
   gulp.watch(config.images, ['images:copy']); // 监听images文件变化
   gulp.watch(config.upload, ['upload:copy']); // 监听images文件变化
   gulp.watch(config.html, ['html:copy']); // 监听html文件变化
-  gulp.watch(config.js, ['js:webpack']); // 监听js文件变化
+  // gulp.watch(config.js, ['js:webpack']); // 监听js文件变化
+  gulp.watch(config.js, ['js:copy']); // 监听js文件变化
   
 })
 
 // 服务器连接操作
-gulp.task('server',['sass:build','html:copy','fonts:copy','images:copy','upload:copy','js:webpack'], () => {
+// gulp.task('server',['sass:build','html:copy','fonts:copy','images:copy','upload:copy','js:webpack'], () => {
+gulp.task('server',['sass:build','html:copy','fonts:copy','images:copy','upload:copy','js:copy'], () => {
   browserSync.init({
     server: config.dist, // 静态服务路径
     // proxy: "http://localhost:9000", // 代理服务路径
