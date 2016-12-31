@@ -26,7 +26,7 @@
       width: 210px;
       height: 280px;
       padding: 0 20px 40px 10px;
-      background: url(/static/images/skin.png) no-repeat;
+      background: url(/static/images/pc_skin.png) no-repeat;
       img{
         width: 100%;
         height: 100%;
@@ -43,7 +43,7 @@
         width: 100px;
         height: 80px;
         padding-top: 45px;
-        background: url(/static/images/skin.png) -234px -116px;
+        background: url(/static/images/pc_skin.png) -234px -116px;
         transition: padding-top .3s, top .3s;
         cursor: pointer;
         &:hover{
@@ -350,7 +350,7 @@
       text-align: center;
       color: rgba(colors(black),.3);
       text-shadow: 1px 1px 0 rgba(colors(white), .2);
-      background: url(/static/images/skin.png) no-repeat -245px -75px;
+      background: url(/static/images/pc_skin.png) no-repeat -245px -75px;
     }
   }
   &>.bd{

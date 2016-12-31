@@ -11,7 +11,7 @@
 	width: 100%;
 	height:68px;
 	padding-top: 4px;
-	background-image: linear-gradient(rgba(0,0,0,0.8),transparent);
+	background-image: linear-gradient(rgba(0,0,0,1),transparent);
 	.aside{
 		@include float(right);
 	}
@@ -244,7 +244,7 @@
 					}
 					&-history{
 						.scroll{
-							height: 332px;
+							height: 235px;
 							padding-right: 15px;
 							overflow:auto;
 						}

@@ -1,0 +1,187 @@
+@charset "utf-8";
+$toolbar-size:52px;
+.toolbar{
+  position: fixed;
+  right: 10px;
+  bottom: 64px;
+  z-index: 999;
+  margin-left: -$toolbar-size / 2;
+  transition:all 1s;
+  &>.item{
+    display: block;
+    position: relative;
+    width: $toolbar-size;
+    height:$toolbar-size;
+    // margin-top: 2px;
+    // box-shadow: 0 0 5px rgba(colors(black),.1);
+    border-top: 1px solid colors(gray);
+    transition: background-position 1s;
+    @include first-child{
+      border-top: 0;
+    }
+    &:hover{
+      .hd{
+        [class^="ift-"]{
+          &:before{
+            left: -$toolbar-size;
+          }
+          &:after{
+            left: 0;
+          }
+        }
+      }
+      .bd{
+        @include opacity(100);
+        transform: scale(1);
+      }
+    }
+  }
+  .hd{
+    [class^="ift-"]{
+      display: block;
+      position: relative;
+      width: $toolbar-size;
+      height:$toolbar-size;
+      background-color: colors(white);
+      overflow: hidden;
+      &:after,&:before{
+        position: absolute;
+        top: 0;
+        width: $toolbar-size;
+        height:$toolbar-size;
+        text-align: center;
+        transition: left .3s;
+      }
+      &:after{
+        left: $toolbar-size;
+        line-height: 1.2;
+        padding-top: 10px;
+        color: colors(white);
+        font-size: fonts(size) * 1.2;
+        background-color: colors(primary);
+        white-space: pre;
+        font-family: fonts(family);
+      }
+      &:before{
+        left: 0;      
+        background-color: colors(white);
+        color: colors(primary);
+        font-size: 24px;
+        line-height: $toolbar-size;
+      }
+    }
+    .ift-weixin{
+      &:after{
+        line-height: $toolbar-size - 16px;
+        content: '公众号';
+      }
+    }
+    .ift-advice{
+      &:after{
+        content: '意见\A反馈';
+      }
+    }
+    .ift-phone{
+      &:after{
+        content: 'APP\A下载';
+      }
+    }
+    .ift-share{
+      &:before{
+        font-size: fonts(size) * 2;
+      }
+      &:after{
+        content: '分享\A好友';
+      }
+    }
+    .ift-up{
+      &:after{
+        content: '返回\A顶部';
+      }
+    }
+  }
+
+  .bd{
+    position: absolute;
+    right: $toolbar-size;
+    bottom: -1px;
+    z-index:0;
+    // width: 172px;
+    // height: 172px;
+    border: 1px solid colors(gray);
+    text-align: center;
+    background-color: colors(white);
+    @include opacity(0);
+    transform-origin: 100% 100%;
+    transform:scale(0);
+    transition:all .3s;
+    &:after{
+      content:'';
+      position: absolute;
+      right: -1px;
+      bottom: 0;
+      height: $toolbar-size;
+      width: 1px;
+      background-color: colors(white);
+    }
+  }
+  .share{
+    width: 160px;
+    padding: 0 10px;
+    height: $toolbar-size;
+    font-size: 0;
+    li{
+      display: inline-block;
+      font-size: 0;
+      padding-top: 8px;
+    }
+    a,[class^="ift-"]{
+      float: initial;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin: 0 3px;
+      padding:0 0;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 16px;
+      font-size: fonts(size) * 1.6;
+      color: colors(white);
+      background-image: none;
+      text-indent: initial;
+      &:hover{
+        @include opacity(75);
+      }
+    }
+    .ift-qq{
+      background-color: colors(blue);
+    }
+    .ift-weixin{
+      background-color: colors(green);
+    }
+    .ift-sina{
+      background-color: colors(orange);
+    }
+    .ift-qqzone{
+      background-color: mix(colors(blue), colors(green));
+    }
+  }
+}
+
+.rq-corde{
+  width: 360px;
+  .item{
+    width: 114px;
+    float: left;
+    margin: 0 3px;
+  }
+  .text{
+    // height: 20px;
+    padding-bottom: 8px;
+    line-height: 1.2;
+    font-size: fonts(size) * 1.2;
+    color: colors(dark);
+  }
+}
+
+

@@ -5,3 +5,16 @@
 @import "classify";
 @import "details";
 @import "usercenter";
+
+#notice{
+  display: none;
+  font-size: fonts(size) * 1.4;
+  line-height: 1.5;
+  color: colors(darker);
+  padding: 20px;
+  .time{
+    color: colors(dark);
+    padding-top: 20px;
+    font-size: fonts(size) * 1.2;
+  }
+}

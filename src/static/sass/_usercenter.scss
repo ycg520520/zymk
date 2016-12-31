@@ -71,12 +71,15 @@
       width: 100%;
       height: 0;
       padding-bottom: 100%;
+      border-radius:50%;
+      overflow: hidden;
       img{
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
+        border-radius:50%;
       }
     }
     .thumbnail{
@@ -100,6 +103,7 @@
       font-size: fonts(size) *  1.2;
       text-align: center;
     }
+
   }
 }
 .list{
@@ -116,6 +120,9 @@
       color: colors(gray);
       margin-right: 4px;
     }
+  }
+  .ip,.del{
+    display:none;
   }
 }
 .user-center{
@@ -134,7 +141,7 @@
   }
   dt,dd{
     float: left;
-    font-size: fonts(size) * 1.2;
+    font-size: fonts(size) * 1.4;
     height: 20px;
     margin-top: 5px;
   }

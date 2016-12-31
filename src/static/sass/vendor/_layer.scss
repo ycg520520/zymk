@@ -177,5 +177,5 @@ html #layuicss-skinlayercss{display: none; position: absolute; width: 1989px;}
 
 
 @media screen and (max-width: 1100px) {
-  .layui-layer-iframe{overflow-y: auto; -webkit-overflow-scrolling: touch;}
+  .layui-layer-iframe{-webkit-overflow-scrolling: touch;}
 }
