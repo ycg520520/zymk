@@ -245,13 +245,13 @@ $.fn.extend({
             ot = _this.offset().top,
             oh = parseInt(_this.height(), 10), // this.offsetHeight在火狐下不正常
             loading = opt.loading || false, // 设置载入的图片样式
-            space = opt.space || (_this.attr('src') || 'images/space.gif'), // 图片占位
-      // space = opt.space || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', // 图片占位
+            // space = opt.space || (_this.attr('src') || 'images/space.gif'), // 图片占位
+            space = opt.space || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', // 图片占位
             errpic = opt.error || 'images/loading.gif'; // 错误图片地址
       // _this.attr('src',space);
           // 设置加载图片
           if (loading) {
-            _this.css('background', 'url(' + loading + ') no-repeat center center')
+            _this.css('background', 'url(' + loading + ') center center / 32px 32px no-repeat');
           }
           // 元素在当前浏览器窗口范围内
           if (ot < st + ch && ot + oh > st) {

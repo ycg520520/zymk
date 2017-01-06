@@ -14,7 +14,9 @@
     float: left;
     width: 12.4%;
     *width: 12%;
-    height: 64px;
+    // height: 64px;
+    height: 0;
+    padding-bottom: 5.05%;
     margin-right: 2.2%;
     @include last-child{
       margin-right: 0;

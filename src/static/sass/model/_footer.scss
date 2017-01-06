@@ -3,6 +3,9 @@
 	padding-bottom:24px;
 	color: colors(dark);
 	background-color: colors(darker);
+	.ft-rqCode{
+		width: 360px;
+	}
 	@at-root .ft-nav-bar{
 		padding: 16px 0;
 		border-bottom:1px solid darken(colors(darker), 5%);
@@ -90,7 +93,6 @@
 		}
 	}
 	@at-root .ft-rqCode{
-		width: 360px;
 		float: right;
 		text-align: center;
 		font-size: 0; 

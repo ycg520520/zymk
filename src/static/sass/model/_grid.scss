@@ -6,7 +6,7 @@ $grid_precentage_width: 88%;
 $container:".row"; //包裹类
 $gridname:".col"; //设置栅格栏类名
 $grid_width: 960px;
-$max_width: 1190px;
+$max_width: 88%;
 $def_gutter: 0px; //槽间距
 $columns: 24;
 @include auto_grids; //自动创建栅格类

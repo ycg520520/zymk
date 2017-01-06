@@ -622,13 +622,31 @@
       //点击图片
       if (_this.readmode == 3) {
         oImg.on('touchstart click', function(){
-          _this.imgOnTouch(this)
+          _this.imgOnTouch(this);
+
+          /*var oHeader = $('.header');
+          if(parseInt(oHeader.css('top'))<0){
+            oHeader.animate({top:0}, 300);
+          }else{
+            oHeader.animate({top:-oHeader.outerHeight()+'px'}, 300);
+          }*/
         }); //点击图片时设置页码(兼容移动端)
 
       } else {
         oImg.on(_this.readmode == 1 ? 'click top' : 'dblclick', function() {
           if (!_this.draging) {
-            _this.goPage('next');
+            // _this.goPage('next');
+            var area = _this.clickArea($(this),false);
+            if(area == 'middle'){
+              var oHeader = $('.header');
+              if(parseInt(oHeader.css('top'))<0){
+                oHeader.animate({top:0}, 300);
+              }else{
+                oHeader.animate({top:-oHeader.outerHeight()+'px'}, 300);
+              }
+            }else{
+              _this.goPage(area);
+            }
           }
         });
       }
@@ -691,6 +709,35 @@
           win.scrolled = true
         };
       }
+    },
+    clickArea: function(obj,flag) {
+      var ev = window.event;
+        var x = ev.clientX;
+        var y = ev.clientY;
+      var winW = $(win).width();
+      var winH = $(win).height();
+      
+        var W = Math.max(winW, obj?obj.width():0);
+        var H = Math.min(winH, obj?obj.height():winH);
+        var UW = W/3;
+        var UH = H/4;
+
+      if(flag == true){
+            if(y - UH < 0) {
+                return 'top';
+            }
+            if(y - 3 * UH > 0) {
+                return 'bottom';
+            }
+        }
+
+        if(x - UW < 0) {
+            return 'prev';
+        }else if(x - 2 * UW < 0) {
+            return 'middle';
+        }else if(x- 3 * UW < 0) {
+            return 'next';
+        }
     },
 
     scrollDis: function(fn) {

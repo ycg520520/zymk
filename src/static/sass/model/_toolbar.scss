@@ -168,8 +168,7 @@ $toolbar-size:52px;
   }
 }
 
-.rq-corde{
-  width: 360px;
+.rq-corde, .app-download{
   .item{
     width: 114px;
     float: left;
@@ -182,6 +181,9 @@ $toolbar-size:52px;
     font-size: fonts(size) * 1.2;
     color: colors(dark);
   }
+}
+.rq-corde{
+  width: 360px;
 }
 
 
